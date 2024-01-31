@@ -1,0 +1,14 @@
+/** GLOBAL STYLES **/
+
+
+/** CSS Reset **/
+/* Border Box Fix */
+:root {
+    box-sizing: border-box;
+}
+
+/* Reset Margins */
+
+body, h1, h2, h3, h4, h5, h6, p, figure, image {
+    margin: 0;
+}
