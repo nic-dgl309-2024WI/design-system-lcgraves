@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header class="l-flex-separate">
+  <header>
     <!-- Top navbar (desktop)-->
   <div class="l-flex-separate">
     <a href="index.html">Design System</a>
@@ -26,12 +26,11 @@
         <li><a href="#">Demo Site</a></li>
       </ul>
     </nav>
+    <a class="toggle h-hide-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
   </div>
     <!-- Mobile navbar & Sidebar (for desktop)-->
     <nav class="c-mobile-navbar">
-      <a class="toggle h-hide-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
       <ul id="c-mobile-first-menu" class="c-mobile-menu h-hide-mobile h-hide-desktop">
-        <li><a href="index.html">Design System</a></li>
         <li><a href="about-me.html">About Me</a></li>
         <li><a href="#">Demo Site</a></li>
       </ul>
