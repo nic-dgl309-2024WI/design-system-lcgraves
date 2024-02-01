@@ -1,6 +1,6 @@
 /* Top menu and side menu not visible for mobile */
 
-.c-top-menu .is-visible, .c-side-menu .is-visible {
+.is-visible {
     display: none;
 }
 
