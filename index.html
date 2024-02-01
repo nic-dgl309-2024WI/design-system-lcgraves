@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <link rel="stylesheet" type="text/css" href="design-system.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="design-system.css">
+  <!--hamburger icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet">
 </head>
 <body>
 <header>
@@ -19,6 +25,7 @@
   </nav>
   <!-- Mobile navbar & Sidebar (for desktop)-->
   <nav>
+    <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
     <ul>
       <li><a href="index.html">Design System</a></li>
       <li><a href="about-me.html">About Me</a></li>
