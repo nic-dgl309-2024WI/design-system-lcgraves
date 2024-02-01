@@ -9,10 +9,12 @@
     display: initial;
   }
 
+/* Flex Layout */
 .l-flex {
     display: flex;
 }
 
+/* Flex Layout with space in between */
 .l-flex-separate {
     display: flex;
     justify-content: space-between;
