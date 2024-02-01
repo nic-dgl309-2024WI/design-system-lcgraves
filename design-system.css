@@ -1,11 +1,33 @@
 /* Top menu and side menu not visible for mobile */
 
-.is-visible {
+.h-hide-mobile {
     display: none;
 }
 
 /* Show mobile menu when hamburger icon toggled */
-.show-items {
-    display: flex;
-    flex-direction: column;
+.h-show-items {
+    display: initial;
   }
+
+.l-flex {
+    display: flex;
+}
+
+.l-flex-separate {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media Queries for Desktop */
+
+@media only screen and (min-width: 1170px) {
+
+.h-hide-desktop {
+    display: none;
+}
+
+.is-visible-desktop {
+    display:initial;
+}
+
+}
