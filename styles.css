@@ -1,10 +1,15 @@
 /** GLOBAL STYLES **/
 
 
-/** CSS Reset **/
+/** CSS Reset & Global Variables **/
 /* Border Box Fix */
 :root {
     box-sizing: border-box;
+    --clr-primary: #000000;
+    --clr-secondary: #999999;
+    --clr-accent: #cccccc;
+    --clr-light: #f2f2f2;
+    --clr-white: #ffffff;
 }
 
 /* Reset Margins */
