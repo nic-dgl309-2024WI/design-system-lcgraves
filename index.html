@@ -20,21 +20,21 @@
     <!-- Top navbar (desktop)-->
   <div class="l-flex-separate">
     <a href="index.html">Design System</a>
-    <nav class="c-top-navbar h-hide-mobile is-visible-desktop">
-      <ul class="c-top-menu l-flex">
+    <nav class="c-desktop-navbar is-hidden-mobile is-visible-desktop">
+      <ul class="l-flex">
         <li><a href="about-me.html">About Me</a></li>
         <li><a href="#">Demo Site</a></li>
       </ul>
     </nav>
-    <a class="toggle h-hide-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+    <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
   </div>
-    <!-- Mobile navbar & Sidebar (for desktop)-->
+    <!-- Mobile nanvbar & Sidebar (for desktop)-->
     <nav class="c-mobile-navbar">
-      <ul id="c-mobile-first-menu" class="c-mobile-menu h-hide-mobile h-hide-desktop">
+      <ul id="c-mobile-menu__first" class="c-menu is-hidden-mobile is-hidden-desktop">
         <li><a href="about-me.html">About Me</a></li>
         <li><a href="#">Demo Site</a></li>
       </ul>
-      <ul id="c-mobile-second-menu" class="c-mobile-menu h-hide-mobile is-visible-desktop">
+      <ul id="c-mobile-menu__second" class="c-menu is-hidden-mobile is-visible-desktop">
         <h4>Branding</h4>
         <li><a href="#">01 Colours</a></li>
         <li><a href="#">02 Typography</a></li>

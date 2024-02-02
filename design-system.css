@@ -1,13 +1,18 @@
-/* Top menu and side menu not visible for mobile */
+/** STATES **/
 
-.h-hide-mobile {
+/* Visibility */
+
+/* Top menu and side menu hidden for mobile */
+.is-hidden-mobile  {
     display: none;
 }
 
 /* Show mobile menu when hamburger icon toggled */
-.h-show-items {
+.is-visible-dropdown-menu {
     display: initial;
   }
+
+/** LAYOUT **/
 
 /* Flex Layout */
 .l-flex {
@@ -20,16 +25,20 @@
     justify-content: space-between;
 }
 
-/* Media Queries for Desktop */
+/** MEDIA QUERY - DESKTOP LAYOUT **/
 
 @media only screen and (min-width: 1170px) {
 
-.h-hide-desktop {
+/** STATES **/
+
+/* Visibility */
+
+.is-hidden-desktop {
     display: none;
 }
 
 .is-visible-desktop {
-    display:initial;
+    display: initial;
 }
 
 }
