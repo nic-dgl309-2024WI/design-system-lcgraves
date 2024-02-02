@@ -24,3 +24,8 @@ ul, ol {
     padding: 0;
     list-style: none;
 }
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+}
