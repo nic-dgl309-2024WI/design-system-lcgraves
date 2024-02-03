@@ -61,8 +61,12 @@ background-color: var(--clr-light);
     font-weight: 400;
 }
 
-.c-mobile-menu__item {
+.c-mobile-menu__link {
     color: var(--clr-primary);
+}
+
+.c-mobile-menu__link:hover {
+    color: var(--clr-accent-two);
 }
 
 .c-sidemenu__item {
