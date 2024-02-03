@@ -6,14 +6,15 @@
 /* Border Box Fix */
 :root {
     box-sizing: border-box;
-    --clr-primary: #2D2923;
-    --clr-secondary: #A89116;
-    --clr-secondary-dark: #7E6D10;
-    --clr-secondary-darkest: #54490B;
-    --clr-accent-one: #FF9283;
-    --clr-accent-one-darker: #BF6E62;
-    --clr-accent-two: #C6753E;
-    --clr-light: #F4EFED;
+    --clr-primary: #434A3E;
+    --clr-secondary: #704153;
+    --clr-secondary-dark: #54303E;
+    --clr-accent-one: #C9C856;
+    --clr-accent-one-darker: #979641;
+    --clr-accent-one-darkest: #65642B;
+    --clr-accent-two: #966D6F;
+    --clr-accent-three: #C9565B;
+    --clr-light: #DEE0DC;
     --clr-white: #ffffff;
 }
 
