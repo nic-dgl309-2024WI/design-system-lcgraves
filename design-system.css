@@ -38,6 +38,13 @@
     background-color: var(--clr-white);
 }
 
+/** COMPONENTS **/
+
+/* Navigation */
+
+.c-desktop-navbar {
+padding-bottom: 1em;
+}
 
 /** STATES **/
 
