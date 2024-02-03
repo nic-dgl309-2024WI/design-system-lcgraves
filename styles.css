@@ -8,9 +8,10 @@
     box-sizing: border-box;
     --clr-primary: #2D2923;
     --clr-secondary: #A89116;
+    --clr-secondary-dark: #7E6D10;
     --clr-accent-one: #FF9283;
     --clr-accent-two: #C6753E;
-    --clr-light: #F4EAE4;
+    --clr-light: #F4EFED;
     --clr-white: #ffffff;
 }
 
@@ -28,4 +29,5 @@ ul, ol {
 /* Remove underline from links */
 a {
     text-decoration: none;
+    color: unset;
 }

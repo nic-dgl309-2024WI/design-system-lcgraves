@@ -1,3 +1,44 @@
+/** UTILITY CLASSES **/
+
+/* COLOUR */
+
+.u-text-primary {
+    color: var(--clr-primary);
+}
+
+.u-text-light {
+    color: var(--clr-light);
+}
+
+.u-text-white {
+    color: var(--clr-white);
+}
+
+.u-bg-primary {
+    background-color: var(--clr-primary);
+}
+
+.u-bg-secondary {
+    background-color: var(--clr-secondary);
+}
+
+.u-bg-accent-one{
+    background-color: var(--clr-accent-one);
+}
+
+.u-bg-accent-two {
+    background-color: var(--clr-accent-two);
+}
+
+.u-bg-light {
+    background-color: var(--clr-light);
+}
+
+.u-bg-white {
+    background-color: var(--clr-white);
+}
+
+
 /** STATES **/
 
 /* Visibility */
