@@ -6,12 +6,13 @@
 /* Border Box Fix */
 :root {
     box-sizing: border-box;
-    --clr-primary: #434A3E;
-    --clr-secondary: #704153;
-    --clr-secondary-dark: #54303E;
-    --clr-accent-one: #C9C856;
-    --clr-accent-one-darker: #979641;
-    --clr-accent-one-darkest: #65642B;
+    --clr-primary-100: #596352;
+    --clr-primary-200: #464C40;
+    --clr-secondary-100: #704153;
+    --clr-secondary-200: #54303E;
+    --clr-accent-one-100: #C9C856;
+    --clr-accent-one-200: #979641;
+    --clr-accent-one-300: #65642B;
     --clr-accent-two: #966D6F;
     --clr-accent-three: #C9565B;
     --clr-light: #DEE0DC;
