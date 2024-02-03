@@ -8,15 +8,26 @@
     box-sizing: border-box;
     --clr-primary-100: #596352;
     --clr-primary-200: #464C40;
+    --clr-primary-300: #434A3E;
+    --clr-primary-400: #2D3229;
+    --clr-secondary-40: #E2D9DD;
+    --clr-secondary-60: #C6B3BA;
+    --clr-secondary-80: #8C6776;
     --clr-secondary-100: #704153;
     --clr-secondary-200: #54303E;
     --clr-accent-one-100: #C9C856;
     --clr-accent-one-200: #979641;
     --clr-accent-one-300: #65642B;
     --clr-accent-two: #966D6F;
-    --clr-accent-three: #C9565B;
-    --clr-light: #DEE0DC;
+    --clr-accent-three-40: #F4DDDE;
+    --clr-accent-three-60: #E9BBBD;
+    --clr-accent-three-80: #D4787C;
+    --clr-accent-three-100: #C9565B;
+    --clr-light-60: #F8F9F8;
+    --clr-light-80: #E5E6E3;
+    --clr-light-100: #DEE0DC;
     --clr-white: #ffffff;
+    --clr-dark: #2D2829;
 }
 
 /* Reset Margins */

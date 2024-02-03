@@ -2,12 +2,36 @@
 
 /* COLOUR */
 
-.u-text-primary {
+.u-text-primary-100 {
+    color: var(--clr-primary-100);
+}
+
+.u-text-primary-200 {
     color: var(--clr-primary-200);
 }
 
-.u-text-secondary {
-    color: var(--clr-secondary);
+.u-text-primary-300 {
+    color: var(--clr-primary-300)
+}
+
+.u-text-primary-400 {
+    color: var(--clr-primary-400)
+}
+
+.u-text-secondary-40 {
+    color: var(--clr-secondary-40);
+}
+
+.u-text-secondary-100 {
+    color: var(--clr-secondary-100);
+}
+
+.u-text-secondary-200 {
+    color: var(--clr-secondary-100);
+}
+
+.u-text-accent-three-40 {
+    color: --clr-accent-three-40;
 }
 
 .u-text-light {
@@ -18,24 +42,80 @@
     color: var(--clr-white);
 }
 
-.u-bg-primary {
-    background-color: var(--clr-primary);
+.u-text-dark {
+    color: var(--clr-dark);
 }
 
-.u-bg-secondary {
-    background-color: var(--clr-secondary);
+.u-bg-primary-100 {
+    background-color: var(--clr-primary-100);
 }
 
-.u-bg-accent-one{
-    background-color: var(--clr-accent-one);
+.u-bg-primary-200 {
+    background-color: var(--clr-primary-100);
+}
+
+.u-bg-secondary-40 {
+    background-color: var(--clr-secondary-40);
+}
+
+.u-bg-secondary-60 {
+    background-color: var(--clr-secondary-60);
+}
+
+.u-bg-secondary-80 {
+    background-color: var(--clr-secondary-80);
+}
+
+.u-bg-secondary-100 {
+    background-color: var(--clr-secondary-100);
+}
+
+.u-bg-secondary-200 {
+    background-color: var(--clr-secondary-200);
+}
+
+.u-bg-accent-one-100{
+    background-color: var(--clr-accent-one-100);
+}
+
+.u-bg-accent-one-200{
+    background-color: var(--clr-accent-one-200);
+}
+
+.u-bg-accent-one-300{
+    background-color: var(--clr-accent-one-100);
 }
 
 .u-bg-accent-two {
     background-color: var(--clr-accent-two);
 }
 
-.u-bg-light {
-    background-color: var(--clr-light);
+.u-bg-accent-three-40 {
+    background-color: var(--clr-accent-three-40)
+}
+
+.u-bg-accent-three-60 {
+    background-color: var(--clr-accent-three-60)
+}
+
+.u-bg-accent-three-80 {
+    background-color: var(--clr-accent-three-80)
+}
+
+.u-bg-accent-three-100 {
+    background-color: var(--clr-accent-three-100)
+}
+
+.u-bg-light-60 {
+    background-color: var(--clr-light-60)
+}
+
+.u-bg-light-80 {
+    background-color: var(--clr-light-80)
+}
+
+.u-bg-light-100 {
+    background-color: var(--clr-light-100)
 }
 
 .u-bg-white {
@@ -50,7 +130,7 @@
 
 .c-desktop-navbar {
 padding-bottom: 1em;
-background-color: var(--clr-light);
+background-color: var(--clr-light-80);
 }
 
 .c-desktop-menu__item {
@@ -63,7 +143,7 @@ background-color: var(--clr-light);
 }
 
 .c-desktop-menu__link {
-    color: var(--clr-primary-200);
+    color: var(--clr-primary-300);
 }
 
 .c-desktop-menu__link:hover {
@@ -73,11 +153,11 @@ background-color: var(--clr-light);
 /* Rules for Mobile navbar */
 
 .c-mobile-navbar {
-    background-color: var(--clr-light);
+    background-color: var(--clr-light-80);
 }
 
 .c-side-navbar {
-    background-color: var(--clr-light);
+    background-color: var(--clr-light-80);
 }
 
 .c-mobile-menu__item {
@@ -90,7 +170,7 @@ background-color: var(--clr-light);
 }
 
 .c-mobile-menu__link {
-    color: var(--clr-primary-200);
+    color: var(--clr-primary-300);
 }
 
 .c-mobile-menu__link:hover {
@@ -100,13 +180,13 @@ background-color: var(--clr-light);
 /* Rules for side navbar */
 
 .c-sidemenu__heading {
-    color: var(--clr-primary-200);
+    color: var(--clr-primary-300);
     padding: 1em 0;
     font-weight: 400;
 }
 
 .c-sidemenu__item {
-    color: var(--clr-primary-200);
+    color: var(--clr-primary-300);
 }
 
 .c-sidemenu__item {
