@@ -42,8 +42,12 @@
     color: var(--clr-white);
 }
 
-.u-text-dark {
-    color: var(--clr-dark);
+.u-text-soft-black {
+    color: var(--clr-soft-black);
+}
+
+.u-text-soft-white {
+    color: var(--clr-soft-white);
 }
 
 .u-bg-primary-100 {
