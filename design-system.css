@@ -44,6 +44,29 @@
 
 .c-desktop-navbar {
 padding-bottom: 1em;
+background-color: var(--clr-light);
+}
+
+.c-mobile-navbar {
+    background-color: var(--clr-light);
+}
+
+.c-side-navbar {
+    background-color: var(--clr-light);
+}
+
+.c-sidemenu__heading {
+    color: var(--clr-primary);
+    padding: 1em 0;
+    font-weight: 400;
+}
+
+.c-mobile-menu__item {
+    color: var(--clr-primary);
+}
+
+.c-sidemenu__item {
+    color: var(--clr-primary);
 }
 
 /** STATES **/
