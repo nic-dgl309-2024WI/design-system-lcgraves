@@ -42,9 +42,19 @@
 
 /* Navigation */
 
+/* Rules for desktop navbar component */
+
 .c-desktop-navbar {
 padding-bottom: 1em;
 background-color: var(--clr-light);
+}
+
+.c-desktop-menu__link {
+    color: var(--clr-primary);
+}
+
+.c-desktop-menu__link:hover {
+    color: var(--clr-accent-one-darker);
 }
 
 .c-mobile-navbar {
@@ -54,6 +64,7 @@ background-color: var(--clr-light);
 .c-side-navbar {
     background-color: var(--clr-light);
 }
+
 
 .c-sidemenu__heading {
     color: var(--clr-primary);
@@ -66,7 +77,7 @@ background-color: var(--clr-light);
 }
 
 .c-mobile-menu__link:hover {
-    color: var(--clr-accent-two);
+    color: var(--clr-accent-one-darker);
 }
 
 .c-sidemenu__item {
