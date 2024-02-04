@@ -58,8 +58,12 @@
     color: var(--clr-accent-three-60);
 }
 
-.u-text-light {
-    color: var(--clr-light);
+.u-text-light-80 {
+    color: var(--clr-light-80);
+}
+
+.u-text-light-100 {
+    color: var(--clr-light-100);
 }
 
 .u-text-white {
@@ -136,10 +140,6 @@
 
 .u-bg-accent-three-100 {
     background-color: var(--clr-accent-three-100)
-}
-
-.u-bg-light-60 {
-    background-color: var(--clr-light-60)
 }
 
 .u-bg-light-80 {
