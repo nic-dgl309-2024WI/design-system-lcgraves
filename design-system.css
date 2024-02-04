@@ -27,11 +27,35 @@
 }
 
 .u-text-secondary-200 {
-    color: var(--clr-secondary-100);
+    color: var(--clr-secondary-200);
+}
+
+.u-text-secondary-300 {
+    color: var(--clr-secondary-300)
+}
+
+.u-text-secondary-400 {
+    color: var(--clr-secondary-400)
+}
+
+.u-text-accent-one-80 {
+    color: var(--clr-accent-one-80);
+}
+
+.u-text-accent-one-100 {
+    color: var(--clr-accent-one-100);
+}
+
+.u-text-accent-one-200 {
+    color: var(--clr-accent-one-200);
 }
 
 .u-text-accent-three-40 {
-    color: --clr-accent-three-40;
+    color: var(--clr-accent-three-40);
+}
+
+.u-text-accent-three-60 {
+    color: var(--clr-accent-three-60);
 }
 
 .u-text-light {
@@ -55,7 +79,11 @@
 }
 
 .u-bg-primary-200 {
-    background-color: var(--clr-primary-100);
+    background-color: var(--clr-primary-200);
+}
+
+.u-bg-primary-300 {
+    background-color: var(--clr-primary-300);
 }
 
 .u-bg-secondary-40 {
