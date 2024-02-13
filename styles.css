@@ -43,6 +43,7 @@
     --fs-x-large: 2.5em;
     --fs-xx-large: 3.5em;
     --fs-italic: italic;
+    --td-underline: underline;
 }
 
 /** UTILITY CLASSES **/
