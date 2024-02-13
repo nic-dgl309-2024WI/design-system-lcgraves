@@ -31,6 +31,18 @@
     --clr-white: #ffffff;
     --clr-soft-black: #383838;
     --clr-soft-white: #F9F9F9;
+    --ff-heading: "latienne-pro", serif;
+    --ff-body: "fenwick", sans-serif;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fs-small: .75em;
+    --fs-regular: 1em;
+    --fs-medium: 1.25em;
+    --fs-large: 2em;
+    --fs-x-large: 2.5em;
+    --fs-xx-large: 3.5em;
+    --fs-italic: italic;
 }
 
 /* Reset Margins */
