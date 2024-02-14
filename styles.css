@@ -31,12 +31,14 @@
     --clr-white: #ffffff;
     --clr-soft-black: #383838;
     --clr-soft-white: #F9F9F9;
-    --ff-heading: "latienne-pro", serif;
-    --ff-body: "fenwick", sans-serif;
+    --ff-heading: 'latienne-pro', serif;
+    --ff-body: 'Neue Montreal', sans-serif;
+    --fw-light: 300;
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-bold: 700;
-    --fs-small: .75em;
+    --fs-x-small: .75em;
+    --fs-small: .88em;
     --fs-regular: 1em;
     --fs-medium: 1.25em;
     --fs-large: 2em;
@@ -212,6 +214,10 @@
     font-family: var(--ff-body);
 }
 
+.u-fw-light {
+    font-weight: var(--fw-light);
+}
+
 .u-fw-regular {
     font-weight: var(--fw-regular);
 }
@@ -222,6 +228,10 @@
 
 .u-fw-bold {
     font-weight: var(--fw-bold);
+}
+
+.u-fs-x-small {
+    font-size: var(--fs-x-small);
 }
 
 .u-fs-small {
