@@ -3,6 +3,23 @@
 
 /** CSS RESET & GLOBAL VARIABLES **/
 
+/* Reset Margins */
+body, h1, h2, h3, h4, ul h4, h5, h6, p, figure, image, ul, ol, li {
+    margin: 0;
+    padding:unset;
+}
+
+/* Remove padding & style from Lists */
+ul, ol {
+    padding: 0;
+    list-style: none;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+}
+
 /* Border Box Fix */
 :root {
     box-sizing: border-box;
@@ -274,21 +291,4 @@
 
 .u-tt-uppercase {
     text-transform: var(--tt-uppercase);
-}
-
-
-/* Reset Margins */
-body, h1, h2, h3, h4, h5, h6, p, figure, image, ul, lo {
-    margin: 0;
-}
-
-/* Remove padding & style from Lists */
-ul, ol {
-    padding: 0;
-    list-style: none;
-}
-
-/* Remove underline from links */
-a {
-    text-decoration: none;
 }
