@@ -31,7 +31,7 @@
     --clr-white: #ffffff;
     --clr-soft-black: #383838;
     --clr-soft-white: #F9F9F9;
-    --ff-heading: 'latienne-pro', serif;
+    --ff-heading: "latienne-pro", serif;
     --ff-body: 'Neue Montreal', sans-serif;
     --fw-light: 300;
     --fw-regular: 400;
@@ -41,11 +41,13 @@
     --fs-small: .88em;
     --fs-regular: 1em;
     --fs-medium: 1.25em;
-    --fs-large: 2em;
-    --fs-x-large: 2.5em;
-    --fs-xx-large: 3.5em;
+    --fs-large: 1.60em;
+    --fs-x-large: 2em;
+    --fs-xx-large: 2.5em;
+    --fs-xxx-large: 3.5em;
     --fs-italic: italic;
     --td-underline: underline;
+    --tt-uppercase: uppercase;
 }
 
 /** UTILITY CLASSES **/
@@ -264,6 +266,10 @@
 
 .u-td-underline {
     text-decoration: var(--td-underline);
+}
+
+.u-tt-uppercase {
+    text-transform: var(--tt-uppercase);
 }
 
 
