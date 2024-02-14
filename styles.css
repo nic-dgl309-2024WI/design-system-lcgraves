@@ -204,8 +204,57 @@
 
 /* TYPOGRAPHY */
 
+.u-ff-heading {
+    font-family: var(--ff-heading);
+}
 
+.u-ff-body {
+    font-family: var(--ff-body);
+}
 
+.u-fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.u-fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+.u-fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.u-fs-small {
+    font-size: var(--fs-small);
+}
+
+.u-fs-regular {
+    font-size: var(--fs-regular);
+}
+
+.u-fs-medium {
+    font-size: var(--fs-medium);
+}
+
+.u-fs-large {
+    font-size: var(--fs-large);
+}
+
+.u-fs-x-large {
+    font-size: var(--fs-x-large);
+}
+
+.u-fs-xx-large {
+    font-size: var(--fs-xx-large);
+}
+
+.u-fs-italic {
+    font-style: var(--fs-italic);
+}
+
+.u-td-underline {
+    text-decoration: var(--td-underline);
+}
 
 
 /* Reset Margins */
