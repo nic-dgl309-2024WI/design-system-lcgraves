@@ -88,6 +88,13 @@ background-color: var(--clr-light-80);
     display: initial;
   }
 
+/* Active page */
+
+.is-active {
+    color: var(--clr-accent-one-200);
+    text-decoration: var(--td-underline);
+}
+
 /** LAYOUT **/
 
 /* Flex Layout */
