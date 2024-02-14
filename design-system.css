@@ -23,7 +23,7 @@ background-color: var(--clr-light-80);
 }
 
 .c-desktop-menu__link:hover {
-    color: var(--clr-accent-one-200);
+    text-decoration: var(--td-underline);
 }
 
 /* Rules for Mobile navbar */
@@ -50,7 +50,7 @@ background-color: var(--clr-light-80);
 }
 
 .c-mobile-menu__link:hover {
-    color: var(--clr-accent-one-200);
+    text-decoration: var(--td-underline);
 }
 
 /* Rules for side navbar */
@@ -91,7 +91,6 @@ background-color: var(--clr-light-80);
 /* Active page */
 
 .is-active {
-    color: var(--clr-accent-one-200);
     text-decoration: var(--td-underline);
 }
 
