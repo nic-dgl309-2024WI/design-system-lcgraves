@@ -31,8 +31,8 @@
     --clr-white: #ffffff;
     --clr-soft-black: #383838;
     --clr-soft-white: #F9F9F9;
-    --ff-heading: "latienne-pro", serif;
-    --ff-body: 'Neue Montreal', sans-serif;
+    --ff-heading: "Lora", serif;
+    --ff-body: "Noto Sans", sans-serif;
     --fw-light: 300;
     --fw-regular: 400;
     --fw-medium: 500;
@@ -258,6 +258,10 @@
 
 .u-fs-xx-large {
     font-size: var(--fs-xx-large);
+}
+
+.u-fs-xxx-large {
+    font-size: var(--fs-xxx-large);
 }
 
 .u-fs-italic {
