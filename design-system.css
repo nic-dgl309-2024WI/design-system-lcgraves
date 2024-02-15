@@ -125,8 +125,7 @@ background-color: var(--clr-light-80);
 
 .c-sidemenu__heading {
     color: var(--clr-primary-300);
-    padding: 1em 0;
-    font-weight: 400;
+    padding: .8em 0;
 }
 
 .c-sidemenu__item {
