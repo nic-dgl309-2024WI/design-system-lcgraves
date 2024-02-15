@@ -1,22 +1,14 @@
 /** TYPOGRAPHY **/
 
-.u-heading--large {
+.u-heading--1 {
     font-family: var(--ff-serif);
     font-size: var(--fs-xxx-large);
     font-weight: var(--fw-medium);
-    line-height: var(--line-height-3);
-    letter-spacing: var(--letter-spacing-1);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-2);
 }
 
-.u-subheading--300 {
-    font-family: var(--ff-sans-serif);
-    font-size: var(--fs-small);
-    font-weight: var(--fw-regular);
-    line-height: var(--line-height-2);
-    text-transform: var(--tt-uppercase);
-}
-
-.u-subheading--200 {
+.u-heading--2 {
     font-family: var(--ff-serif);
     font-size: var(--fs-xx-large);
     font-weight: var(--fw-medium);
@@ -25,12 +17,51 @@
     font-style: var(--fs-italic)
 }
 
-.u-subheading--100 {
+.u-heading--3 {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-xx-large);
+    font-weight: var(--fw-medium);
+    line-height: var(--line-height-2);
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.u-heading--4 {
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-x-large);
+    font-weight: var(--fw-medium);
+    line-height: var(--line-height-2);
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.u-heading--5 {
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-regular);
+    line-height: var(--line-height-2);
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.u-subheading--1 {
     font-family: var(--ff-serif);
     font-size: var(--fs-medium);
     font-weight: var(--fw-medium);
     line-height: var(--line-height-2);
     letter-spacing: var(--letter-spacing-1);
+}
+
+.u-subheading--2 {
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-light);
+    line-height: var(--line-height-2);
+    text-transform: var(--tt-uppercase);
+}
+
+.u-body-text {
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-regular);
+    line-height: var(--line-height-3);
 }
 
 

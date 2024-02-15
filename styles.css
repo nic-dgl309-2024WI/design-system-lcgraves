@@ -65,9 +65,9 @@ a {
 
     /* Font-size */
     --fs-x-small: .75em;
-    --fs-small: .88em;
+    --fs-small: .875em;
     --fs-regular: 1em;
-    --fs-medium: 1.2em;
+    --fs-medium: 1.25em;
     --fs-large: 1.60em;
     --fs-x-large: 2em;
     --fs-xx-large: 3.5em;
