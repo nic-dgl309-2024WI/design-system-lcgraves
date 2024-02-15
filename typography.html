@@ -23,7 +23,7 @@
   <header>
     <!-- Top navbar (desktop)-->
   <div class="c-desktop-navbar l-flex-separate">
-    <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small u-tt-uppercase " href="index.html">Design System</a>
+    <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small u-fw-medium" href="index.html">Design System</a>
     <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
       <ul class="l-flex u-ff-sans-serif u-fs-small u-tt-uppercase">
         <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="about-me.html">About Me</a></li>
@@ -42,7 +42,7 @@
         <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="colours.html">01 Colours</a></li>
         <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link is-active" href="typography.html">02 Typography</a></li>
         <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">03 Logo</a></li>
-        <h4 class="c-sidemenu__heading u-ff-serif u-fs-medium">Utilites</h4>
+        <h4 class="c-sidemenu__heading subheading--200">Utilities</h4>
         <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">04 Spacing</a></li>
         <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">05 Containers</a></li>
         <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">06 Images</a></li>
@@ -65,27 +65,79 @@
       </ul>
     </nav>
   </header>
-
-  <h1 class="u-ff-serif">Typography</h1>
-  <h2 class="u-ff-serif">Lora (Adobe Font)</h2>
+  <main>
+  <h1 class="heading--large">Typefaces</h1>
+  <h2 class="subheading--300">Font Families</h2>
+  <p class="u-ff-serif">Lora (Adobe Font)</p>
   <p class="u-ff-serif">A contemporary serif</p>
+  <p class="u-ff-serif">Utility class name: u-ff-serif</p>
   <p class="u-ff-serif u-tt-uppercase">abcdefghijklmnopqrstuvwxyz</p>
   <p class="u-ff-serif">abcdefghijklmnopqrstuvwxyz</p>
-  <p class="u-ff-serif">Utilit class name: u-ff-serif<p/>
-  <h2 class="u-ff-sans-serif">Noto Sans (Google Font)</h2>
+  <p class="u-ff-serif">12345678910</p>
+
+  <p class="u-ff-sans-serif">Noto Sans (Google Font)</p>
   <p class="u-ff-sans-serif">A humanist sans serif with calligraphy influence</p>
+  <p class="u-ff-sans-serif">Utilit class name: u-ff-sans-serif</p>
   <p class="u-ff-sans-serif u-tt-uppercase">abcdefghijklmnopqrstuvwxyz</p>
   <p class="u-ff-sans-serif">abcdefghijklmnopqrstuvwxyz</p>
   <p class="u-ff-sans-serif">12345678910</p>
-  <p class="u-ff-sans-serif">Utilit class name: u-ff-sans-serif</p>
-  
+
+  <h2>Font Uses</h2>
+  <table>
+    <tr>
+        <td>Headings</td>
+        <td>Font-family</td>
+        <td>Font-size</td>
+        <td>Font-weight</td>
+        <td>Accent</td>
+        <td>Line-height</td>
+        <td>Letter-spacing</td>
+    </tr>
+    <tr>
+        <td>H1 - display heading</td>
+        <td>Lora</td>
+        <td>96px</td>
+        <td>500</td>
+        <td></td>
+        <td>1.3</td>
+        <td>0.08em</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>u-ff-serif</td>
+        <td>u-fs-xxx-large</td>
+        <td>u-fw-medium</td>
+        <td></td>
+        <td>u-line-height-1</td>
+        <td>u-letter-spacing-2</td>
+    </tr>
+    <tr>
+        <td>H2 heading</td>
+        <td>Noto Sans</td>
+        <td>20px</td>
+        <td>300</td>
+        <td></td>
+        <td>1.3</td>
+        <td>-0.02</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>u-ff-serif</td>
+        <td>u-fs-xxx-large</td>
+        <td>u-fw-medium</td>
+        <td></td>
+        <td>u-line-height-1</td>
+        <td>u-letter-spacing-2</td>
+    </tr>
+
+    
 
 
 
 
 
 
-
+  </main>
   <script src="design-system.js"></script>
 </body>
 

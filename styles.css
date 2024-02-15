@@ -23,6 +23,8 @@ a {
 /* Border Box Fix */
 :root {
     box-sizing: border-box;
+
+/* Colour Variables */    
     --clr-primary-100: #596352;
     --clr-primary-200: #434A3E;
     --clr-primary-300: #2D3229;
@@ -48,23 +50,45 @@ a {
     --clr-white: #ffffff;
     --clr-soft-black: #383838;
     --clr-soft-white: #FCFDFC;
-    --ff-heading: "Lora", serif;
-    --ff-body: "Noto Sans", sans-serif;
+
+    /*** TYPOGRAPHY ***/
+
+    /* Typeface */
+    --ff-serif: "Lora", serif;
+    --ff-sans-serif: "Noto Sans", sans-serif;
+
+    /* Font-weight */
     --fw-light: 300;
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-bold: 700;
+
+    /* Font-size */
     --fs-x-small: .75em;
     --fs-small: .88em;
     --fs-regular: 1em;
     --fs-medium: 1.25em;
     --fs-large: 1.60em;
     --fs-x-large: 2em;
-    --fs-xx-large: 2.5em;
-    --fs-xxx-large: 3.5em;
+    --fs-xx-large: 3.5em;
+    --fs-xxx-large: 6em;
+
+    /* Font style */
     --fs-italic: italic;
     --td-underline: underline;
     --tt-uppercase: uppercase;
+
+    /* Letter spacing */
+    --letter-spacing-0: -0.02em;
+    --letter-spacing-1: .05em;
+    --letter-spacing-2: .08em;
+    --letter-spacing-3: 1em;
+
+    /* Line Height */
+    --line-height-0: 1.2;
+    --line-height-1: 1.3;
+    --line-height-2: 1.4;
+    --line-height-3: 1.6;
 }
 
 /** UTILITY CLASSES **/
@@ -226,11 +250,11 @@ a {
 /* TYPOGRAPHY */
 
 .u-ff-serif {
-    font-family: var(--ff-heading);
+    font-family: var(--ff-serif);
 }
 
 .u-ff-sans-serif {
-    font-family: var(--ff-body);
+    font-family: var(--ff-sans-serif);
 }
 
 .u-fw-light {
@@ -291,4 +315,40 @@ a {
 
 .u-tt-uppercase {
     text-transform: var(--tt-uppercase);
+}
+
+/* Letter spacing */
+
+.u-letter-spacing-0 {
+    letter-spacing: var(--letter-spacing-0);
+}
+
+.u-letter-spacing-1 {
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.u-letter-spacing-2 {
+    letter-spacing: var(--letter-spacing-2);
+}
+
+.u-letter-spacing-3 {
+    letter-spacing: var(--letter-spacing-3);
+}
+
+/* Line Height */
+
+.u-line-height-0 {
+    line-height: var( --line-height-0);
+}
+
+.u-line-height-1 {
+    line-height: var( --line-height-1);
+}
+
+.u-line-height-2 {
+    line-height: var( --line-height-2);
+}
+
+.u-line-height-3 {
+    line-height: var( --line-height-3);
 }
