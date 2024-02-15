@@ -1,6 +1,6 @@
 /** TYPOGRAPHY **/
 
-.heading--large {
+.u-heading--large {
     font-family: var(--ff-serif);
     font-size: var(--fs-xxx-large);
     font-weight: var(--fw-medium);
@@ -8,7 +8,7 @@
     letter-spacing: var(--letter-spacing-1);
 }
 
-.subheading--300 {
+.u-subheading--300 {
     font-family: var(--ff-sans-serif);
     font-size: var(--fs-small);
     font-weight: var(--fw-regular);
@@ -16,17 +16,18 @@
     text-transform: var(--tt-uppercase);
 }
 
-.subheading--200 {
+.u-subheading--200 {
     font-family: var(--ff-serif);
     font-size: var(--fs-xx-large);
     font-weight: var(--fw-medium);
     line-height: var(--line-height-2);
     letter-spacing: var(--letter-spacing-1);
+    font-style: var(--fs-italic)
 }
 
-.subheading--100 {
+.u-subheading--100 {
     font-family: var(--ff-serif);
-    font-size: var(--fs-large);
+    font-size: var(--fs-medium);
     font-weight: var(--fw-medium);
     line-height: var(--line-height-2);
     letter-spacing: var(--letter-spacing-1);
