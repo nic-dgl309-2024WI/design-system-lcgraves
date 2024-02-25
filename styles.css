@@ -24,8 +24,24 @@ a {
 :root {
     box-sizing: border-box;
 
-/* Colour Variables */    
-    --clr-primary-100: #596352;
+/* Colour Variables */ 
+    --clr-primary-60: #F2F3F1;
+    --clr-primary-80: #EFF0EE;
+    --clr-primary-100: #598878;
+    --clr-primary-200: #306A56;
+    --clr-primary-300: #245041;
+
+    --clr-secondary-20: #FAFCFB;
+    --clr-secondary-20: #F2F5F4;
+    --clr-secondary-40: #E6EEEA;
+    --clr-secondary-60: #E5E7E6;
+    --clr-secondary-80: #D3D7D6;
+    --clr-secondary-100: #B5BDBA;
+    --clr-secondary-200: #6B7A75;
+    
+    
+
+
     --clr-primary-200: #434A3E;
     --clr-primary-300: #2D3229;
     --clr-primary-400: #161914;
