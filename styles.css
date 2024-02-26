@@ -45,6 +45,7 @@ a {
     
     --clr-almost-white: #FAFCFB;
     --clr-soft-white: #F2F5F4;
+    --clr-soft-black: #545454;
 
     /*** TYPOGRAPHY ***/
 
@@ -142,6 +143,10 @@ a {
     color: var(--clr-soft-white);
 }
 
+.u-text-soft-black {
+    color: var(--clr-soft-black);
+}
+
 .u-bg-primary-40 {
     background-color: var(--clr-primary-40);
 }
@@ -205,6 +210,11 @@ a {
 .u-bg-soft-white {
     background-color: var(--clr-soft-white);
 }
+
+.u-bg-soft-black {
+    background-color: var(--clr-soft-black);
+}
+
 
 /* TYPOGRAPHY */
 
