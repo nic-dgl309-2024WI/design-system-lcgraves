@@ -1,36 +1,37 @@
 /** TYPOGRAPHY **/
 
 .u-heading--1 {
-    font-family: var(--ff-serif);
+    font-family: var(--ff-serif-italic);
     font-size: var(--fs-xxx-large);
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-regular);
     line-height: var(--line-height-1);
-    letter-spacing: var(--letter-spacing-2);
+    letter-spacing: var(--letter-spacing-1);
+    font-style: var(--fs-italic)
 }
 
 .u-heading--2 {
-    font-family: var(--ff-serif);
+    font-family: var(--ff-serif-italic);
     font-size: var(--fs-xx-large);
-    font-weight: var(--fw-medium);
-    line-height: var(--line-height-2);
+    line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
     font-style: var(--fs-italic)
 }
 
 .u-heading--3 {
-    font-family: var(--ff-serif);
-    font-size: var(--fs-xx-large);
-    font-weight: var(--fw-medium);
-    line-height: var(--line-height-2);
-    letter-spacing: var(--letter-spacing-1);
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-xxx-large);
+    font-weight: var(--fw-bold);
+    line-height: var(--line-height-1);
+    text-transform: uppercase;
 }
 
 .u-heading--4 {
     font-family: var(--ff-sans-serif);
-    font-size: var(--fs-x-large);
-    font-weight: var(--fw-medium);
-    line-height: var(--line-height-2);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-regular);
+    line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
+    text-transform: var(--tt-uppercase);
 }
 
 .u-heading--5 {
