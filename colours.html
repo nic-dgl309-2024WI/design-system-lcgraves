@@ -9,23 +9,25 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!--Noto Sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!--Lora Adobe font-->
     <link rel="stylesheet" href="https://use.typekit.net/vzc4enl.css">
     <!--Lora Adobe font-->
     <link rel="stylesheet" href="https://use.typekit.net/jdt3oru.css">
     <!--Add WT Solaire Font-->
-  <style media="screen, print">
-    @font-face {
-        font-family: "WT Solaire-display";
-        src: url(fonts/Fontspring-DEMO-wtsolaire-displayregular.otf) format("opentype");
-    }
-    @font-face {
-        font-family: "WT Solaire-display-italic";
-        src: url(fonts/Fontspring-DEMO-wtsolaire-displayitalic.otf) format("opentype");
-    }
-</style>
+    <style media="screen, print">
+        @font-face {
+            font-family: "WT Solaire-display";
+            src: url(fonts/Fontspring-DEMO-wtsolaire-displayregular.otf) format("opentype");
+        }
+
+        @font-face {
+            font-family: "WT Solaire-display-italic";
+            src: url(fonts/Fontspring-DEMO-wtsolaire-displayitalic.otf) format("opentype");
+        }
+    </style>
     <!--hamburger icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -33,49 +35,63 @@
 <body>
     <header>
         <!-- Top navbar (desktop)-->
-      <div class="c-desktop-navbar l-flex-separate">
-        <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small" href="index.html">Design System</a>
-        <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
-          <ul class="l-flex u-ff-sans-serif u-fs-small u-fw-medium">
-            <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="about-me.html">About Me</a></li>
-            <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="#">Demo Site</a></li>
-          </ul>
-        </nav>
-        <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
-      </div>
+        <div class="c-desktop-navbar l-flex-separate">
+            <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small" href="index.html">Design System</a>
+            <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
+                <ul class="l-flex u-ff-sans-serif u-fs-small u-fw-medium">
+                    <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="about-me.html">About Me</a>
+                    </li>
+                    <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="#">Demo Site</a></li>
+                </ul>
+            </nav>
+            <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+        </div>
         <!-- Mobile nanvbar & Sidebar (for desktop)-->
         <nav class="c-side-navbar">
-          <ul id="c-mobile-menu__first" class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small u-fw-medium">
-            <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a></li>
-            <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="#">Demo Site</a></li>
-          </ul>
-          <ul id="c-mobile-menu__second" class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small">
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link is-active" href="colours.html">01 Colours</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="typography.html">02 Typography</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">03 Logo</a></li>
-            <h4 class="c-sidemenu__heading u-subheading--1">Utilities</h4>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">04 Spacing</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">05 Containers</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">06 Images</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">07 Interactive</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">08 Feedback</a></li>
-            <h4 class="c-sidemenu__heading u-subheading--1">Navigation</h4>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">09 Navbars</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">10 Breadcrumbs</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">11 Pagination</a></li>
-            <h4 class="c-sidemenu__heading u-subheading--1">Blocks</h4>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">12 Hero</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">13 Carousel</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">14 Slats</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">15 Footer</a></li>
-            <h4 class="c-sidemenu__heading u-subheading--1">Components</h4>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">16 Cards</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">17 Forms</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">18 Accordion</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">19 Lists</a></li>
-          </ul>
+            <ul id="c-mobile-menu__first"
+                class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small u-fw-medium">
+                <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a></li>
+                <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="#">Demo Site</a></li>
+            </ul>
+            <ul id="c-mobile-menu__second"
+                class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small">
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link is-active"
+                        href="colours.html">01 Colours</a></li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="typography.html">02
+                        Typography</a></li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">03 Logo</a></li>
+                <h4 class="c-sidemenu__heading u-subheading--1">Utilities</h4>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">04 Spacing</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">05 Containers</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">06 Images</a></li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">07 Interactive</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">08 Feedback</a>
+                </li>
+                <h4 class="c-sidemenu__heading u-subheading--1">Navigation</h4>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">09 Navbars</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">10 Breadcrumbs</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">11 Pagination</a>
+                </li>
+                <h4 class="c-sidemenu__heading u-subheading--1">Blocks</h4>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">12 Hero</a></li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">13 Carousel</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">14 Slats</a></li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">15 Footer</a></li>
+                <h4 class="c-sidemenu__heading u-subheading--1">Components</h4>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">16 Cards</a></li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">17 Forms</a></li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">18 Accordion</a>
+                </li>
+                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">19 Lists</a></li>
+            </ul>
         </nav>
-      </header>
+    </header>
 
     <section>
         <h1 class="u-text-soft-black u-heading--3">Brand Colours</h1>
@@ -275,28 +291,28 @@
             <p class="u-text-soft-white">Class: u-text-primary-300</p>
             <p class="u-text-soft-white">Uses: text colour for buttons, button borders</p>
             <table class="u-body-text">
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td class="u-text-soft-white">Normal text</td>
-                        <td class="u-text-soft-white">Large text</td>
-                        <td class="u-text-soft-white">Graphics & Components</td>
-                    </tr>
-                    <tr class="u-text-soft-white">
-                        <td>Soft white</td>
-                        <td>#F2F5F4</td>
-                        <td>Pass</td>
-                        <td>Pass</td>
-                        <td>Pass</td>
-                    </tr>
-                    <tr class="u-text-almost-white">
-                        <td>Almost white</td>
-                        <td>#FAFCFB</td>
-                        <td>Pass</td>
-                        <td>Pass</td>
-                        <td>Pass</td>
-                    </tr>
-                </table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="u-text-soft-white">Normal text</td>
+                    <td class="u-text-soft-white">Large text</td>
+                    <td class="u-text-soft-white">Graphics & Components</td>
+                </tr>
+                <tr class="u-text-soft-white">
+                    <td>Soft white</td>
+                    <td>#F2F5F4</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                </tr>
+                <tr class="u-text-almost-white">
+                    <td>Almost white</td>
+                    <td>#FAFCFB</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                    <td>Pass</td>
+                </tr>
+            </table>
         </div>
 
         <!--Secondary Colours-->
@@ -454,7 +470,7 @@
             <h4 class="u-heading--2 u-fs-x-large">Light moss</h4>
             <p>#D9E86B</p>
             <p>Class: u-bg-accent-one-80</p>
-            <p >Uses: Background colour for buttons</p>
+            <p>Uses: Background colour for buttons</p>
             <table>
                 <tr>
                     <td></td>
@@ -573,7 +589,8 @@
             <p class="u-text-soft-black">#F2F5F4</p>
             <p class="u-text-soft-black">Class: u-bg-soft-white</p>
             <p class="u-text-soft-black">Class: u-text-soft-white, u-bg-soft-white</p>
-            <p class="u-text-soft-black">Uses: Colour for text on dark backgrounds, background colour for cards and forms</p>
+            <p class="u-text-soft-black">Uses: Colour for text on dark backgrounds, background colour for cards and
+                forms</p>
             <table class="u-body-text">
                 <tr>
                     <td></td>

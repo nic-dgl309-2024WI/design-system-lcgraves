@@ -79,8 +79,8 @@
 /* Rules for desktop navbar component */
 
 .c-desktop-navbar {
-padding-bottom: 1em;
-background-color: var(--clr-primary-60);
+    padding-bottom: 1em;
+    background-color: var(--clr-primary-60);
 }
 
 .c-desktop-menu__item {
@@ -164,14 +164,14 @@ background-color: var(--clr-primary-60);
 /* Visibility */
 
 /* Top menu and side menu hidden for mobile */
-.is-hidden-mobile  {
+.is-hidden-mobile {
     display: none;
 }
 
 /* Show mobile menu when hamburger icon toggled */
 .is-visible-dropdown-menu {
     display: initial;
-  }
+}
 
 /* Active page */
 
@@ -196,16 +196,16 @@ background-color: var(--clr-primary-60);
 
 @media only screen and (min-width: 1170px) {
 
-/** STATES **/
+    /** STATES **/
 
-/* Visibility */
+    /* Visibility */
 
-.is-hidden-desktop {
-    display: none;
-}
+    .is-hidden-desktop {
+        display: none;
+    }
 
-.is-visible-desktop {
-    display: initial;
-}
+    .is-visible-desktop {
+        display: initial;
+    }
 
 }
