@@ -38,25 +38,23 @@
     font-family: var(--ff-sans-serif);
     font-size: var(--fs-medium);
     font-weight: var(--fw-regular);
-    line-height: var(--line-height-1);
-    letter-spacing: var(--letter-spacing-1);
+    line-height: var(--line-height-2);
     text-transform: var(--tt-uppercase);
 }
 
 .u-subheading--1 {
     font-family: var(--ff-serif);
     font-size: var(--fs-medium);
-    font-weight: var(--fw-medium);
-    line-height: var(--line-height-2);
-    letter-spacing: var(--letter-spacing-1);
+    font-weight: var(--fw-regular);
+    line-height: var(--line-height-1);
 }
 
 .u-subheading--2 {
-    font-family: var(--ff-sans-serif);
-    font-size: var(--fs-small);
-    font-weight: var(--fw-light);
+    font-family: var(--ff-serif-italic);
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-regular);
     line-height: var(--line-height-2);
-    text-transform: var(--tt-uppercase);
+    font-style: var(--fs-italic);
 }
 
 .u-body-text {
@@ -66,6 +64,12 @@
     line-height: var(--line-height-3);
 }
 
+.u-body-text--bigger-bold {
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-medium);
+    line-height: var(--line-height-3);
+    font-family: var(--ff-sans-serif);
+}
 
 
 /** COMPONENTS **/
