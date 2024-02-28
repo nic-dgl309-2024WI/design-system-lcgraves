@@ -75,7 +75,7 @@
 
 .c-desktop-navbar {
 padding-bottom: 1em;
-background-color: var(--clr-light-80);
+background-color: var(--clr-primary-60);
 }
 
 .c-desktop-menu__item {
@@ -98,11 +98,11 @@ background-color: var(--clr-light-80);
 /* Rules for Mobile navbar */
 
 .c-mobile-navbar {
-    background-color: var(--clr-light-80);
+    background-color: var(--clr-primary-60);
 }
 
 .c-side-navbar {
-    background-color: var(--clr-light-80);
+    background-color: var(--clr-primary-60);
 }
 
 .c-mobile-menu__item {
