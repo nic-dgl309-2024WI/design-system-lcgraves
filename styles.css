@@ -223,6 +223,10 @@ a {
     font-family: var(--ff-serif);
 }
 
+.u-ff-serif-italic {
+    font-family: var(--ff-serif-italic)
+}
+
 .u-ff-sans-serif {
     font-family: var(--ff-sans-serif);
 }
