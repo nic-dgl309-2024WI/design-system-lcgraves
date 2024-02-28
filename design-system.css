@@ -38,8 +38,9 @@
     font-family: var(--ff-sans-serif);
     font-size: var(--fs-medium);
     font-weight: var(--fw-regular);
-    line-height: var(--line-height-2);
+    line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
+    text-transform: var(--tt-uppercase);
 }
 
 .u-subheading--1 {
@@ -140,6 +141,18 @@ background-color: var(--clr-primary-60);
 
 .c-sidemenu__item:hover {
     transform: scale(1.1);
+}
+
+/* Buttons */
+
+.c-button {
+    width: 20em;
+    font-size: var(--fs-medium);
+    padding: 1em;
+    border: 1px solid var(--clr-primary-300);
+    background-color: var(--clr-accent-one-100);
+    text-align: center;
+    text-transform: var(--tt-uppercase);
 }
 
 /** STATES **/
