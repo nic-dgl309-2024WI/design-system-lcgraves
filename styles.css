@@ -24,7 +24,7 @@ a {
 :root {
     box-sizing: border-box;
 
-/* Colour Variables */ 
+/* COLOUR VARIABLES */ 
     --clr-primary-40: #F9F9F8;
     --clr-primary-60: #EFF0EE;
     --clr-primary-80: #E6EEEA;
@@ -47,20 +47,20 @@ a {
     --clr-soft-white: #F2F5F4;
     --clr-soft-black: #545454;
 
-    /*** TYPOGRAPHY ***/
+    /*** TYPOGRAPHY VARIABLES ***/
 
-    /* Typeface */
+    /* Typeface variables*/
     --ff-serif: "WT Solaire-display", serif;
     --ff-serif-italic: "WT Solaire-display-italic", serif;
     --ff-sans-serif: "Noto Sans", sans-serif;
 
-    /* Font-weight */
+    /* Font-weight variables*/
     --fw-light: 300;
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-bold: 700;
 
-    /* Font-size */
+    /* Font-size variables */
     --fs-x-small: .75em;
     --fs-small: .875em;
     --fs-regular: 1em;
@@ -70,18 +70,18 @@ a {
     --fs-xx-large: 4em;
     --fs-xxx-large: 4.7em;
 
-    /* Font style */
+    /* Font style variables*/
     --fs-italic: italic;
     --td-underline: underline;
     --tt-uppercase: uppercase;
 
-    /* Letter spacing */
+    /* Letter spacing variables*/
     --letter-spacing-0: -0.02em;
     --letter-spacing-1: .02em;
     --letter-spacing-2: .08em;
     --letter-spacing-3: 1em;
 
-    /* Line Height */
+    /* Line Height variables */
     --line-height-0: 1.1;
     --line-height-1: 1.2;
     --line-height-2: 1.4;
@@ -90,7 +90,9 @@ a {
 
 /** UTILITY CLASSES **/
 
-/* COLOUR */
+/* COLOUR UTILITY CLASSES */
+
+/* Text colour utility classes */
 
 .u-text-primary-100 {
     color: var(--clr-primary-100);
@@ -147,6 +149,8 @@ a {
 .u-text-soft-black {
     color: var(--clr-soft-black);
 }
+
+/* Background colour utility classes */
 
 .u-bg-primary-40 {
     background-color: var(--clr-primary-40);
@@ -217,7 +221,9 @@ a {
 }
 
 
-/* TYPOGRAPHY */
+/* TYPOGRAPHY UTILITY CLASSES */
+
+/* Typefaces Utility classes */
 
 .u-ff-serif {
     font-family: var(--ff-serif);
@@ -230,6 +236,8 @@ a {
 .u-ff-sans-serif {
     font-family: var(--ff-sans-serif);
 }
+
+/* Font weight utility classes */
 
 .u-fw-light {
     font-weight: var(--fw-light);
@@ -246,6 +254,8 @@ a {
 .u-fw-bold {
     font-weight: var(--fw-bold);
 }
+
+/* Font size utility classes */
 
 .u-fs-x-small {
     font-size: var(--fs-x-small);
@@ -279,6 +289,8 @@ a {
     font-size: var(--fs-xxx-large);
 }
 
+/* Font style utility classes */
+
 .u-fs-italic {
     font-style: var(--fs-italic);
 }
@@ -287,11 +299,13 @@ a {
     text-decoration: var(--td-underline);
 }
 
+/* Text transform utility classes */
+
 .u-tt-uppercase {
     text-transform: var(--tt-uppercase);
 }
 
-/* Letter spacing */
+/* Letter spacing utility classes */
 
 .u-letter-spacing-0 {
     letter-spacing: var(--letter-spacing-0);
@@ -309,7 +323,7 @@ a {
     letter-spacing: var(--letter-spacing-3);
 }
 
-/* Line Height */
+/* Line Height utility classes */
 
 .u-line-height-0 {
     line-height: var( --line-height-0);
