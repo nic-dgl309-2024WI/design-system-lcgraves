@@ -29,6 +29,11 @@ body {
     line-height: 1.5rem;
 }
 
+/* Reset  width to 100% for images */
+img {
+    width: 100%;
+}
+
 /* COLOUR VARIABLES */ 
     --clr-primary-40: #F9F9F8;
     --clr-primary-60: #EFF0EE;
