@@ -1130,3 +1130,59 @@ img {
 .l-grid--rows-4 {
     grid-template-columns: repeat(4, 1fr);
 }
+
+/* Grid Gap */
+
+.l-grid--gap-1 {
+    gap: 1rem;
+}
+
+.l-grid--gap-1-5 {
+    gap: 1.5rem;
+}
+
+.l-grid--gap-2 {
+    gap: 2rem;
+}
+
+.l-grid--gap-3 {
+    gap: 3rem;
+}
+
+/* Justify and Align Items */
+
+.l-grid--justify-items-start {
+    justify-items: start;
+}
+
+.l-grid--justify-items-center {
+    justify-items: center;
+}
+
+.l-grid--align-items-start {
+    align-items: start;
+}
+
+.l-grid--align-items-center {
+    align-items: center;
+}
+
+/* Justify and Align Content */
+
+.l-grid--justify-content-start {
+    justify-content: start;
+}
+
+.l-grid--justify-content-center {
+    justify-content: center;
+}
+
+.l-grid--align-content-start {
+    align-content: start;
+}
+
+.l-grid--align-content-center {
+    align-content: center;
+}
+
+
