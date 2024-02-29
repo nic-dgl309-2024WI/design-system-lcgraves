@@ -1031,11 +1031,11 @@ img {
 
 /* Flex direction */
 
-.l-flex-row {
+.l-flex--row {
     flex-direction: row;
 }
 
-.l-flex-column {
+.l-flex--column {
     flex-direction: column;
 }
 
@@ -1071,29 +1071,29 @@ img {
 
 /* Align items */
 
-.l-flex-align-start {
+.l-flex--align-start {
     align-items: flex-start;
 }
 
-.l-flex-align-center {
+.l-flex--align-center {
     align-items: center;
 }
 
-.l-flex-align-end {
+.l-flex--align-end {
     align-items: flex-end;
 }
 
 /* Align self */
 
-.l-align-self-start {
+.l-flex--align-self-start {
     align-self: flex-start;
 }
 
-.l-align-self-center {
+.l-flex--align-self-center {
     align-self: center;
 }
 
-.l-align-self-eng {
+.l-flex--align-self-eng {
     align-self: flex-end;
 }
 
