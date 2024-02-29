@@ -24,6 +24,11 @@ a {
 :root {
     box-sizing: border-box;
 
+/* Line-height for body text */
+body {
+    line-height: 1.5rem;
+}
+
 /* COLOUR VARIABLES */ 
     --clr-primary-40: #F9F9F8;
     --clr-primary-60: #EFF0EE;
