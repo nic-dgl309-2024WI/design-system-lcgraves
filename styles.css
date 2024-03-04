@@ -65,7 +65,8 @@ img {
     --ff-sans-serif: "Helvetica Neue", sans-serif;
 
     /* Font-weight variables*/
-    --fw-light: 300;
+    --fw-ultralight: 200;
+    --fw-light: 300
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-bold: 700;
