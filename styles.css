@@ -61,7 +61,7 @@ img {
 
     /* Typeface variables*/
     
-    --ff-serif-italic: "wt_solairedisplay_italic", serif;
+    --ff-serif: "wt_solairedisplay", serif;
     --ff-sans-serif: "Helvetica Neue", sans-serif;
 
     /* Font-weight variables*/
@@ -79,10 +79,10 @@ img {
     --fs-small: .875em;
     --fs-regular: 1em;
     --fs-medium: 1.25em;
-    --fs-large: 1.60em;
+    --fs-large: 1.50em;
     --fs-x-large: 2em;
     --fs-xx-large: 4em;
-    --fs-xxx-large: 4.7em;
+    --fs-xxx-large: 4.75em;
 
     /* Font style variables*/
     --fs-italic: italic;
@@ -241,10 +241,6 @@ img {
 
 .u-ff-serif {
     font-family: var(--ff-serif);
-}
-
-.u-ff-serif-italic {
-    font-family: var(--ff-serif-italic)
 }
 
 .u-ff-sans-serif {
