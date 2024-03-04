@@ -65,11 +65,14 @@ img {
     --ff-sans-serif: "Helvetica Neue", sans-serif;
 
     /* Font-weight variables*/
+    --fw-thin: 100;
     --fw-ultralight: 200;
-    --fw-light: 300
+    --fw-light: 300;
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-bold: 700;
+    --fw-heavy: 800;
+    --fw-black: 900;
 
     /* Font-size variables */
     --fs-x-small: .75em;
@@ -250,6 +253,14 @@ img {
 
 /* Font weight utility classes */
 
+u.-fw-thin {
+    font-weight: 100;
+}
+
+u.-fw-ultra-light {
+    font-weight: var(--fw-ultra-light);
+}
+
 .u-fw-light {
     font-weight: var(--fw-light);
 }
@@ -264,6 +275,14 @@ img {
 
 .u-fw-bold {
     font-weight: var(--fw-bold);
+}
+
+u.fw-heavy {
+    font-weight: var(--fw-heavy);
+}
+
+u.fw-black {
+    font-weight: var(--fw-black);
 }
 
 /* Font size utility classes */
