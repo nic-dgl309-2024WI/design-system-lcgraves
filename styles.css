@@ -60,9 +60,9 @@ img {
     /*** TYPOGRAPHY VARIABLES ***/
 
     /* Typeface variables*/
-    --ff-serif: "WT Solaire-display", serif;
-    --ff-serif-italic: "WT Solaire-display-italic", serif;
-    --ff-sans-serif: "Noto Sans", sans-serif;
+    
+    --ff-serif-italic: "wt_solairedisplay_italic", serif;
+    --ff-sans-serif: "Helvetica Neue", sans-serif;
 
     /* Font-weight variables*/
     --fw-light: 300;
