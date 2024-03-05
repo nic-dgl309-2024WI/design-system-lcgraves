@@ -1,6 +1,13 @@
 /** TYPOGRAPHY UTILITY CLASSES **/
 
 .u-heading--1 {
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-xxx-large);
+    font-weight: var(--fw-bold);
+    line-height: var(--line-height-0);
+    text-transform: uppercase;
+}
+.u-heading--2 {
     font-family: var(--ff-serif);
     font-size: var(--fs-xxx-large);
     font-weight: var(--fw-regular);
@@ -9,7 +16,7 @@
     font-style: var(--fs-italic)
 }
 
-.u-heading--2 {
+.u-heading--3 {
     font-family: var(--ff-serif);
     font-size: var(--fs-xx-large);
     line-height: var(--line-height-1);
@@ -17,15 +24,15 @@
     font-style: var(--fs-italic)
 }
 
-.u-heading--3 {
-    font-family: var(--ff-sans-serif);
-    font-size: var(--fs-xxx-large);
-    font-weight: var(--fw-bold);
-    line-height: var(--line-height-0);
-    text-transform: uppercase;
+.u-heading--4 {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-x-large);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-1);
+    font-weight: var(--fw-light);
 }
 
-.u-heading--4 {
+.u-heading--5 {
     font-family: var(--ff-sans-serif);
     font-size: var(--fs-regular);
     font-weight: var(--fw-regular);
@@ -34,7 +41,7 @@
     text-transform: var(--tt-uppercase);
 }
 
-.u-heading--5 {
+.u-heading--6 {
     font-family: var(--ff-sans-serif);
     font-size: var(--fs-medium);
     font-weight: var(--fw-regular);
@@ -150,9 +157,9 @@
 /* Buttons */
 
 .c-button {
-    width: 20em;
+    width: 12em;
     font-size: var(--fs-medium);
-    padding: 1em;
+    padding: .6em;
     border: 1px solid var(--clr-primary-300);
     background-color: var(--clr-accent-one-100);
     text-align: center;
