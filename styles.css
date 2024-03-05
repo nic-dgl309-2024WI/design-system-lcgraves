@@ -1068,6 +1068,12 @@ img {
     flex-direction: column;
 }
 
+/* Flex wrap */
+
+.l-flex--wrap {
+    flex-wrap: wrap;
+}
+
 /* Justify content */
 
 .l-flex--justify-start {
@@ -1076,10 +1082,6 @@ img {
 
 .l-flex--justify-end {
     justify-content: flex-end;
-}
-
-.l-flex--justify-center {
-    justify-content: center;
 }
 
 .l-flex--justify-center {
@@ -1232,8 +1234,8 @@ img {
     margin-right: auto;
     margin-left: auto;
     width: fit-content;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 32px;
+    padding-left: 32px;
 }
 
 .wrapper {
@@ -1263,6 +1265,7 @@ img {
     max-width: 21rem;
 }
 
+
 /* Fixed side navigation */
 
 /* Desktop CSS Rulesets */
@@ -1271,8 +1274,8 @@ img {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 /* Desktop grid layout to keep top and side navigation sticky */
