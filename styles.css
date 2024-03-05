@@ -80,8 +80,8 @@ img {
     --fs-regular: 1em;
     --fs-medium: 1.25em;
     --fs-large: 1.50em;
-    --fs-x-large: 2em;
-    --fs-xx-large: 4em;
+    --fs-x-large: 2.5em;
+    --fs-xx-large: 3em;
     --fs-xxx-large: 4.75em;
 
     /* Font style variables*/
@@ -92,8 +92,8 @@ img {
     /* Letter spacing variables*/
     --letter-spacing-0: -0.02em;
     --letter-spacing-1: .02em;
-    --letter-spacing-2: .08em;
-    --letter-spacing-3: 1em;
+    --letter-spacing-2: .05em;
+    --letter-spacing-3: .1em;
 
     /* Line Height variables */
     --line-height-0: 1.1;
@@ -249,12 +249,12 @@ img {
 
 /* Font weight utility classes */
 
-u.-fw-thin {
+.u-fw-thin {
     font-weight: 100;
 }
 
-u.-fw-ultra-light {
-    font-weight: var(--fw-ultra-light);
+.u-fw-ultralight {
+    font-weight: var(--fw-ultralight);
 }
 
 .u-fw-light {
@@ -273,11 +273,11 @@ u.-fw-ultra-light {
     font-weight: var(--fw-bold);
 }
 
-u.fw-heavy {
+.u-fw-heavy {
     font-weight: var(--fw-heavy);
 }
 
-u.fw-black {
+.u-fw-black {
     font-weight: var(--fw-black);
 }
 
