@@ -1256,6 +1256,13 @@ img {
 
 }
 
+/* Constrain width classes */
+
+.width-20 {
+    min-width: 21rem;
+    max-width: 21rem;
+}
+
 /* Fixed side navigation */
 
 /* Desktop CSS Rulesets */
