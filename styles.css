@@ -1201,4 +1201,75 @@ img {
     align-content: center;
 }
 
+/* Container Classes */
 
+.wrapper {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.wrapper-full-width {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* Fixed side navigation */
+
+/* Desktop CSS Rulesets */
+@media (min-width: 1200px) {
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* Desktop grid layout to keep top and side navigation sticky */
+
+.grid-sticky {
+    --header-height: 5rem;
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "sidebar main"
+          "footer footer";
+        grid-template-columns: 14rem 1fr;
+        gap: 16px;
+        max-width: 1200px;
+        margin: 0 auto;
+        isolation: isolate;
+      }
+    
+.header-sticky {
+        grid-area: header;
+        position: sticky;
+        z-index: 2;
+        top: 0;
+        display: grid;
+        place-content: center;
+        height: var(--header-height);
+        border-bottom: 1px solid;
+      }
+
+aside {
+        grid-area: sidebar;
+        position: relative;
+        z-index: 1;
+      }
+
+.sidebar-sticky {
+        position: sticky;
+        top: 9rem;
+      }
+
+/* Padding around grid contents */
+.grid > * {
+    padding: 8px;
+  }
+
+}
