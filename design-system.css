@@ -170,7 +170,7 @@
 
 /* Visibility */
 
-/* Top menu and side menu hidden for mobile */
+/* Hidden on mobile */
 .is-hidden-mobile {
     display: none;
 }
