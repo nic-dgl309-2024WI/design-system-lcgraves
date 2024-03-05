@@ -166,6 +166,13 @@
     text-transform: var(--tt-uppercase);
 }
 
+/* Colour Swatches */
+
+.swatch {
+    min-width: 20rem;
+    max-width: 20rem;
+}
+
 /** STATES **/
 
 /* Visibility */
