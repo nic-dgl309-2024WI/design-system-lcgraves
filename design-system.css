@@ -1,7 +1,7 @@
 /** TYPOGRAPHY UTILITY CLASSES **/
 
 .u-heading--1 {
-    font-family: var(--ff-serif-italic);
+    font-family: var(--ff-serif);
     font-size: var(--fs-xxx-large);
     font-weight: var(--fw-regular);
     line-height: var(--line-height-1);
@@ -10,7 +10,7 @@
 }
 
 .u-heading--2 {
-    font-family: var(--ff-serif-italic);
+    font-family: var(--ff-serif);
     font-size: var(--fs-xx-large);
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
@@ -50,11 +50,12 @@
 }
 
 .u-subheading--2 {
-    font-family: var(--ff-serif-italic);
+    font-family: var(--ff-serif);
     font-size: var(--fs-medium);
     font-weight: var(--fw-regular);
     line-height: var(--line-height-2);
     font-style: var(--fs-italic);
+    letter-spacing: var(--letter-spacing-2);
 }
 
 .u-body-text {
@@ -64,9 +65,9 @@
     line-height: var(--line-height-3);
 }
 
-.u-body-text--bigger-bold {
-    font-weight: var(--fw-medium);
-    font-size: var(--fs-medium);
+.u-body-text--small-light {
+    font-weight: var(--fw-light);
+    font-size: var(--fs-small);
     line-height: var(--line-height-3);
     font-family: var(--ff-sans-serif);
 }
