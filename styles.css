@@ -9,6 +9,10 @@ body, h1, h2, h3, h4, ul h4, h5, h6, p, figure, image, ul, ol, li {
     padding:unset;
 }
 
+p {
+    font-family: var(--ff-sans-serif);
+}
+
 /* Remove padding & style from Lists */
 ul, ol {
     padding: 0;
