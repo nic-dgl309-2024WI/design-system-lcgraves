@@ -169,8 +169,8 @@
 /* Colour Swatches */
 
 .swatch {
-    min-width: 20rem;
-    max-width: 20rem;
+    min-width: 18rem;
+    max-width: 18rem;
 }
 
 /** STATES **/
@@ -226,11 +226,11 @@
 
     .swatch {
         display: grid;
-        grid-template-columns: 12rem 24rem;
+        grid-template-columns: 9rem 17rem;
         grid-template-areas: 
         "name-hex properties";
         justify-content: center;
-        gap:16px;
+        gap:48px;
     }
 
     .swatch-table {
