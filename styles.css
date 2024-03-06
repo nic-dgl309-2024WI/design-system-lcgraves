@@ -4,7 +4,20 @@
 /** CSS RESET & GLOBAL VARIABLES **/
 
 /* Reset Margins */
-body, h1, h2, h3, h4, ul h4, h5, h6, p, figure, image, ul, ol, li {
+body,
+h1,
+h2,
+h3,
+h4,
+ul h4,
+h5,
+h6,
+p,
+figure,
+image,
+ul,
+ol,
+li {
     margin: 0;
     padding: unset;
 }
@@ -14,7 +27,8 @@ p {
 }
 
 /* Remove padding & style from Lists */
-ul, ol {
+ul,
+ol {
     padding: 0;
     list-style: none;
 }
@@ -24,9 +38,6 @@ a {
     text-decoration: none;
 }
 
-/* Border Box Fix */
-:root {
-    box-sizing: border-box;
 
 /* Line-height for body text */
 body {
@@ -38,7 +49,11 @@ img {
     width: 100%;
 }
 
-/* COLOUR VARIABLES */ 
+/* Border Box Fix */
+:root {
+    box-sizing: border-box;
+
+    /* COLOUR VARIABLES */
 
     --clr-primary-60: #EFF0EE;
     --clr-primary-80: #E6EEEA;
@@ -55,9 +70,9 @@ img {
     --clr-accent-one-80: #D9E86B;
     --clr-accent-one-100: #BBCB44;
     --clr-accent-one-200: #9AA739;
-    
+
     --clr-accent-two: #609D9F;
-    
+
     --clr-almost-white: #FAFCFB;
     --clr-soft-white: #F2F5F4;
     --clr-soft-black: #545454;
@@ -65,7 +80,7 @@ img {
     /*** TYPOGRAPHY VARIABLES ***/
 
     /* Typeface variables*/
-    
+
     --ff-serif: "wt_solairedisplay", serif;
     --ff-sans-serif: "Helvetica Neue", sans-serif;
 
@@ -85,9 +100,9 @@ img {
     --fs-regular: 1em;
     --fs-medium: 1.25em;
     --fs-large: 1.50em;
-    --fs-x-large: 2.5em;
+    --fs-x-large: 2.25em;
     --fs-xx-large: 3em;
-    --fs-xxx-large: 4.75em;
+    --fs-xxx-large: 2.5em;
 
     /* Font style variables*/
     --fs-italic: italic;
@@ -105,6 +120,19 @@ img {
     --line-height-1: 1.2;
     --line-height-2: 1.4;
     --line-height-3: 1.6;
+
+    /* Rem spacing */
+    --rem-space-025: .25rem;
+    --rem-space-05: .5rem;
+    --rem-space-075: .75rem;
+    --rem-space-1: 1rem;
+    --rem-space-1-5: 1.5rem;
+    --rem-space-2: 2rem;
+    --rem-space-2-5: 2.5rem;
+    --rem-space-3: 3rem;
+    --rem-space-4: 4rem;
+    --rem-space-5: 5rem;
+    --rem-space-6: 6rem;
 }
 
 /** UTILITY CLASSES **/
@@ -215,11 +243,11 @@ img {
     background-color: var(--clr-accent-one-80);
 }
 
-.u-bg-accent-one-100{
+.u-bg-accent-one-100 {
     background-color: var(--clr-accent-one-100)
 }
 
-.u-bg-accent-one-200{
+.u-bg-accent-one-200 {
     background-color: var(--clr-accent-one-200);
 }
 
@@ -357,19 +385,19 @@ img {
 /* Line Height utility classes */
 
 .u-line-height-0 {
-    line-height: var( --line-height-0);
+    line-height: var(--line-height-0);
 }
 
 .u-line-height-1 {
-    line-height: var( --line-height-1);
+    line-height: var(--line-height-1);
 }
 
 .u-line-height-2 {
-    line-height: var( --line-height-2);
+    line-height: var(--line-height-2);
 }
 
 .u-line-height-3 {
-    line-height: var( --line-height-3);
+    line-height: var(--line-height-3);
 }
 
 /** SPACING UTILITY CLASSES **/
@@ -378,294 +406,279 @@ img {
 
 /* All four sides */
 
+.l-m-025 {
+    margin: var(--rem-space-025);
+}
+
 .l-m-05 {
-    margin: .5rem;
+    margin: var(--rem-space-05);
 }
 
 .l-m-075 {
-    margin: .75rem;
+    margin: var(--rem-space-075);
 }
 
 .l-m-1 {
-    margin: 1rem;
+    margin: var(--rem-space-1);
 }
 
 .l-m-1-5 {
-    margin: 1.5rem;
-}
-
-.l-m-1-75 {
-    margin: 1.75rem;
+    margin: var(--rem-space-1-5);
 }
 
 .l-m-2 {
-    margin: 2rem;
+    margin: var(--rem-space-2);
 }
 
 .l-m-2-5 {
-    margin: 2.5rem;
+    margin: var(--rem-space-2-5);
 }
 
 .l-m-3 {
-    margin: 3rem;
+    margin: var(--rem-space-3);
+}
+
+.l-m-4 {
+    margin: var(--rem-space-4);
+}
+
+.l-m-5 {
+    margin: var(--rem-space-5);
+}
+
+.l-m-6 {
+    margin: var(--rem-space-6);
 }
 
 /* Margin top */
-
 .l-mt-05 {
-    margin-top: .5rem;
+    margin-top: var(--rem-space-05);
 }
 
 .l-mt-075 {
-    margin-top: .75rem;
+    margin-top: var(--rem-space-075);
 }
 
 .l-mt-1 {
-    margin-top: 1rem;
+    margin-top: var(--rem-space-1);
 }
 
 .l-mt-1-5 {
-    margin-top: 1.5rem;
-}
-
-.l-mt-1-75 {
-    margin-top: 1.75rem;
+    margin-top: var(--rem-space-1-5);
 }
 
 .l-mt-2 {
-    margin-top: 2rem;
+    margin-top: var(--rem-space-2);
 }
 
 .l-mt-2-5 {
-    margin-top: 2.5rem;
+    margin-top: var(--rem-space-2-5);
 }
 
 .l-mt-3 {
-    margin-top: 3rem;
+    margin-top: var(--rem-space-3);
 }
 
 .l-mt-4 {
-    margin-top: 4rem;
+    margin-top: var(--rem-space-4);
 }
 
 .l-mt-5 {
-    margin-top: 5rem;
+    margin-top: var(--rem-space-5);
 }
 
 .l-mt-6 {
-    margin-top: 6rem;
+    margin-top: var(--rem-space-6);
 }
 
 /* Margin bottom */
 
 .l-mb-05 {
-    margin-bottom: .5rem;
+    margin-bottom: var(--rem-space-05);
 }
 
 .l-mb-075 {
-    margin-bottom: .75rem;
+    margin-bottom: var(--rem-space-075);
 }
 
 .l-mb-1 {
-    margin-bottom: 1rem;
+    margin-bottom: var(--rem-space-1);
 }
 
 .l-mb-1-5 {
-    margin-bottom: 1.5rem;
-}
-
-.l-mb-1-75 {
-    margin-bottom: 1.75rem;
+    margin-bottom: var(--rem-space-1-5);
 }
 
 .l-mb-2 {
-    margin-bottom: 2rem;
+    margin-bottom: var(--rem-space-2);
 }
 
 .l-mb-2-5 {
-    margin-bottom: 2.5rem;
+    margin-bottom: var(--rem-space-2-5);
 }
 
 .l-mb-3 {
-    margin-bottom: 3rem;
+    margin-bottom: var(--rem-space-3);
 }
 
 .l-mb-4 {
-    margin-bottom: 4rem;
+    margin-bottom: var(--rem-space-4);
 }
 
 .l-mb-5 {
-    margin-bottom: 5rem;
+    margin-bottom: var(--rem-space-5);
 }
 
 .l-mb-6 {
-    margin-bottom: 6rem;
+    margin-bottom: var(--rem-space-6);
 }
 
 /* Margin right */
 
 .l-mr-05 {
-    margin-right: .5rem;
+    margin-right: var(--rem-space-05);
 }
 
 .l-mr-075 {
-    margin-right: .75rem;
+    margin-right: var(--rem-space-075);
 }
 
 .l-mr-1 {
-    margin-right: 1rem;
+    margin-right: var(--rem-space-1);
 }
 
 .l-mr-1-5 {
-    margin-right: 1.5rem;
-}
-
-.l-mr-1-75 {
-    margin-right: 1.75rem;
+    margin-right: var(--rem-space-1-5);
 }
 
 .l-mr-2 {
-    margin-right: 2rem;
+    margin-right: var(--rem-space-2);
 }
 
 .l-mr-2-5 {
-    margin-right: 2.5rem;
+    margin-right: var(--rem-space-2-5);
 }
 
 .l-mr-3 {
-    margin-right: 3rem;
+    margin-right: var(--rem-space-3);
 }
 
 .l-mr-4 {
-    margin-right: 4rem;
+    margin-right: var(--rem-space-4);
 }
 
 .l-mr-5 {
-    margin-right: 5rem;
+    margin-right: var(--rem-space-5);
 }
 
 .l-mr-6 {
-    margin-right: 6rem;
+    margin-right: var(--rem-space-6);
 }
 
 /* Margin Left */
 
 .l-ml-05 {
-    margin-left: .5rem;
+    margin-left: var(--rem-space-05);
 }
 
 .l-ml-075 {
-    margin-left: .75rem;
+    margin-left: var(--rem-space-075);
 }
 
 .l-ml-1 {
-    margin-left: 1rem;
+    margin-left: var(--rem-space-1);
 }
 
 .l-ml-1-5 {
-    margin-left: 1.5rem;
-}
-
-.l-ml-1-75 {
-    margin-left: 1.75rem;
+    margin-left: var(--rem-space-1-5);
 }
 
 .l-ml-2 {
-    margin-left: 2rem;
+    margin-left: var(--rem-space-2);
 }
 
 .l-ml-2-5 {
-    margin-left: 2.5rem;
+    margin-left: var(--rem-space-2-5);
 }
 
 .l-ml-3 {
-    margin-left: 3rem;
+    margin-left: var(--rem-space-3);
 }
 
 .l-ml-4 {
-    margin-left: 4rem;
+    margin-left: var(--rem-space-4);
 }
 
 .l-ml-5 {
-    margin-left: 5rem;
+    margin-left: var(--rem-space-5);
 }
 
 .l-ml-6 {
-    margin-left: 6rem;
+    margin-left: var(--rem-space-6);
 }
 
 /* Right and left margins - x-axis */
 
 .l-mx-05 {
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin-left: var(--rem-space-05);
+    margin-right: var(--rem-space-05);
 }
 
 .l-mx-075 {
-    margin-left: .75rem;
-    margin-right: .75rem;
+    margin-left: var(--rem-space-075);
+    margin-right: var(--rem-space-075);
 }
 
 .l-mx-1 {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: var(--rem-space-1);
+    margin-right: var(--rem-space-1);
 }
 
 .l-mx-1-5 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.l-mx-1-75 {
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
+    margin-left: var(--rem-space-1-5);
+    margin-right: var(--rem-space-1-5);
 }
 
 .l-mx-2 {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: var(--rem-space-2);
+    margin-right: var(--rem-space-2);
 }
 
 .l-mx-2-5 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: var(--rem-space-2-5);
+    margin-right: var(--rem-space-2-5);
 }
 
 .l-mx-3 {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: var(--rem-space-3);
+    margin-right: var(--rem-space-3);
 }
 
 .l-mx-4 {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: var(--rem-space-4);
+    margin-right: var(--rem-space-4);
 }
 
 .l-mx-5 {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: var(--rem-space-5);
+    margin-right: var(--rem-space-5);
 }
 
 .l-mx-6 {
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: var(--rem-space-6);
+    margin-right: var(--rem-space-6);
 }
 
 /* Top and Bottom margins - y axis */
 
 .l-my-05 {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-}
-
-.l-my-075 {
-    margin-top: .75rem;
-    margin-bottom: .75rem;
+    margin-top: var(--rem-space-05);
+    margin-bottom: var(--rem-space-05);
 }
 
 .l-my-1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: var(--rem-space-1);
+    margin-bottom: var(--rem-space-1);
 }
 
 .l-my-1-25 {
@@ -674,8 +687,8 @@ img {
 }
 
 .l-my-1-5 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: var(--rem-space-1-5);
+    margin-bottom: var(--rem-space-1-5);
 }
 
 .l-my-1-75 {
@@ -684,33 +697,33 @@ img {
 }
 
 .l-my-2 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: var(--rem-space-2);
+    margin-bottom: var(--rem-space-2);
 }
 
 .l-my-2-5 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: var(--rem-space-2-5);
+    margin-bottom: var(--rem-space-2-5);
 }
 
 .l-my-3 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: var(--rem-space-3);
+    margin-bottom: var(--rem-space-3);
 }
 
 .l-my-4 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: var(--rem-space-4);
+    margin-bottom: var(--rem-space-4);
 }
 
 .l-my-5 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: var(--rem-space-5);
+    margin-bottom: var(--rem-space-5);
 }
 
 .l-my-6 {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: var(--rem-space-6);
+    margin-bottom: var(--rem-space-6);
 }
 
 /* Padding Utility Classes **/
@@ -718,338 +731,312 @@ img {
 /* All four sides */
 
 .l-p-05 {
-    padding: .5rem;
+    padding: var(--rem-space-05);
 }
 
 .l-p-075 {
-    padding: .75rem;
+    padding: var(--rem-space-075);
 }
 
 .l-p-1 {
-    padding: 1rem;
+    padding: var(--rem-space-1);
 }
 
 .l-p-1-5 {
-    padding: 1.5rem;
-}
-
-.l-p-1-75 {
-    padding: 1.75rem;
+    padding: var(--rem-space-1-5);
 }
 
 .l-p-2 {
-    padding: 2rem;
+    padding: var(--rem-space-2);
 }
 
 .l-p-2-5 {
-    padding: 2.5rem;
+    padding: var(--rem-space-2-5);
 }
 
 .l-p-3 {
-    padding: 3rem;
+    padding: var(--rem-space-3);
 }
 
 /* Padding top */
 
 .l-pt-05 {
-    padding-top: .5rem;
+    padding-top: var(--rem-space-05);
 }
 
 .l-pt-075 {
-    padding-top: .75rem;
+    padding-top: var(--rem-space-075);
 }
 
 .l-pt-1 {
-    padding-top: 1rem;
+    padding-top: var(--rem-space-1);
 }
 
 .l-pt-1-5 {
-    padding-top: 1.5rem;
-}
-
-.l-pt-1-75 {
-    padding-top: 1.75rem;
+    padding-top: var(--rem-space-1-5);
 }
 
 .l-pt-2 {
-    padding-top: 2rem;
+    padding-top: var(--rem-space-2);
 }
 
 .l-pt-2-5 {
-    padding-top: 2.5rem;
+    padding-top: var(--rem-space-2-5);
 }
 
 .l-pt-3 {
-    padding-top: 3rem;
+    padding-top: var(--rem-space-3);
 }
 
 .l-pt-4 {
-    padding-top: 4rem;
+    padding-top: var(--rem-space-4);
 }
 
 .l-pt-5 {
-    padding-top: 5rem;
+    padding-top: var(--rem-space-5);
 }
 
 .l-pt-6 {
-    padding-top: 6rem;
+    padding-top: var(--rem-space-6);
 }
 
 /* Padding bottom */
 
 .l-pb-025 {
-    padding-bottom: .25rem;
+    padding-bottom: var(--rem-space-025);
 }
 
 .l-pb-05 {
-    padding-bottom: .5rem;
+    padding-bottom: var(--rem-space-05);
 }
 
 .l-pb-075 {
-    padding-bottom: .75rem;
+    padding-bottom: var(--rem-space-075);
 }
 
 .l-pb-1 {
-    padding-bottom: 1rem;
+    padding-bottom: var(--rem-space-1);
 }
 
 .l-pb-1-5 {
-    padding-bottom: 1.5rem;
-}
-
-.l-pb-1-75 {
-    padding-bottom: 1.75rem;
+    padding-bottom: var(--rem-space-1-5);
 }
 
 .l-pb-2 {
-    padding-bottom: 2rem;
+    padding-bottom: var(--rem-space-2);
 }
 
 .l-pb-2-5 {
-    padding-bottom: 2.5rem;
+    padding-bottom: var(--rem-space-2-5);
 }
 
 .l-pb-3 {
-    padding-bottom: 3rem;
+    padding-bottom: var(--rem-space-3);
 }
 
 .l-pb-4 {
-    padding-bottom: 4rem;
+    padding-bottom: var(--rem-space-4);
 }
 
 .l-pb-5 {
-    padding-bottom: 5rem;
+    padding-bottom: var(--rem-space-5);
 }
 
 .l-pb-6 {
-    padding-bottom: 6rem;
+    padding-bottom: var(--rem-space-6);
 }
 
 /* Padding right */
 
 .l-pr-05 {
-    padding-right: .5rem;
+    padding-right: var(--rem-space-05);
 }
 
 .l-pr-075 {
-    padding-right: .75rem;
+    padding-right: var(--rem-space-075);
 }
 
 .l-pr-1 {
-    padding-right: 1rem;
+    padding-right: var(--rem-space-1);
 }
 
 .l-pr-1-5 {
-    padding-right: 1.5rem;
-}
-
-.l-pr-1-75 {
-    padding-right: 1.75rem;
+    padding-right: var(--rem-space-1-5);
 }
 
 .l-pr-2 {
-    padding-right: 2rem;
+    padding-right: var(--rem-space-2);
 }
 
 .l-pr-2-5 {
-    padding-right: 2.5rem;
+    padding-right: var(--rem-space-2-5);
 }
 
 .l-pr-3 {
-    padding-right: 3rem;
+    padding-right: var(--rem-space-3);
 }
 
 .l-pr-4 {
-    padding-right: 4rem;
+    padding-right: var(--rem-space-4);
 }
 
 .l-pr-5 {
-    padding-right: 5rem;
+    padding-right: var(--rem-space-5);
 }
 
 .l-pr-6 {
-    padding-right: 6rem;
+    padding-right: var(--rem-space-6);
 }
 
 /* Padding Left */
 
 .l-pl-05 {
-    padding-left: .5rem;
+    padding-left: var(--rem-space-05);
 }
 
 .l-pl-075 {
-    padding-left: .75rem;
+    padding-left: var(--rem-space-075);
 }
 
 .l-pl-1 {
-    padding-left: 1rem;
+    padding-left: var(--rem-space-1);
 }
 
 .l-pl-1-5 {
-    padding-left: 1.5rem;
-}
-
-.l-pl-1-75 {
-    padding-left: 1.75rem;
+    padding-left: var(--rem-space-1-5);
 }
 
 .l-pl-2 {
-    padding-left: 2rem;
+    padding-left: var(--rem-space-2);
 }
 
 .l-pl-2-5 {
-    padding-left: 2.5rem;
+    padding-left: var(--rem-space-2-5);
 }
 
 .l-pl-3 {
-    padding-left: 3rem;
+    padding-left: var(--rem-space-3);
 }
 
 .l-pl-4 {
-    padding-left: 4rem;
+    padding-left: var(--rem-space-4);
 }
 
 .l-pl-5 {
-    padding-left: 5rem;
+    padding-left: var(--rem-space-5);
 }
 
 .l-pl-6 {
-    padding-left: 6rem;
+    padding-left: var(--rem-space-6);
 }
 
 /* Right and left paddings - x-axis */
 
 .l-px-05 {
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: var(--rem-space-05);
+    padding-right: var(--rem-space-05);
 }
 
 .l-px-075 {
-    padding-left: .75rem;
-    padding-right: .75rem;
+    padding-left: var(--rem-space-075);
+    padding-right: var(--rem-space-075);
 }
 
 .l-px-1 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: var(--rem-space-1);
+    padding-right: var(--rem-space-1);
 }
 
 .l-px-1-5 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
-.l-px-1-75 {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
+    padding-left: var(--rem-space-1-5);
+    padding-right: var(--rem-space-1-5);
 }
 
 .l-px-2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: var(--rem-space-2);
+    padding-right: var(--rem-space-2);
 }
 
 .l-px-2-5 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: var(--rem-space-2-5);
+    padding-right: var(--rem-space-2-5);
 }
 
 .l-px-3 {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: var(--rem-space-3);
+    padding-right: var(--rem-space-3);
 }
 
 .l-px-4 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: var(--rem-space-4);
+    padding-right: var(--rem-space-4);
 }
 
 .l-px-5 {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: var(--rem-space-5);
+    padding-right: var(--rem-space-5);
 }
 
 .l-px-6 {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: var(--rem-space-6);
+    padding-right: var(--rem-space-6);
 }
+
 
 /* Top and Bottom paddings - y axis */
 
 .l-py-05 {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: var(--rem-space-05);
+    padding-bottom: var(--rem-space-05);
 }
 
 .l-py-075 {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    padding-top: var(--rem-space-075);
+    padding-bottom: var(--rem-space-075);
 }
 
 .l-py-1 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: var(--rem-space-1);
+    padding-bottom: var(--rem-space-1);
 }
 
 .l-py-1-5 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.l-py-1-75 {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+    padding-top: var(--rem-space-1-5);
+    padding-bottom: var(--rem-space-1-5);
 }
 
 .l-py-2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: var(--rem-space-2);
+    padding-bottom: var(--rem-space-2);
 }
 
 .l-py-2-5 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: var(--rem-space-2-5);
+    padding-bottom: var(--rem-space-2-5);
 }
 
 .l-py-3 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: var(--rem-space-3);
+    padding-bottom: var(--rem-space-3);
 }
 
 .l-py-4 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: var(--rem-space-4);
+    padding-bottom: var(--rem-space-4);
 }
 
 .l-py-5 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: var(--rem-space-5);
+    padding-bottom: var(--rem-space-5);
 }
 
 .l-py-6 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: var(--rem-space-6);
+    padding-bottom: var(--rem-space-6);
 }
+
+/* Borders */
+
 
 /* LAYOUT UTILITY CLASSES */
 
@@ -1249,7 +1236,7 @@ img {
 
 /* Text indentation */
 
-.u-text-indent-1{
+.u-text-indent-1 {
     text-indent: 16px
 }
 
@@ -1293,55 +1280,82 @@ img {
 /* Desktop CSS Rulesets */
 @media (min-width: 1200px) {
 
-/* constrain width classes */
 
-.width-main {
-    max-width: 1000px;
-}
-/* wrapper-center for desktop */
+    /* Font size variables for desktop */
+    :root {
+        --fs-x-small: .75em;
+        --fs-small: .875em;
+        --fs-regular: 1em;
+        --fs-medium: 1.25em;
+        --fs-large: 1.50em;
+        --fs-x-large: 2.25em;
+        --fs-xx-large: 3em;
+        --fs-xxx-large: 4.75em;
+
+        /* Spacing Variables */
+        --rem-space-025: .25rem;
+        --rem-space-05: .5rem;
+        --rem-space-075: .75rem;
+        --rem-space-1: 1rem;
+        --rem-space-1-5: 1.5rem;
+        --rem-space-2: 2rem;
+        --rem-space-2-5: 2.5rem;
+        --rem-space-3: 3rem;
+        --rem-space-4: 4rem;
+        --rem-space-5: 5rem;
+        --rem-space-6: 6rem;
+    }
+
+    /* constrain width classes */
+
+    .width-main {
+        max-width: 1000px;
+    }
+
+    /* wrapper-center for desktop */
     .wrapper-center {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: fit-content;
-}
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: fit-content;
+    }
 
-.wrapper {
-    max-width: 1200px;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: fit-content;
-}
+    .wrapper {
+        max-width: 1200px;
+        padding-left: 12px;
+        padding-right: 12px;
+        width: fit-content;
+    }
 
-/* Full-width wrapper-center */
+    /* Full-width wrapper-center */
 
-.wrapper-center-full-width {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 12px;
-    padding-right: 12px;
-}
+    .wrapper-center-full-width {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 
-/* Desktop grid layout to keep top and side navigation sticky --> adapted from your 'Spacing Recipes' ******THANK YOU!!!!!******* */
+    /* Desktop grid layout to keep top and side navigation sticky --> adapted from your 'Spacing Recipes' ******THANK YOU!!!!!******* */
 
-.grid-sticky {
-    --header-height: 2.9em;
+    .grid-sticky {
+        --header-height: 3.5em;
         display: grid;
         grid-template-areas:
-          "topnav topnav"
-          "sidebar main"
-          "footer footer";
+            "topnav topnav"
+            "sidebar main"
+            "footer footer";
         grid-template-columns: 8.5rem 1fr;
         gap: 0;
         max-width: 1200px;
         margin: 0 auto;
         isolation: isolate;
-      }
-    
-.topnav-sticky {
+    }
+
+    .topnav-sticky {
         grid-area: topnav;
         position: sticky;
         z-index: 2;
@@ -1350,28 +1364,28 @@ img {
         height: var(--header-height);
         border-bottom: 1px solid;
         border-left: 1px solid;
-      }
+    }
 
-aside {
+    aside {
         grid-area: sidebar;
         position: relative;
         z-index: 1;
         border-right: 1px solid;
         border-left: 1px solid;
-      }
+    }
 
-.sidebar-sticky {
+    .sidebar-sticky {
         position: sticky;
         top: 3rem;
-      }
+    }
 
-      main {
+    main {
         grid-area: main;
         min-height: 180vh;
         padding: 0 1em .5em 1em;
-      }
+    }
 
-      footer {
+    footer {
         grid-area: footer;
         display: grid;
         place-content: center;
@@ -1381,42 +1395,43 @@ aside {
         background-color: white;
         position: relative;
         z-index: 2;
-      }
+    }
 
-/* Padding around grid contents */
-/*.grid-sticky > * {
+    /* Padding around grid contents */
+    /*.grid-sticky > * {
     padding: 8px;
   }*/
 
-.width-swatch {
-    min-width: unset;
-    max-width: unset;
-}
+    .width-swatch {
+        min-width: unset;
+        max-width: unset;
+    }
 
-.swatch {
-    min-width: 472px;
-    max-width: 472px;
-}
-/* Layout classes for just desktop */
+    .swatch {
+        min-width: 472px;
+        max-width: 472px;
+    }
 
-.l-flex-desktop {
-    display: flex;
-}
+    /* Layout classes for just desktop */
 
-.l-flex-wrap-desktop {
-    flex-wrap: wrap;
-}
+    .l-flex-desktop {
+        display: flex;
+    }
+
+    .l-flex-wrap-desktop {
+        flex-wrap: wrap;
+    }
 
 
-/* Desktop Utility Classes */
+    /* Desktop Utility Classes */
 
-/* Padding */
+    /* Padding */
 
-.l-pb-1-5--desktop {
-    padding-bottom: 1.5rem;
-}
+    .l-pb-1-5--desktop {
+        padding-bottom: 1.5rem;
+    }
 
-.border-right-1 {
-    border-right: 1px solid;
-}
+    .border-right-1 {
+        border-right: 1px solid;
+    }
 }
