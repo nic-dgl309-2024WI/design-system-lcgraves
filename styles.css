@@ -100,7 +100,7 @@ img {
     --fs-regular: 1em;
     --fs-medium: 1.25em;
     --fs-large: 1.50em;
-    --fs-x-large: 2.25em;
+    --fs-x-large: 1.75em;
     --fs-xx-large: 2em;
     --fs-xxx-large: 2.5em;
 
@@ -1293,14 +1293,6 @@ img {
 }
 
 .wrapper {
-    width: fit-content;
-}
-
-.width-90 {
-    max-width: 90%;
-}
-
-.width-100 {
     width: fit-content;
 }
 
