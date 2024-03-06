@@ -1263,12 +1263,6 @@ img {
     padding-left: 32px;
 }
 
-.wrapper-full-width {
-    width: 100%;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
 .zero-auto {
     margin: 0 auto;
     width: fit-content;
@@ -1287,6 +1281,7 @@ img {
 /* Desktop CSS Rulesets */
 @media (min-width: 1200px) {
 
+
 /* Wrapper for desktop */
     .wrapper {
     max-width: 1200px;
@@ -1297,17 +1292,27 @@ img {
     width: fit-content;
 }
 
+/* Full-width wrapper */
+
+.wrapper-full-width {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 /* Desktop grid layout to keep top and side navigation sticky */
 
 .grid-sticky {
-    --header-height: 3rem;
+    --header-height: 2.9em;
         display: grid;
         grid-template-areas:
           "topnav topnav"
           "sidebar main"
           "footer footer";
         grid-template-columns: 8.5rem 1fr;
-        gap: 8px;
+        gap: 0;
         max-width: 1200px;
         margin: 0 auto;
         isolation: isolate;
@@ -1321,12 +1326,15 @@ img {
         place-content: center;
         height: var(--header-height);
         border-bottom: 1px solid;
+        border-left: 1px solid;
       }
 
 aside {
         grid-area: sidebar;
         position: relative;
         z-index: 1;
+        border-right: 1px solid;
+        border-left: 1px solid;
       }
 
 .sidebar-sticky {
@@ -1362,4 +1370,7 @@ aside {
     padding-bottom: 1.5rem;
 }
 
+.border-right-1 {
+    border-right: 1px solid;
+}
 }
