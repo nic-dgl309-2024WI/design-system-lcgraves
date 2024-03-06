@@ -225,8 +225,29 @@
     /* Swatch for colours */
 
     .swatch {
-        min-width: 35rem;
-        max-width: 35rem;
+        display: grid;
+        grid-template-columns: 12rem 22rem;
+        grid-template-areas: 
+        "name-hex properties";
+        justify-content: center;
+        gap:10px;
+    }
+
+    .swatch-table {
+        border-collapse: separate;
+        border-spacing: 15px 5px;
+    }
+
+    .swatch-table tr {
+        padding: 0 10px
+    }
+
+    .name-hex {
+        grid-area: name-hex;
+    }
+
+    .properties {
+        grid-area: properties;
     }
 
 }
