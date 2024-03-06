@@ -258,11 +258,11 @@
     /* Top and side navigation for desktop */
 
     aside {
-        background-color: var(--clr-primary-60);
+        background-color: var(--clr-primary-40);
     }
 
     .c-desktop-navbar {
-        background-color: var(--clr-primary-60);
+        background-color: var(--clr-primary-40);
     }
 
 }
