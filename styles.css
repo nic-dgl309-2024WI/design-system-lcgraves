@@ -676,6 +676,11 @@ img {
     margin-bottom: var(--rem-space-05);
 }
 
+.l-my-075 {
+    margin-top: var(--rem-space-075);
+    margin-bottom: var(--rem-space-075);
+}
+
 .l-my-1 {
     margin-top: var(--rem-space-1);
     margin-bottom: var(--rem-space-1);
@@ -756,6 +761,14 @@ img {
 
 .l-p-3 {
     padding: var(--rem-space-3);
+}
+
+.l-p-4 {
+    padding: var(--rem-space-4);
+}
+
+.l-p-5 {
+    padding: var(--rem-space-5);
 }
 
 /* Padding top */
@@ -1251,12 +1264,28 @@ img {
     width: fit-content;
 }
 
+/* Borders */
+
+.u-border-round {
+ border-radius: 16px;
+}
+
+/* Drop Shadow */
+
+/* Copied from https://getcssscan.com/css-box-shadow-examples */
+.drop-shadow-1 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
 /* Container Classes */
 
 .wrapper-center {
     margin-right: auto;
     margin-left: auto;
     width: fit-content;
+}
+
+.wrapper-center-padding {
     padding-right: 32px;
     padding-left: 32px;
 }
@@ -1313,14 +1342,19 @@ img {
     }
 
     /* wrapper-center for desktop */
+
     .wrapper-center {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 12px;
-        padding-right: 12px;
         width: fit-content;
     }
+
+    .wrapper-center-padding {
+    padding-left: 12px;
+    padding-right: 12px;
+    }
+    
 
     .wrapper {
         max-width: 1200px;
@@ -1329,9 +1363,9 @@ img {
         width: fit-content;
     }
 
-    /* Full-width wrapper-center */
+    /* Full-width wrapper-center-padding */
 
-    .wrapper-center-full-width {
+    .wrapper-center-padding-full-width {
         width: 100%;
         margin-right: auto;
         margin-left: auto;
@@ -1396,11 +1430,6 @@ img {
         position: relative;
         z-index: 2;
     }
-
-    /* Padding around grid contents */
-    /*.grid-sticky > * {
-    padding: 8px;
-  }*/
 
     .width-swatch {
         min-width: unset;
