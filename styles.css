@@ -1180,6 +1180,12 @@ img {
     gap: 3rem;
 }
 
+/* Grid Gap Columns */
+
+.l-grid-gap-column-1-5 {
+    column-gap: 1.5rem;
+}
+
 /* Justify and Align Items */
 
 .l-grid-justify-items-start {
@@ -1216,6 +1222,21 @@ img {
     align-content: center;
 }
 
+/* Align self */
+
+.l-grid-align-self-start {
+    align-self: start;
+}
+
+.l-grid-align-self-end {
+    align-self: end;
+}
+
+/* Text align */
+
+.u-text-center {
+    text-align: center;
+}
 /* Text indentation */
 
 .u-text-indent-1{
@@ -1244,10 +1265,9 @@ img {
     padding-right: 12px;
 }
 
-.test {
+.zero-auto {
     margin: 0 auto;
     width: fit-content;
-
 }
 
 /* Constrain width classes */
@@ -1270,6 +1290,7 @@ img {
     margin-right: auto;
     padding-left: 12px;
     padding-right: 12px;
+    width: fit-content;
 }
 
 /* Desktop grid layout to keep top and side navigation sticky */
@@ -1314,13 +1335,6 @@ aside {
 .grid > * {
     padding: 8px;
   }
-
-/* Constraining widths for desktop */
-
-.max-width-60-desktop {
-    max-width: 63rem;
-    min-width: 63rem;
-}
 
 .width-20 {
     min-width: unset;
