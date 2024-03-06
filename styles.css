@@ -1371,6 +1371,18 @@ aside {
         padding: 0 1em .5em 1em;
       }
 
+      footer {
+        grid-area: footer;
+        display: grid;
+        place-content: center;
+        height: 5rem;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        background-color: white;
+        position: relative;
+        z-index: 2;
+      }
+
 /* Padding around grid contents */
 /*.grid-sticky > * {
     padding: 8px;
