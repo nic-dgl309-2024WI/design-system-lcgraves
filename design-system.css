@@ -87,7 +87,7 @@
 
 .c-desktop-navbar {
     padding-bottom: 1em;
-    background-color: var(--clr-primary-60);
+    background-color: #FFFFFF;
 }
 
 .c-desktop-menu__item {
@@ -110,10 +110,6 @@
 /* Rules for Mobile navbar */
 
 .c-mobile-navbar {
-    background-color: var(--clr-primary-60);
-}
-
-.c-side-navbar {
     background-color: var(--clr-primary-60);
 }
 
@@ -257,6 +253,14 @@
     
     .l-grid--desktop {
         display: grid;
+    }
+
+    aside {
+        background-color: var(--clr-primary-60);
+    }
+
+    .c-desktop-navbar {
+        background-color: var(--clr-primary-60);
     }
 
 }
