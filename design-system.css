@@ -226,16 +226,17 @@
 
     .swatch {
         display: grid;
-        grid-template-columns: 12rem 22rem;
+        grid-template-columns: 12rem 24rem;
         grid-template-areas: 
         "name-hex properties";
         justify-content: center;
-        gap:10px;
+        gap:16px;
     }
 
     .swatch-table {
         border-collapse: separate;
         border-spacing: 15px 5px;
+        justify-content: end;
     }
 
     .swatch-table tr {
@@ -248,6 +249,14 @@
 
     .properties {
         grid-area: properties;
+    }
+
+    .l-grid-cols-2--desktop {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    
+    .l-grid--desktop {
+        display: grid;
     }
 
 }
