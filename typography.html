@@ -129,125 +129,140 @@
 </head>
 
 <body>
-    <header>
-        <!-- Top navbar (desktop)-->
-        <div class="c-desktop-navbar l-flex-separate">
-            <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small is-active" href="index.html">Design System</a>
-            <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
-                <ul class="l-flex u-ff-sans-serif u-fs-small">
-                    <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="about-me.html">About Me</a>
+
+    <div class="grid-sticky border-right-1">
+        <header class="topnav-sticky">
+            <!-- Top navbar (desktop)-->
+            <div class="c-desktop-navbar l-flex-separate l-p-1">
+                <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small is-active" href="index.html">Design System</a>
+                <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
+                    <ul class="l-flex u-ff-sans-serif u-fs-small">
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1"
+                                href="about-me.html">About Me</a></li>
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="#">Demo Site</a></li>
+                    </ul>
+                </nav>
+                <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </div>
+        </header>
+        <!-- Mobile nanvbar & Sidebar (for desktop)-->
+        <aside>
+            <nav class="c-side-navbar sidebar-sticky l-p-1">
+                <ul id="c-mobile-menu__first"
+                    class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a>
                     </li>
-                    <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="#">Demo Site</a></li>
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="#">Demo Site</a></li>
+                </ul>
+                <ul id="c-mobile-menu__second"
+                    class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="colours.html">01
+                            Colours</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="typography.html">02
+                            Typography</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">03 Logo</a>
+                    </li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">04
+                            Spacing</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">05
+                            Containers</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">06 Images</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">07
+                            Interactive</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">08
+                            Feedback</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">09 Navbars</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">10
+                            Breadcrumbs</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">11
+                            Pagination</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">12 Hero</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">13
+                            Carousel</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">14 Slats</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">15 Footer</a>
+                    </li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">16 Cards</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">17 Forms</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">18
+                            Accordion</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">19 Lists</a>
+                    </li>
                 </ul>
             </nav>
-            <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
-        </div>
-        <!-- Mobile nanvbar & Sidebar (for desktop)-->
-        <nav class="c-side-navbar">
-            <ul id="c-mobile-menu__first"
-                class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
-                <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a></li>
-                <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="#">Demo Site</a></li>
-            </ul>
-            <ul id="c-mobile-menu__second"
-                class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="colours.html">01
-                        Colours</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="typography.html">02
-                        Typography</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">03 Logo</a></li>
-                <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">04
-                        Spacing</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">05 Containers</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">06 Images</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">07 Interactive</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">08 Feedback</a>
-                </li>
-                <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">09 Navbars</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">10 Breadcrumbs</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">11 Pagination</a>
-                </li>
-                <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">12 Hero</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">13 Carousel</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">14 Slats</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">15 Footer</a></li>
-                <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">16 Cards</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">17 Forms</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">18 Accordion</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">19 Lists</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1 class="u-heading--2">Typography</h1>
+        </aside>
+        <main>
+            <h1 class="u-heading--2">Typography</h1>
 
-        <!--WT Solaire Display Typeface-->
-        <p class="u-ff-sans-serif u-fs-large u-fw-light">Serif Typeface: WT Solaire Display</p>
-        <p class="u-ff-sans-serif u-fs-small u-fw-light">An elegant serif designed by Wraith Types with charmingly
-            quirky weights</p>
-        <p class="u-ff-sans-serif u-fs-small u-fw-light">Class name: u-ff-serif</p>
-        <p class="u-ff-serif u-fs-x-large u-tt-uppercase u-letter-spacing-3">abcdefghijklmnopqrstuvwxyz</p>
-        <p class="u-ff-serif u-fs-x-large u-letter-spacing-3">abcdefghijklmnopqrstuvwxyz</p>
-        <p class="u-ff-serif u-letter-spacing-3 u-fs-x-large">1234567890</p>
+            <!--WT Solaire Display Typeface-->
+            <p class="u-ff-sans-serif u-fs-large u-fw-light">Serif Typeface: WT Solaire Display</p>
+            <p class="u-ff-sans-serif u-fs-small u-fw-light">An elegant serif designed by Wraith Types with charmingly
+                quirky weights</p>
+            <p class="u-ff-sans-serif u-fs-small u-fw-light">Class name: u-ff-serif</p>
+            <p class="u-ff-serif u-fs-x-large u-tt-uppercase u-letter-spacing-3">abcdefghijklmnopqrstuvwxyz</p>
+            <p class="u-ff-serif u-fs-x-large u-letter-spacing-3">abcdefghijklmnopqrstuvwxyz</p>
+            <p class="u-ff-serif u-letter-spacing-3 u-fs-x-large">1234567890</p>
 
-        <!--Noto Sans Typeface-->
-        <p class="u-ff-sans-serif u-fs-large u-fw-light">Serif Typeface: Noto Sans (Google Font)</p>
-        <p class="u-ff-sans-serif u-fs-small u-fw-light">A humanist sans serif with calligraphy influence</p>
-        <p class="u-ff-sans-serif u-fs-small u-fw-light">Class name: u-ff-sans-serif</p>
-        <p class="u-ff-sans-serif u-tt-uppercase u-letter-spacing-3 u-fs-x-large u-fw-light">abcdefghijklmnopqrstuvwxyz
-        </p>
-        <p class="u-ff-sans-serif u-letter-spacing-3 u-fs-x-large u-fw-light">abcdefghijklmnopqrstuvwxyz</p>
-        <p class="u-ff-sans-serif u-letter-spacing-3 u-fs-x-large u-fw-light">1234567890</p>
+            <!--Noto Sans Typeface-->
+            <p class="u-ff-sans-serif u-fs-large u-fw-light">Serif Typeface: Noto Sans (Google Font)</p>
+            <p class="u-ff-sans-serif u-fs-small u-fw-light">A humanist sans serif with calligraphy influence</p>
+            <p class="u-ff-sans-serif u-fs-small u-fw-light">Class name: u-ff-sans-serif</p>
+            <p class="u-ff-sans-serif u-tt-uppercase u-letter-spacing-3 u-fs-x-large u-fw-light">
+                abcdefghijklmnopqrstuvwxyz
+            </p>
+            <p class="u-ff-sans-serif u-letter-spacing-3 u-fs-x-large u-fw-light">abcdefghijklmnopqrstuvwxyz</p>
+            <p class="u-ff-sans-serif u-letter-spacing-3 u-fs-x-large u-fw-light">1234567890</p>
 
-        <!--Fonts and their uses-->
-        <!--H1 for banner sections-->
-        <h2 class="u-ff-sans-serif u-fs-large u-fw-light">Fonts and their Uses</h2>
-        <div class="u-heading--1 u-text-secondary-200 u-bg-secondary-80">
-            <p>Heading 1</p>
-        </div>
-        <p class="u-body-text--small-light">Uses: Text in banner section</p>
-        <p class="u-body-text--small-light">Utility class: u-heading--1</p>
-        <table class="u-body-text--small-light">
-            <tr>
-                <td></td>
-                <td>Font-family</td>
-                <td>Font-size</td>
-                <td>Font-weight</td>
-                <td>Line-height</td>
-                <td>Letter-spacing</td>
-                <td>Text-transform</td>
-            </tr>
-            <tr>
-                <td>Properties</td>
-                <td>Noto Sans</td>
-                <td>76px</td>
-                <td>700</td>
-                <td>.85</td>
-                <td>Normal</td>
-                <td>Uppercase</td>
-            </tr>
-            <tr>
-                <td>Utility class</td>
-                <td>u-ff-sans-serif</td>
-                <td>u-fs-xxx-large</td>
-                <td>u-fw-bold</td>
-                <td>u-line-height-0</td>
-                <td>u-tt-uppercase</td>
-            </tr>
-        </table>
+            <!--Fonts and their uses-->
+            <!--H1 for banner sections-->
+            <h2 class="u-ff-sans-serif u-fs-large u-fw-light">Fonts and their Uses</h2>
+            <div class="u-heading--1 u-text-secondary-200 u-bg-secondary-80">
+                <p>Heading 1</p>
+            </div>
+            <p class="u-body-text--small-light">Uses: Text in banner section</p>
+            <p class="u-body-text--small-light">Utility class: u-heading--1</p>
+            <table class="u-body-text--small-light">
+                <tr>
+                    <td></td>
+                    <td>Font-family</td>
+                    <td>Font-size</td>
+                    <td>Font-weight</td>
+                    <td>Line-height</td>
+                    <td>Letter-spacing</td>
+                    <td>Text-transform</td>
+                </tr>
+                <tr>
+                    <td>Properties</td>
+                    <td>Noto Sans</td>
+                    <td>76px</td>
+                    <td>700</td>
+                    <td>.85</td>
+                    <td>Normal</td>
+                    <td>Uppercase</td>
+                </tr>
+                <tr>
+                    <td>Utility class</td>
+                    <td>u-ff-sans-serif</td>
+                    <td>u-fs-xxx-large</td>
+                    <td>u-fw-bold</td>
+                    <td>u-line-height-0</td>
+                    <td>u-tt-uppercase</td>
+                </tr>
+            </table>
 
-        <!--H2, Hero Heading-->
+            <!--H2, Hero Heading-->
             <p class="u-heading--2 u-bg-primary-60 u-text-primary-200">Heading 2</p>
             <p class="u-body-text--small-light">Uses: Hero Headings</p>
             <p class="u-body-text--small-light">Class: u-heading--2</p>
@@ -280,12 +295,12 @@
                     <td>u-fs-italic</td>
                 </tr>
             </table>
-        
-        <!--h3, Heading for Sections-->
-                <p class="u-heading--3 u-bg-primary-60 u-text-primary-200">Heading 3</p>
-                <p class="u-body-text--small-light">Uses: Section Headings</p>
-                <p class="u-body-text--small-light">Class: u-heading--2</p>
-                <table class="u-body-text--small-light">
+
+            <!--h3, Heading for Sections-->
+            <p class="u-heading--3 u-bg-primary-60 u-text-primary-200">Heading 3</p>
+            <p class="u-body-text--small-light">Uses: Section Headings</p>
+            <p class="u-body-text--small-light">Class: u-heading--2</p>
+            <table class="u-body-text--small-light">
                 <tr>
                     <td></td>
                     <td>Font-family</td>
@@ -313,10 +328,10 @@
             </table>
 
             <!--Alternate Section Headings-->
-                <p class="u-heading--4 u-bg-primary-60 u-text-primary-200">Heading 4</p>
-                <p class="u-body-text--small-light">Class: u-heading--4</p>
-                <p class="u-body-text--small-light">Uses: Alternate section headings</p>
-                <table class="u-body-text--small-light">
+            <p class="u-heading--4 u-bg-primary-60 u-text-primary-200">Heading 4</p>
+            <p class="u-body-text--small-light">Class: u-heading--4</p>
+            <p class="u-body-text--small-light">Uses: Alternate section headings</p>
+            <table class="u-body-text--small-light">
                 <tr>
                     <td></td>
                     <td>Font-family</td>
@@ -344,10 +359,10 @@
             </table>
 
             <!--Button Text-->
-                <p class="u-heading--5 u-text-primary-300  ">Heading 5</p>
-                <p class="u-body-text--small-light">Class: u-heading--5</p>
-                <p class="u-body-text--small-light">Uses: Button text</p>
-                <table class="u-body-text--small-light">
+            <p class="u-heading--5 u-text-primary-300  ">Heading 5</p>
+            <p class="u-body-text--small-light">Class: u-heading--5</p>
+            <p class="u-body-text--small-light">Uses: Button text</p>
+            <table class="u-body-text--small-light">
                 <tr>
                     <td></td>
                     <td>Font-family</td>
@@ -377,11 +392,11 @@
                 </tr>
             </table>
 
-<!--Navigation links and card headings-->
-                <p class="u-heading--6 u-bg-primary-60 u-text-primary-200">Heading 6</p>
-                <p class="u-body-text--small-light">Class: u-heading--6</p>
-                <p class="u-body-text--small-light">Uses: Navigation Links, card headings</p>
-                <table class="u-body-text--small-light">
+            <!--Navigation links and card headings-->
+            <p class="u-heading--6 u-bg-primary-60 u-text-primary-200">Heading 6</p>
+            <p class="u-body-text--small-light">Class: u-heading--6</p>
+            <p class="u-body-text--small-light">Uses: Navigation Links, card headings</p>
+            <table class="u-body-text--small-light">
                 <tr>
                     <td></td>
                     <td>Font-family</td>
@@ -411,10 +426,10 @@
             </table>
 
             <!--Card headings-->
-                <p class="u-subheading--1 u-bg-soft-white u-text-primary-300">Subheadings 1</p>
-                <p class="u-body-text--small-light">Class: u-subheading--1</p>
-                <p class="u-body-text--small-light">Uses: Card headings</p>
-                <table class="u-body-text--small-light">
+            <p class="u-subheading--1 u-bg-soft-white u-text-primary-300">Subheadings 1</p>
+            <p class="u-body-text--small-light">Class: u-subheading--1</p>
+            <p class="u-body-text--small-light">Uses: Card headings</p>
+            <table class="u-body-text--small-light">
                 <tr>
                     <td></td>
                     <td>Font-family</td>
@@ -445,10 +460,10 @@
             </table>
 
             <!--Footer subheadings-->
-                <p class="u-subheading--2 u-text-primary-200 u-bg-primary-60">Subheading 2</p>
-                <p class="u-body-text--small-light">Class: u-subheading--2</p>
-                <p class="u-body-text--small-light">Uses: Footer subheadings</p>
-                <table class="u-body-text--small-light">
+            <p class="u-subheading--2 u-text-primary-200 u-bg-primary-60">Subheading 2</p>
+            <p class="u-body-text--small-light">Class: u-subheading--2</p>
+            <p class="u-body-text--small-light">Uses: Footer subheadings</p>
+            <table class="u-body-text--small-light">
                 <tr>
                     <td></td>
                     <td>Font-family</td>
@@ -510,7 +525,10 @@
                     <td></td>
                 </tr>
             </table>
-    </main>
+        </main>
+        <footer>
+        </footer>
+    </div>
     <script src="design-system.js"></script>
 </body>
 

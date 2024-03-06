@@ -14,761 +14,819 @@
         rel="stylesheet">
     <!--Add WT Solaire Font-->
     <style media="screen, print">
-         @font-face {
-         font-family: 'wt_solairedisplay';
-         src: url('Fonts/wtsolaire-displayitalic-webfont.ttf') format('truetype');
-         font-weight: 400;
-         font-style: italic;
-         }
-         @font-face {
-         font-family: 'wt_solairedisplay';
-         src: url('Fonts/wtsolaire-displaylight-webfont.ttf') format('truetype');
-         font-weight: 300;
-         font-style: normal;
-         }
-         /* Add Helvetica Neue Font */
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueBlack.otf") format('opentype');
-             font-weight: 900;
-             font-style: normal;
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueBold.otf") format('opentype');
-             font-weight: 700;
-             font-style: normal;
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueHeavy.otf") format('opentype');
-             font-weight: 800;
-             font-style: normal;
-         }
-     
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueItalic.ttf") format('opentype');
-             font-weight: 400;
-             font-style: italic;
-     
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueLight.otf") format('opentype');
-             font-weight: 300;
-             font-style: normal;
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueLightItalic.otf") format('opentype');
-             font-weight: 300;
-             font-style: italic;
-     
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueMedium.otf") format('opentype');
-             font-weight: 500;
-             font-style: normal;
-     
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueMediumItalic.otf") format('opentype');
-             font-weight: 500;
-             font-style: italic;
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueThin.otf") format('opentype');
-             font-weight: 100;
-             font-style: normal;
-     
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueThinItalic.otf") format('opentype');
-             font-weight: 100;
-             font-style: italic;
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueUltraLight.otf") format('opentype');
-             font-weight: 200;
-             font-style: normal;
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueUltraLightItalic.otf") format('opentype');
-             font-weight: 200;
-             font-style: italic;
-         }
-         @font-face {
-             font-family: 'Helvetica Neue';
-             src: url("Fonts/HelveticaNeueRoman.otf");
-             font-weight: 400;
-             font-style: normal;
-          }
-       </style>
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displayitalic-webfont.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displaylight-webfont.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        /* Add Helvetica Neue Font */
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBlack.otf") format('opentype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBold.otf") format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueHeavy.otf") format('opentype');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueItalic.ttf") format('opentype');
+            font-weight: 400;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLight.otf") format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLightItalic.otf") format('opentype');
+            font-weight: 300;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMedium.otf") format('opentype');
+            font-weight: 500;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMediumItalic.otf") format('opentype');
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThin.otf") format('opentype');
+            font-weight: 100;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThinItalic.otf") format('opentype');
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLight.otf") format('opentype');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLightItalic.otf") format('opentype');
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueRoman.otf");
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
     <!--hamburger icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-<div class="grid-sticky border-right-1">
-    <header class="topnav-sticky">
-        <!-- Top navbar (desktop)-->
-        <div class="c-desktop-navbar l-flex-separate l-p-1">
-          <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small is-active" href="index.html">Design System</a>
-          <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
-            <ul class="l-flex u-ff-sans-serif u-fs-small">
-              <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1" href="about-me.html">About Me</a></li>
-              <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="#">Demo Site</a></li>
-            </ul>
-          </nav>
-          <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
-        </div>
-    </header>
+    <div class="grid-sticky border-right-1">
+        <header class="topnav-sticky">
+            <!-- Top navbar (desktop)-->
+            <div class="c-desktop-navbar l-flex-separate l-p-1">
+                <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small is-active" href="index.html">Design System</a>
+                <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
+                    <ul class="l-flex u-ff-sans-serif u-fs-small">
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1"
+                                href="about-me.html">About Me</a></li>
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="#">Demo Site</a></li>
+                    </ul>
+                </nav>
+                <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </div>
+        </header>
         <!-- Mobile nanvbar & Sidebar (for desktop)-->
         <aside>
-        <nav class="c-side-navbar sidebar-sticky l-p-1">
-          <ul id="c-mobile-menu__first"
-            class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
-            <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a></li>
-            <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="#">Demo Site</a></li>
-          </ul>
-          <ul id="c-mobile-menu__second"
-            class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="colours.html">01 Colours</a>
-            </li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="typography.html">02
-                Typography</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">03 Logo</a></li>
-            <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">04 Spacing</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">05 Containers</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">06 Images</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">07 Interactive</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">08 Feedback</a></li>
-            <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">09 Navbars</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">10 Breadcrumbs</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">11 Pagination</a></li>
-            <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">12 Hero</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">13 Carousel</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">14 Slats</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">15 Footer</a></li>
-            <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">16 Cards</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">17 Forms</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">18 Accordion</a></li>
-            <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">19 Lists</a></li>
-          </ul>
-        </nav>
-    </aside>
+            <nav class="c-side-navbar sidebar-sticky l-p-1">
+                <ul id="c-mobile-menu__first"
+                    class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a>
+                    </li>
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="#">Demo Site</a></li>
+                </ul>
+                <ul id="c-mobile-menu__second"
+                    class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="colours.html">01
+                            Colours</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="typography.html">02
+                            Typography</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">03 Logo</a>
+                    </li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">04
+                            Spacing</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">05
+                            Containers</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">06 Images</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">07
+                            Interactive</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">08
+                            Feedback</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">09 Navbars</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">10
+                            Breadcrumbs</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">11
+                            Pagination</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">12 Hero</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">13
+                            Carousel</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">14 Slats</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">15 Footer</a>
+                    </li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">16 Cards</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">17 Forms</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">18
+                            Accordion</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">19 Lists</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section>
+                <h1 class="u-heading--2 u-fs-xx-large l-pt-3 l-pb-075 wrapper">01 Colours</h1>
+                <div class="u-ff-sans-serif l-flex l-flex-column l-flex-align-center u-line-height-2 l-pb-3">
+                    <a href="#primary">Primary Colours</a>
+                    <a href="#secondary">Secondary Colours</a>
+                    <a href="#neutral">Neutral Colours</a>
+                </div>
 
-    <section>
-        <h1 class="u-heading--2 u-fs-xx-large l-pt-3 l-pb-075 wrapper">01 Colours</h1>
-        <div class="u-ff-sans-serif l-flex l-flex-column l-flex-align-center u-line-height-2 l-pb-3">
-        <a href="#primary">Primary Colours</a>
-        <a href="#secondary">Secondary Colours</a>
-        <a href="#neutral">Neutral Colours</a>
-        </div>
+                <!--Primary Colours-->
 
-        <!--Primary Colours-->
+                <h2 id="primary" class="width-swatch wrapper u-ff-sans-serif u-fs-large u-fw-light l-pb-1-5--desktop">
+                    Primary Colours</h2>
+                <div class="l-grid-cols-2--desktop l-grid--desktop l-grid-gap-column-1-5 zero-auto">
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-primary-40" style="background-color: #F9F9F8;">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Light Mist</p>
+                            <p class="u-text-soft-black l-pb-1">#F9F9F8</p>
+                            <p class="u-text-soft-black l-pb-05 u-fw-medium">u-bg-primary-40</p>
+                            <p class="u-text-soft-black">Card background colour</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-soft-black">Normal text</td>
+                                <td class="u-text-soft-black">Large text</td>
+                            </tr>
+                            <tr class="u-text-primary-300">
+                                <td>Dark Pine</td>
+                                <td>#245041</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-200">
+                                <td>Pine</td>
+                                <td>#306A56</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-100">
+                                <td>Light Pine</td>
+                                <td>#598878</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-soft-black">
+                                <td>Soft-black</td>
+                                <td>#545454</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-secondary-200">
+                                <td>Backwoods</td>
+                                <td>#6B7A75</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-primary-60">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025">Mist</p>
+                            <p class="u-text-soft-black l-pb-1">#EFF0EE</p>
+                            <p class="u-text-soft-black l-pb-05 u-fw-medium">u-bg-primary-60</p>
+                            <p class="u-text-soft-black">Section background colour</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-soft-black">Normal text</td>
+                                <td class="u-text-soft-black">Large text</td>
+                            </tr>
+                            <tr class="u-text-primary-300">
+                                <td>Dark Pine</td>
+                                <td>#245041</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-200">
+                                <td>Pine</td>
+                                <td>#306A56</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-100">
+                                <td>Light Pine</td>
+                                <td>#598878</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-soft-black">
+                                <td>Soft-black</td>
+                                <td>#545454</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-secondary-200">
+                                <td>Backwoods</td>
+                                <td>#6B7A75</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 l-my-075 wrapper swatch u-bg-primary-80">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Sea Foam</p>
+                            <p class="u-text-soft-black l-pb-1">#E6EEEA</p>
+                            <p class="u-text-soft-black l-pb-05 u-fw-medium">u-bg-primary-80</p>
+                            <p class="u-text-soft-black">Form text field background colour</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-soft-black">Normal text</td>
+                                <td class="u-text-soft-black">Large text</td>
+                            </tr>
+                            <tr class="u-text-primary-300">
+                                <td>Dark Pine</td>
+                                <td>#245041</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-200">
+                                <td>Pine</td>
+                                <td>#306A56</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-100">
+                                <td>Light Pine</td>
+                                <td>#598878</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-soft-black">
+                                <td>Soft-black</td>
+                                <td>#545454</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-secondary-200">
+                                <td>Backwoods</td>
+                                <td>#6B7A75</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 l-my-075 wrapper swatch u-bg-primary-100">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="u-text-almost-white l-pb-025 u-fs-medium">Light Pine</p>
+                            <p class="u-text-soft-white l-pb-1">#598878</p>
+                            <p class="u-text-soft-white l-pb-05 u-fw-medium">u-text-primary-100</p>
+                            <p class="u-text-soft-white">Graphics</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-soft-white">Normal text</td>
+                                <td class="u-text-soft-white">Large text</td>
+                            </tr>
+                            <tr class="u-text-soft-white">
+                                <td>Soft white</td>
+                                <td>#F2F5F4</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-almost-white">
+                                <td>Almost white</td>
+                                <td>#FAFCFB</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-primary-200">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="u-text-soft-white l-pb-025 u-fs-medium">Pine</p>
+                            <p class="u-text-soft-white l-pb-1">#306A56</p>
+                            <p class="u-text-soft-white l-pb-05 u-fw-medium">u-text-primary-200</p>
+                            <p class="u-text-soft-white">Headings, body text, icons and borders</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-soft-white">Normal text</td>
+                                <td class="u-text-soft-white">Large text</td>
+                            </tr>
+                            <tr class="u-text-soft-white">
+                                <td>Soft white</td>
+                                <td>#F2F5F4</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-almost-white">
+                                <td>Almost white</td>
+                                <td>#FAFCFB</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-primary-300">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="u-text-soft-white l-pb-025 u-fs-medium">Dark Pine</p>
+                            <p class="u-text-soft-white l-pb-1">#245041</p>
+                            <p class="u-text-soft-white l-pb-05 u-fw-medium">u-text-primary-300</p>
+                            <p class="u-text-soft-white">Text for buttons, button borders</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-soft-white">Normal text</td>
+                                <td class="u-text-soft-white">Large text</td>
+                            </tr>
+                            <tr class="u-text-soft-white">
+                                <td>Soft white</td>
+                                <td>#F2F5F4</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-almost-white">
+                                <td>Almost white</td>
+                                <td>#FAFCFB</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
-        <h2 id="primary" class="width-swatch wrapper u-ff-sans-serif u-fs-large u-fw-light l-pb-1-5--desktop">Primary Colours</h2>
-        <div class="l-grid-cols-2--desktop l-grid--desktop l-grid-gap-column-1-5 zero-auto">
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-primary-40" style="background-color: #F9F9F8;">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025 u-fs-medium">Light Mist</p>
-            <p class="u-text-soft-black l-pb-1">#F9F9F8</p>
-            <p class="u-text-soft-black l-pb-05 u-fw-medium">u-bg-primary-40</p>
-            <p class="u-text-soft-black">Card background colour</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-soft-black">Normal text</td>
-                    <td class="u-text-soft-black">Large text</td>
-                </tr>
-                <tr class="u-text-primary-300">
-                    <td>Dark Pine</td>
-                    <td>#245041</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-200">
-                    <td>Pine</td>
-                    <td>#306A56</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-100">
-                    <td>Light Pine</td>
-                    <td>#598878</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-soft-black">
-                    <td>Soft-black</td>
-                    <td>#545454</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-secondary-200">
-                    <td>Backwoods</td>
-                    <td>#6B7A75</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-primary-60">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025">Mist</p>
-            <p class="u-text-soft-black l-pb-1">#EFF0EE</p>
-            <p class="u-text-soft-black l-pb-05 u-fw-medium">u-bg-primary-60</p>
-            <p class="u-text-soft-black">Section background colour</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-soft-black">Normal text</td>
-                    <td class="u-text-soft-black">Large text</td>
-                </tr>
-                <tr class="u-text-primary-300">
-                    <td>Dark Pine</td>
-                    <td>#245041</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-200">
-                    <td>Pine</td>
-                    <td>#306A56</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-100">
-                    <td>Light Pine</td>
-                    <td>#598878</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-soft-black">
-                    <td>Soft-black</td>
-                    <td>#545454</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-secondary-200">
-                    <td>Backwoods</td>
-                    <td>#6B7A75</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 l-my-075 wrapper swatch u-bg-primary-80">
-            <div class="l-grid-align-self-start name-hex">
-                <p class="l-pb-025 u-fs-medium">Sea Foam</p>
-            <p class="u-text-soft-black l-pb-1">#E6EEEA</p>
-            <p class="u-text-soft-black l-pb-05 u-fw-medium">u-bg-primary-80</p>
-            <p class="u-text-soft-black">Form text field background colour</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-soft-black">Normal text</td>
-                    <td class="u-text-soft-black">Large text</td>
-                </tr>
-                <tr class="u-text-primary-300">
-                    <td>Dark Pine</td>
-                    <td>#245041</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-200">
-                    <td>Pine</td>
-                    <td>#306A56</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-100">
-                    <td>Light Pine</td>
-                    <td>#598878</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-soft-black">
-                    <td>Soft-black</td>
-                    <td>#545454</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-secondary-200">
-                    <td>Backwoods</td>
-                    <td>#6B7A75</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 l-my-075 wrapper swatch u-bg-primary-100">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="u-text-almost-white l-pb-025 u-fs-medium">Light Pine</p>
-            <p class="u-text-soft-white l-pb-1">#598878</p>
-            <p class="u-text-soft-white l-pb-05 u-fw-medium">u-text-primary-100</p>
-            <p class="u-text-soft-white">Graphics</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-soft-white">Normal text</td>
-                    <td class="u-text-soft-white">Large text</td>
-                </tr>
-                <tr class="u-text-soft-white">
-                    <td>Soft white</td>
-                    <td>#F2F5F4</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-almost-white">
-                    <td>Almost white</td>
-                    <td>#FAFCFB</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-primary-200">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="u-text-soft-white l-pb-025 u-fs-medium">Pine</p>
-            <p class="u-text-soft-white l-pb-1">#306A56</p>
-            <p class="u-text-soft-white l-pb-05 u-fw-medium">u-text-primary-200</p>
-            <p class="u-text-soft-white">Headings, body text, icons and borders</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-soft-white">Normal text</td>
-                    <td class="u-text-soft-white">Large text</td>
-                </tr>
-                <tr class="u-text-soft-white">
-                    <td>Soft white</td>
-                    <td>#F2F5F4</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-almost-white">
-                    <td>Almost white</td>
-                    <td>#FAFCFB</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-primary-300">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="u-text-soft-white l-pb-025 u-fs-medium">Dark Pine</p>
-            <p class="u-text-soft-white l-pb-1">#245041</p>
-            <p class="u-text-soft-white l-pb-05 u-fw-medium">u-text-primary-300</p>
-            <p class="u-text-soft-white">Text for buttons, button borders</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-soft-white">Normal text</td>
-                    <td class="u-text-soft-white">Large text</td>
-                </tr>
-                <tr class="u-text-soft-white">
-                    <td>Soft white</td>
-                    <td>#F2F5F4</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-almost-white">
-                    <td>Almost white</td>
-                    <td>#FAFCFB</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+                <!--Secondary Colours-->
+                <h2 id="secondary"
+                    class="width-swatch wrapper u-ff-sans-serif u-fs-large u-fw-light l-pb-1-5--desktop l-mt-4">
+                    Secondary colours</h2>
+                <div class="l-grid-cols-2--desktop l-grid--desktop l-grid-gap-column-1-5 zero-auto">
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-secondary-60">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Cloud</p>
+                            <p class="u-text-soft-black l-pb-1">#E5E7E6</p>
+                            <p class="u-text-soft-black l-pb-05 u-fw-medium">u-bg-secondary-60</p>
+                            <p class="u-text-soft-black">Section Background Colour</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-soft-black">Normal text</td>
+                                <td class="u-text-soft-black">Large text</td>
+                            </tr>
+                            <tr class="u-text-primary-300">
+                                <td>Dark Pine</td>
+                                <td>#245041</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-200">
+                                <td>Pine</td>
+                                <td>#306A56</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-100">
+                                <td>Light Pine</td>
+                                <td>#598878</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-soft-black">
+                                <td>Soft-black</td>
+                                <td>#545454</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-secondary-200">
+                                <td>Backwoods</td>
+                                <td>#6B7A75</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 swatch l-my-075 wrapper u-bg-secondary-80">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Storm</p>
+                            <p class="u-text-soft-black l-pb-1">#D3D7D6</p>
+                            <p class="u-text-soft-black l-pb-05 u-fw-medium">u-bg-secondary-80</p>
+                            <p class="u-text-soft-black l-pb-025">Banner section background colour</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-soft-black">Normal text</td>
+                                <td class="u-text-soft-black">Large text</td>
+                            </tr>
+                            <tr class="u-text-primary-300">
+                                <td>Dark Pine</td>
+                                <td>#245041</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-200">
+                                <td>Pine</td>
+                                <td>#306A56</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-soft-black">
+                                <td>Soft-black</td>
+                                <td>#545454</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-secondary-200">
+                                <td>Backwoodsl</td>
+                                <td>#6B7A75</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-secondary-100">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Clay</p>
+                            <p class="l-pb-1">#B5BDBA</p>
+                            <p class="l-pb-05 u-fw-medium">u-text-secondary-100</p>
+                            <p>Lighter text for banner sections</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Normal text</td>
+                                <td>Large text</td>
+                            </tr>
+                            <tr class="u-text-soft-black">
+                                <td>Soft black</td>
+                                <td>#545454</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-secondary-80">
+                                <td>Storm</td>
+                                <td>#D3D7D6</td>
+                                <td>Fail</td>
+                                <td>Fail</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-secondary-200">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="u-text-almost-white l-pb-025 u-fs-medium">Backwoods</p>
+                            <p class="u-text-almost-white l-pb-1">#6B7A75</p>
+                            <p class="u-text-almost-white l-pb-05 u-fw-medium">u-text-secondary-200</p>
+                            <p class="u-text-almost-white">Darker text for banner sections</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-almost-white">Normal text</td>
+                                <td class="u-text-almost-white">Large text</td>
+                            </tr>
+                            <tr class="u-text-secondary-80">
+                                <td>Storm</td>
+                                <td>#D3D7D6</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-soft-white">
+                                <td>Soft white</td>
+                                <td>#F2F5F4</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-almost-white">
+                                <td>Almost white</td>
+                                <td>#FAFCFB</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
 
-        <!--Secondary Colours-->
-        <h2 id="secondary" class="width-swatch wrapper u-ff-sans-serif u-fs-large u-fw-light l-pb-1-5--desktop l-mt-4">Secondary colours</h2>
-        <div class="l-grid-cols-2--desktop l-grid--desktop l-grid-gap-column-1-5 zero-auto">
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-secondary-60">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025 u-fs-medium">Cloud</p>
-            <p class="u-text-soft-black l-pb-1">#E5E7E6</p>
-            <p class="u-text-soft-black l-pb-05 u-fw-medium">u-bg-secondary-60</p>
-            <p class="u-text-soft-black">Section Background Colour</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-soft-black">Normal text</td>
-                    <td class="u-text-soft-black">Large text</td>
-                </tr>
-                <tr class="u-text-primary-300">
-                    <td>Dark Pine</td>
-                    <td>#245041</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-200">
-                    <td>Pine</td>
-                    <td>#306A56</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-100">
-                    <td>Light Pine</td>
-                    <td>#598878</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-soft-black">
-                    <td>Soft-black</td>
-                    <td>#545454</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-secondary-200">
-                    <td>Backwoods</td>
-                    <td>#6B7A75</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 swatch l-my-075 wrapper u-bg-secondary-80">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025 u-fs-medium">Storm</p>
-            <p class="u-text-soft-black l-pb-1">#D3D7D6</p>
-            <p class="u-text-soft-black l-pb-05 u-fw-medium">u-bg-secondary-80</p>
-            <p class="u-text-soft-black l-pb-025">Banner section background colour</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-soft-black">Normal text</td>
-                    <td class="u-text-soft-black">Large text</td>
-                </tr>
-                <tr class="u-text-primary-300">
-                    <td>Dark Pine</td>
-                    <td>#245041</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-200">
-                    <td>Pine</td>
-                    <td>#306A56</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-soft-black">
-                    <td>Soft-black</td>
-                    <td>#545454</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-secondary-200">
-                    <td>Backwoodsl</td>
-                    <td>#6B7A75</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-secondary-100">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025 u-fs-medium">Clay</p>
-            <p class="l-pb-1">#B5BDBA</p>
-            <p class="l-pb-05 u-fw-medium">u-text-secondary-100</p>
-            <p>Lighter text for banner sections</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Normal text</td>
-                    <td>Large text</td>
-                </tr>
-                <tr class="u-text-soft-black">
-                    <td>Soft black</td>
-                    <td>#545454</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-secondary-80">
-                    <td>Storm</td>
-                    <td>#D3D7D6</td>
-                    <td>Fail</td>
-                    <td>Fail</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-secondary-200">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="u-text-almost-white l-pb-025 u-fs-medium">Backwoods</p>
-            <p class="u-text-almost-white l-pb-1">#6B7A75</p>
-            <p class="u-text-almost-white l-pb-05 u-fw-medium">u-text-secondary-200</p>
-            <p class="u-text-almost-white">Darker text for banner sections</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-almost-white">Normal text</td>
-                    <td class="u-text-almost-white">Large text</td>
-                </tr>
-                <tr class="u-text-secondary-80">
-                    <td>Storm</td>
-                    <td>#D3D7D6</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-soft-white">
-                    <td>Soft white</td>
-                    <td>#F2F5F4</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-almost-white">
-                    <td>Almost white</td>
-                    <td>#FAFCFB</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
+                <!--Accent Colours-->
+                <h2 class="l-mt-4 width-swatch wrapper u-ff-sans-serif u-fs-large u-fw-light l-pb-1-5--desktop">Accent
+                    colours</h2>
+                <div class="l-grid-cols-2--desktop l-grid--desktop l-grid-gap-column-1-5 zero-auto">
+                    <div class="l-p-1 l-my-075 wrapper swatch u-bg-accent-one-80">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Light moss</p>
+                            <p class="l-pb-1">#D9E86B</p>
+                            <p class="l-pb-05 u-fw-medium">u-bg-accent-one-80</p>
+                            <p>Button background colour</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Normal text</td>
+                                <td>Large text</td>
+                            </tr>
+                            <tr class="u-text-primary-300">
+                                <td>Dark Pine</td>
+                                <td>#245041</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-200">
+                                <td>Pine</td>
+                                <td>#306A56</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-soft-black">
+                                <td>Soft-black</td>
+                                <td>#545454</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-accent-one-100">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Moss</p>
+                            <p class="l-pb-1">#BBCB44</p>
+                            <p class="l-pb-05 u-fw-medium">u-bg-accent-one-100</p>
+                            <p>Button background colour</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Normal text</td>
+                                <td>Large text</td>
+                            </tr>
+                            <tr class="u-text-primary-300">
+                                <td>Dark Pine</td>
+                                <td>#245041</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-200">
+                                <td>Pine</td>
+                                <td>#306A56</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-soft-black">
+                                <td>Soft-black</td>
+                                <td>#545454</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-accent-one-200">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Darker moss</p>
+                            <p class="l-pb-1">#9AA739</p>
+                            <p class="l-pb-05 u-fw-medium">u-text-accent-one-80<br>u-bg-accent-one-80</p>
+                            <p>Graphics</p>
+                        </div>
+                    </div>
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-accent-two">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Ocean</p>
+                            <p class="l-pb-1">#BBCB44</p>
+                            <p class="l-pb-05 u-fw-medium">u-text-accent-two</p>
+                            <p>Icons</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Neutral Colours-->
+                <h2 id="neutral"
+                    class="l-mt-4 width-swatch wrapper u-ff-sans-serif u-fs-large u-fw-light l-pb-1-5--desktop">Neutral
+                    Colours</h2>
+                <div class="l-grid-cols-2--desktop l-grid--desktop l-grid-gap-column-1-5 zero-auto">
+                    <div class="l-p-1 l-my-075 wrapper swatch u-bg-almost-white">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Almost White</p>
+                            <p class="l-pb-1 u-text-soft-black">#FAFCFB;</p>
+                            <p class="l-pb-05 u-fw-medium u-text-soft-black">u-bg-almost-white<br> u-text-almost-white
+                            </p>
+                            <p class="u-text-soft-black">Colour for icons on dark backgrounds</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-soft-black">Normal text</td>
+                                <td class="u-text-soft-black">Large text</td>
+                            </tr>
+                            <tr class="u-text-primary-300">
+                                <td>Dark Pine</td>
+                                <td>#245041</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-200">
+                                <td>Pine</td>
+                                <td>#306A56</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-100">
+                                <td>Light Pine</td>
+                                <td>#598878</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-secondary-200">
+                                <td>Backwoods</td>
+                                <td>#6B7A75</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-soft-white">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="l-pb-025 u-fs-medium">Soft White</p>
+                            <p class="u-text-soft-black l-pb-1">#F2F5F4</p>
+                            <p class="u-text-soft-black l-pb-05 u-fw-medium">Classes: u-text-soft-white, u-bg-soft-white
+                            </p>
+                            <p class="u-text-soft-black l-pb-025">Card and form background colour, text colour</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-soft-black">Normal text</td>
+                                <td class="u-text-soft-black">Large text</td>
+                            </tr>
+                            <tr class="u-text-primary-300">
+                                <td>Dark Pine</td>
+                                <td>#245041</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-200">
+                                <td>Pine</td>
+                                <td>#306A56</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-primary-100">
+                                <td>Light Pine</td>
+                                <td>#598878</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-secondary-200">
+                                <td>Backwoods</td>
+                                <td>#6B7A75</td>
+                                <td>Fail</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="l-p-1 wrapper l-my-075 swatch u-bg-soft-black">
+                        <div class="l-grid-align-self-start name-hex">
+                            <p class="u-text-almost-white l-pb-025 u-fs-medium">Soft black</p>
+                            <p class="u-text-soft-white l-pb-1">#545454</p>
+                            <p class="u-text-soft-white l-pb-05 u-fw-medium">u-bg-soft-black<br>u-text-soft-black</p>
+                            <p class="u-text-soft-white">Neutral text color</p>
+                        </div>
+                        <table
+                            class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="u-text-almost-white">Normal text</td>
+                                <td class="u-text-almost-white">Large text</td>
+                            </tr>
+                            <tr class="u-text-secondary-80">
+                                <td>Storm</td>
+                                <td>#D3D7D6</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-soft-white">
+                                <td>Soft white</td>
+                                <td>#F2F5F4</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="u-text-almost-white">
+                                <td>Almost white</td>
+                                <td>#FAFCFB</td>
+                                <td>Pass</td>
+                                <td>Pass</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
     </div>
-
-        <!--Accent Colours-->
-        <h2 class="l-mt-4 width-swatch wrapper u-ff-sans-serif u-fs-large u-fw-light l-pb-1-5--desktop">Accent colours</h2>
-        <div class="l-grid-cols-2--desktop l-grid--desktop l-grid-gap-column-1-5 zero-auto">
-        <div class="l-p-1 l-my-075 wrapper swatch u-bg-accent-one-80">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025 u-fs-medium">Light moss</p>
-            <p class="l-pb-1">#D9E86B</p>
-            <p class="l-pb-05 u-fw-medium">u-bg-accent-one-80</p>
-            <p>Button background colour</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Normal text</td>
-                    <td>Large text</td>
-                </tr>
-                <tr class="u-text-primary-300">
-                    <td>Dark Pine</td>
-                    <td>#245041</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-200">
-                    <td>Pine</td>
-                    <td>#306A56</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-soft-black">
-                    <td>Soft-black</td>
-                    <td>#545454</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-accent-one-100">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025 u-fs-medium">Moss</p>
-            <p class="l-pb-1">#BBCB44</p>
-            <p class="l-pb-05 u-fw-medium">u-bg-accent-one-100</p>
-            <p>Button background colour</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Normal text</td>
-                    <td>Large text</td>
-                </tr>
-                <tr class="u-text-primary-300">
-                    <td>Dark Pine</td>
-                    <td>#245041</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-200">
-                    <td>Pine</td>
-                    <td>#306A56</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-soft-black">
-                    <td>Soft-black</td>
-                    <td>#545454</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-accent-one-200">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025 u-fs-medium">Darker moss</p>
-            <p class="l-pb-1">#9AA739</p>
-            <p class="l-pb-05 u-fw-medium">u-text-accent-one-80<br>u-bg-accent-one-80</p>
-            <p>Graphics</p>
-            </div>
-        </div>
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-accent-two">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025 u-fs-medium">Ocean</p>
-            <p class="l-pb-1">#BBCB44</p>
-            <p class="l-pb-05 u-fw-medium">u-text-accent-two</p>
-            <p>Icons</p>
-        </div>
-    </div>
-    </div>
-        <!--Neutral Colours-->
-        <h2 id="neutral" class="l-mt-4 width-swatch wrapper u-ff-sans-serif u-fs-large u-fw-light l-pb-1-5--desktop">Neutral Colours</h2>
-        <div class="l-grid-cols-2--desktop l-grid--desktop l-grid-gap-column-1-5 zero-auto">
-        <div class="l-p-1 l-my-075 wrapper swatch u-bg-almost-white">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025 u-fs-medium">Almost White</p>
-            <p class="l-pb-1 u-text-soft-black">#FAFCFB;</p>
-            <p class="l-pb-05 u-fw-medium u-text-soft-black">u-bg-almost-white<br> u-text-almost-white</p>
-            <p class="u-text-soft-black">Colour for icons on dark backgrounds</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-soft-black">Normal text</td>
-                    <td class="u-text-soft-black">Large text</td>
-                </tr>
-                <tr class="u-text-primary-300">
-                    <td>Dark Pine</td>
-                    <td>#245041</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-200">
-                    <td>Pine</td>
-                    <td>#306A56</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-100">
-                    <td>Light Pine</td>
-                    <td>#598878</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-secondary-200">
-                    <td>Backwoods</td>
-                    <td>#6B7A75</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-        <div class="l-p-1 wrapper l-my-075 swatch u-bg-soft-white">
-            <div class="l-grid-align-self-start name-hex">
-            <p class="l-pb-025 u-fs-medium">Soft White</p>
-            <p class="u-text-soft-black l-pb-1">#F2F5F4</p>
-            <p class="u-text-soft-black l-pb-05 u-fw-medium">Classes: u-text-soft-white, u-bg-soft-white</p>
-            <p class="u-text-soft-black l-pb-025">Card and form background colour, text colour</p>
-            </div>
-            <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="u-text-soft-black">Normal text</td>
-                    <td class="u-text-soft-black">Large text</td>
-                </tr>
-                <tr class="u-text-primary-300">
-                    <td>Dark Pine</td>
-                    <td>#245041</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-200">
-                    <td>Pine</td>
-                    <td>#306A56</td>
-                    <td>Pass</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-primary-100">
-                    <td>Light Pine</td>
-                    <td>#598878</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-                <tr class="u-text-secondary-200">
-                    <td>Backwoods</td>
-                    <td>#6B7A75</td>
-                    <td>Fail</td>
-                    <td>Pass</td>
-                </tr>
-            </table>
-        </div>
-    <div class="l-p-1 wrapper l-my-075 swatch u-bg-soft-black">
-        <div class="l-grid-align-self-start name-hex">
-        <p class="u-text-almost-white l-pb-025 u-fs-medium">Soft black</p>
-        <p class="u-text-soft-white l-pb-1">#545454</p>
-        <p class="u-text-soft-white l-pb-05 u-fw-medium">u-bg-soft-black<br>u-text-soft-black</p>
-        <p class="u-text-soft-white">Neutral text color</p>
-        </div>
-        <table class="swatch-table l-grid-align-self-end properties u-ff-sans-serif u-fs-small is-hidden-mobile is-visible-desktop l-grid-justify-self-end">
-            <tr>
-                <td></td>
-                <td></td>
-                <td class="u-text-almost-white">Normal text</td>
-                <td class="u-text-almost-white">Large text</td>
-            </tr>
-            <tr class="u-text-secondary-80">
-                <td>Storm</td>
-                <td>#D3D7D6</td>
-                <td>Pass</td>
-                <td>Pass</td>
-            </tr>
-            <tr class="u-text-soft-white">
-                <td>Soft white</td>
-                <td>#F2F5F4</td>
-                <td>Pass</td>
-                <td>Pass</td>
-            </tr>
-            <tr class="u-text-almost-white">
-                <td>Almost white</td>
-                <td>#FAFCFB</td>
-                <td>Pass</td>
-                <td>Pass</td>
-            </tr>
-        </table>
-    </div>
-</div>
-</section>
-<footer>
-</footer>
-</div>
     <script src="design-system.js"></script>
 </body>
 
