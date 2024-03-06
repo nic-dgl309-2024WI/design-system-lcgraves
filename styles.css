@@ -1251,7 +1251,12 @@ img {
     text-indent: 32px
 }
 
+/* Margin 0 auto trick */
 
+.zero-auto {
+    margin: 0 auto;
+    width: fit-content;
+}
 
 /* Container Classes */
 
@@ -1263,14 +1268,9 @@ img {
     padding-left: 32px;
 }
 
-.zero-auto {
-    margin: 0 auto;
-    width: fit-content;
-}
-
 /* Constrain width classes */
 
-.width-20 {
+.width-swatch {
     min-width: 24rem;
     max-width: 24rem;
 }
@@ -1347,7 +1347,7 @@ aside {
     padding: 8px;
   }*/
 
-.width-20 {
+.width-swatch {
     min-width: unset;
     max-width: unset;
 }

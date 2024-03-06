@@ -255,6 +255,8 @@
         display: grid;
     }
 
+    /* Top and side navigation for desktop */
+
     aside {
         background-color: var(--clr-primary-60);
     }
