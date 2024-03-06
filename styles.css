@@ -39,12 +39,13 @@ img {
 }
 
 /* COLOUR VARIABLES */ 
-    --clr-primary-40: #F9F9F8;
+
     --clr-primary-60: #EFF0EE;
     --clr-primary-80: #E6EEEA;
     --clr-primary-100: #598878;
     --clr-primary-200: #306A56;
     --clr-primary-300: #245041;
+    --clr-primary-40: #F9F9F8;
 
     --clr-secondary-60: #E5E7E6;
     --clr-secondary-80: #D3D7D6;
@@ -1241,6 +1242,11 @@ img {
 .u-text-center {
     text-align: center;
 }
+
+.u-text-left {
+    text-align: left
+}
+
 /* Text indentation */
 
 .u-text-indent-1{
@@ -1260,9 +1266,15 @@ img {
 
 /* Container Classes */
 
-.wrapper {
+.wrapper-center {
     margin-right: auto;
     margin-left: auto;
+    width: fit-content;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.wrapper {
     width: fit-content;
     padding-right: 32px;
     padding-left: 32px;
@@ -1281,9 +1293,13 @@ img {
 /* Desktop CSS Rulesets */
 @media (min-width: 1200px) {
 
+/* constrain width classes */
 
-/* Wrapper for desktop */
-    .wrapper {
+.width-main {
+    max-width: 1000px;
+}
+/* wrapper-center for desktop */
+    .wrapper-center {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -1292,9 +1308,16 @@ img {
     width: fit-content;
 }
 
-/* Full-width wrapper */
+.wrapper {
+    max-width: 1200px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: fit-content;
+}
 
-.wrapper-full-width {
+/* Full-width wrapper-center */
+
+.wrapper-center-full-width {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
