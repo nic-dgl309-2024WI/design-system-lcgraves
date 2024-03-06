@@ -1365,6 +1365,12 @@ aside {
         top: 3rem;
       }
 
+      main {
+        grid-area: main;
+        min-height: 180vh;
+        padding: 0 1em .5em 1em;
+      }
+
 /* Padding around grid contents */
 /*.grid-sticky > * {
     padding: 8px;
