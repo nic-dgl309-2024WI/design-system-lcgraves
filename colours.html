@@ -116,20 +116,23 @@
 </head>
 
 <body>
-    <header>
+<div class="grid-sticky">
+    <header class="topnav-sticky">
         <!-- Top navbar (desktop)-->
-        <div class="c-desktop-navbar l-flex-separate">
+        <div class="c-desktop-navbar l-flex-separate l-p-1">
           <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small is-active" href="index.html">Design System</a>
           <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
             <ul class="l-flex u-ff-sans-serif u-fs-small">
-              <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="about-me.html">About Me</a></li>
+              <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1" href="about-me.html">About Me</a></li>
               <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="#">Demo Site</a></li>
             </ul>
           </nav>
           <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
         </div>
+    </header>
         <!-- Mobile nanvbar & Sidebar (for desktop)-->
-        <nav class="c-side-navbar">
+        <aside>
+        <nav class="c-side-navbar sidebar-sticky l-p-1">
           <ul id="c-mobile-menu__first"
             class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
             <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a></li>
@@ -164,7 +167,7 @@
             <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">19 Lists</a></li>
           </ul>
         </nav>
-      </header>
+    </aside>
 
     <section>
         <h1 class="u-heading--2 u-fs-xx-large l-pt-3 l-pb-075 wrapper">01 Colours</h1>
@@ -761,7 +764,10 @@
         </table>
     </div>
 </div>
-
+</section>
+<footer>
+</footer>
+</div>
     <script src="design-system.js"></script>
 </body>
 

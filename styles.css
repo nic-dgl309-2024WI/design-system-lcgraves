@@ -1300,25 +1300,24 @@ img {
 /* Desktop grid layout to keep top and side navigation sticky */
 
 .grid-sticky {
-    --header-height: 5rem;
+    --header-height: 3rem;
         display: grid;
         grid-template-areas:
-          "header header"
+          "topnav topnav"
           "sidebar main"
           "footer footer";
-        grid-template-columns: 14rem 1fr;
-        gap: 16px;
+        grid-template-columns: 8.5rem 1fr;
+        gap: 8px;
         max-width: 1200px;
         margin: 0 auto;
         isolation: isolate;
       }
     
-.header-sticky {
-        grid-area: header;
+.topnav-sticky {
+        grid-area: topnav;
         position: sticky;
         z-index: 2;
         top: 0;
-        display: grid;
         place-content: center;
         height: var(--header-height);
         border-bottom: 1px solid;
@@ -1332,13 +1331,13 @@ aside {
 
 .sidebar-sticky {
         position: sticky;
-        top: 9rem;
+        top: 3rem;
       }
 
 /* Padding around grid contents */
-.grid-sticky > * {
+/*.grid-sticky > * {
     padding: 8px;
-  }
+  }*/
 
 .width-20 {
     min-width: unset;
