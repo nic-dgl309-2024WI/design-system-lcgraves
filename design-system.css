@@ -222,11 +222,11 @@
 
     .swatch {
         display: grid;
-        grid-template-columns: 9rem 17rem;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "name-hex properties";
         justify-content: center;
-        gap:48px;
+        gap:16px;
     }
 
     .swatch-table {

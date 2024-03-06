@@ -1325,7 +1325,7 @@ img {
     padding-right: 12px;
 }
 
-/* Desktop grid layout to keep top and side navigation sticky */
+/* Desktop grid layout to keep top and side navigation sticky --> adapted from your 'Spacing Recipes' ******THANK YOU!!!!!******* */
 
 .grid-sticky {
     --header-height: 2.9em;
@@ -1373,6 +1373,11 @@ aside {
 .width-swatch {
     min-width: unset;
     max-width: unset;
+}
+
+.swatch {
+    min-width: 472px;
+    max-width: 472px;
 }
 /* Layout classes for just desktop */
 
