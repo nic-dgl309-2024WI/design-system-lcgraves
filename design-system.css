@@ -162,6 +162,24 @@
     text-transform: var(--tt-uppercase);
 }
 
+/* Tables */
+
+.c-table {
+    border-collapse: collapse;
+    width: fit-content;
+    font-family: var(u-ff-sans-serif);
+}
+
+.c-table td {   
+    padding: var(--rem-space-05);
+    text-align: left;
+    border: 1px solid;
+}
+
+.c-table th {
+    background-color: var(--clr-primary-40);
+}
+
 /* Colour Swatches */
 
 .c-swatch {
