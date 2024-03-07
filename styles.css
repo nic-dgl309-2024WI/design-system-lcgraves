@@ -102,14 +102,14 @@ img {
     --fw-black: 900;
 
     /* Font-size variables */
-    --fs-x-small: .75em;
-    --fs-small: .875em;
-    --fs-regular: 1em;
-    --fs-medium: 1.25em;
-    --fs-large: 1.50em;
-    --fs-x-large: 1.75em;
-    --fs-xx-large: 2em;
-    --fs-xxx-large: 2.5em;
+    --fs-x-small: .75rem;
+    --fs-small: .875rem;
+    --fs-regular: 1rem;
+    --fs-medium: 1.25rem;
+    --fs-large: 1.50rem;
+    --fs-x-large: 1.75rem;
+    --fs-xx-large: 2rem;
+    --fs-xxx-large: 2.5rem;
 
     /* Font style variables*/
     --fs-italic: italic;
@@ -1380,14 +1380,14 @@ img {
 
     /* Font size variables for desktop */
     :root {
-        --fs-x-small: .75em;
-        --fs-small: .875em;
-        --fs-regular: 1em;
-        --fs-medium: 1.25em;
-        --fs-large: 1.50em;
-        --fs-x-large: 2.25em;
-        --fs-xx-large: 3em;
-        --fs-xxx-large: 4.75em;
+        --fs-x-small: .75rem;
+        --fs-small: .875rem;
+        --fs-regular: 1rem;
+        --fs-medium: 1.25rem;
+        --fs-large: 1.50rem;
+        --fs-x-large: 2.25rem;
+        --fs-xx-large: 3rem;
+        --fs-xxx-large: 4.75rem;
 
         /* Spacing variables for desktop */
         --rem-space-025: .25rem;
