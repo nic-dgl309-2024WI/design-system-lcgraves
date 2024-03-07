@@ -1294,7 +1294,7 @@ img {
 
 /* Container Classes */
 
-.wrapper-center-fit-content {
+.wrapper-center-content {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
@@ -1340,7 +1340,7 @@ text-wrapper {
 
 /* Constrain width classes */
 
-.width-swatch {
+.c-swatch {
     min-width: 24rem;
     max-width: 24rem;
 }
@@ -1395,14 +1395,14 @@ text-wrapper {
 
     /* wrapper-center for desktop */
 
-    .wrapper-center-fit-content {
-        max-width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
     .wrapper {
         max-width: 1200px;
+    }
+
+    /* Center contents */
+
+    .margin-auto {
+        margin: 0 auto;
     }
 
     /* Full-width wrapper-center-padding */
@@ -1469,12 +1469,7 @@ text-wrapper {
         z-index: 2;
     }
 
-    .width-swatch {
-        min-width: unset;
-        max-width: unset;
-    }
-
-    .swatch {
+    .c-swatch {
         min-width: 472px;
         max-width: 472px;
     }
