@@ -1308,6 +1308,14 @@ img {
     padding-left: 32px;
 }
 
+.full-width {
+    width: 100%;
+} 
+
+.width-90 {
+    width: 90%;
+}
+
 .wrapper-95-width {
     min-width: 95%;
     max-width: 95%;
@@ -1315,10 +1323,6 @@ img {
     margin-left: auto;
     padding-left: 12px;
     padding-right: 12px;
-}
-
-full-width {
-    width: 100%;
 }   
 
 text-wrapper {

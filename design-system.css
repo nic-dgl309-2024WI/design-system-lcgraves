@@ -166,19 +166,26 @@
 
 .c-table {
     border-collapse: collapse;
-    width: fit-content;
     font-family: var(u-ff-sans-serif);
+    table-layout: fixed;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.c-table td {   
+.c-table td, th {   
     padding: var(--rem-space-05);
     text-align: left;
     border: 1px solid;
 }
 
 .c-table th {
-    background-color: var(--clr-primary-40);
+    background-color: var( --clr-accent-one-80);
 }
+
+/* Zebra striping for rows */
+.c-table tr:nth-child(even) {
+        background-color: var(--clr-soft-white);
+      }
 
 /* Colour Swatches */
 
