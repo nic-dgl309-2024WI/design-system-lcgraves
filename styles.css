@@ -1294,12 +1294,16 @@ img {
 
 /* Container Classes */
 
-.wrapper-center {
+.wrapper-center-fit-content {
+    width: fit-content;
     margin-right: auto;
     margin-left: auto;
 }
 
 .wrapper-center-padding {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
     padding-right: 32px;
     padding-left: 32px;
 }
@@ -1308,7 +1312,7 @@ img {
     width: fit-content;
 }
 
-width-90 {
+.width-90 {
     max-width: 90%;
 }
 
@@ -1369,10 +1373,11 @@ width-90 {
 
     /* wrapper-center for desktop */
 
-    .wrapper-center {
-        margin-left: auto;
+    .wrapper-center-fit-content {
+        max-width: 1200px;
         margin-right: auto;
-    }
+        margin-left: auto;
+    } 
 
     .wrapper-center-padding {
     padding-left: 12px;
@@ -1397,7 +1402,7 @@ width-90 {
     /* Desktop grid layout to keep top and side navigation sticky --> adapted from your 'Spacing Recipes' ******THANK YOU!!!!!******* */
 
     .grid-sticky {
-        --header-height: 3.5em;
+        --header-height: 3.6rem;
         display: grid;
         grid-template-areas:
             "topnav topnav"
@@ -1439,8 +1444,8 @@ width-90 {
     main {
         grid-area: main;
         min-height: 180vh;
-        padding: 0 1rem 1rem 0;
         border-right: 1px solid;
+        padding: 1rem;
     }
 
     footer {
