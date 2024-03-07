@@ -1308,6 +1308,24 @@ img {
     padding-left: 32px;
 }
 
+.wrapper-95-width {
+    min-width: 95%;
+    max-width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+full-width {
+    width: 100%;
+}   
+
+text-wrapper {
+    max-width: 70px;
+    min-width: 50px;
+}
+
 .wrapper {
     width: fit-content;
 }
@@ -1377,27 +1395,13 @@ img {
         max-width: 1200px;
         margin-right: auto;
         margin-left: auto;
-    } 
-
-    .wrapper-center-padding {
-    padding-left: 12px;
-    padding-right: 12px;
     }
-    
 
     .wrapper {
         max-width: 1200px;
     }
 
     /* Full-width wrapper-center-padding */
-
-    .wrapper-center-padding-full-width {
-        max-width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
 
     /* Desktop grid layout to keep top and side navigation sticky --> adapted from your 'Spacing Recipes' ******THANK YOU!!!!!******* */
 
