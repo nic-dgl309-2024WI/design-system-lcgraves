@@ -192,7 +192,39 @@
 .c-swatch {
     min-width: 18rem;
     max-width: 18rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* transparent border on swatch so it doesn't shift */
+    border: 1.5px solid transparent;
 }
+
+
+/* Drawing clockwise border Animation */
+/* animation-fill-mode set to forwards to ensure that border stays at 100% keyframe value -- with help from: https://www.joshwcomeau.com/animation/keyframe-animations/ */
+
+.c-swatch:hover {
+    animation: drawBorder 1.5s ease-in forwards;
+}
+  
+  @keyframes drawBorder {
+    0% {
+      border-top-color: transparent;
+    }
+    15% {
+      border-top-color: black;
+    }
+    35% {
+        border-right-color: black;
+    }
+    55% {
+      border-bottom-color: black;
+    }
+    75% {
+      border-left-color: black;
+    }
+    100% {
+      border-color: black;
+    }
+  }
 
 /** STATES **/
 
