@@ -1372,7 +1372,6 @@ img {
     word-break: break-all;
 }
 
-/* Fixed side navigation */
 
 /* Desktop CSS Rulesets */
 @media (min-width: 1200px) {
@@ -1439,7 +1438,6 @@ img {
             "footer footer";
         grid-template-columns: 10rem 1fr;
         gap: 0;
-        max-width: 1200px;
         margin-right: auto;
         margin-left: auto;
         isolation: isolate;
