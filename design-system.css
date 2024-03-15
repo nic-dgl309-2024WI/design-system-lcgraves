@@ -267,7 +267,7 @@
 
     .name-hex {
         grid-area: name-hex;
-        min-width: 282.44px
+        min-width: 301px
     }
 
     .properties {
