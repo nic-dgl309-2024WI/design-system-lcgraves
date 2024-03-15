@@ -1456,8 +1456,6 @@ img {
         place-content: center;
         height: var(--header-height);
         border-bottom: 1px solid;
-        border-left: 1px solid;
-        border-right: 1px solid;
     }
 
     aside {
@@ -1465,7 +1463,6 @@ img {
         position: relative;
         z-index: 1;
         border-right: 1px solid;
-        border-left: 1px solid;
     }
 
     .sidebar-sticky {
@@ -1476,7 +1473,6 @@ img {
     main {
         grid-area: main;
         min-height: 180vh;
-        border-right: 1px solid;
         padding: 1rem;
     }
 
@@ -1486,8 +1482,6 @@ img {
         place-content: center;
         height: 5rem;
         border-top: 1px solid;
-        border-left: 1px solid;
-        border-right: 1px solid;
         background-color: white;
         position: relative;
         z-index: 2;
