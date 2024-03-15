@@ -1304,8 +1304,8 @@ img {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 12px;
+    padding-left: 12px;
 }
 
 .full-width {
@@ -1340,11 +1340,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
- 
-.zero-auto {
-    margin: 0 auto;
-    width: fit-content;
-}
 
 /* Column layout */
 
@@ -1374,7 +1369,7 @@ img {
 
 
 /* Desktop CSS Rulesets */
-@media (min-width: 1200px) {
+@media (min-width: 1170px) {
 
 
     /* Font size variables for desktop */
@@ -1490,7 +1485,7 @@ img {
 
     .c-swatch {
         min-width: 472px;
-        max-width: 472px;
+        max-width: 650px;
     }
 
     /* Layout classes for just desktop */

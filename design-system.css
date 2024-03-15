@@ -258,6 +258,7 @@
         border-collapse: separate;
         border-spacing: 15px 5px;
         justify-content: end;
+        min-width: 226.89px
     }
 
     .swatch-table tr {
@@ -266,6 +267,7 @@
 
     .name-hex {
         grid-area: name-hex;
+        min-width: 282.44px
     }
 
     .properties {
