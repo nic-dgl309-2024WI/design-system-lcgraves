@@ -1245,6 +1245,12 @@ img {
     justify-self: end;
 }
 
+/* Grid span two columns */
+
+.l-grid-span-2-cols {
+    grid-column: 1 / -1;
+}
+
 /* Text align */
 
 .u-text-center {
@@ -1339,6 +1345,10 @@ img {
     padding: 32px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.text-left {
+ text-align: left;
 }
 
 /* Column layout */
