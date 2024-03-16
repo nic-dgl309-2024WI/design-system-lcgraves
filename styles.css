@@ -60,6 +60,9 @@ img {
 :root {
     box-sizing: border-box;
 
+    /* Prevent Scroll Bounce */
+    overscroll-behavior: none;
+
     /* COLOUR VARIABLES */
 
     --clr-primary-60: #EFF0EE;
