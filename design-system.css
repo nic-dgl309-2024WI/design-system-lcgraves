@@ -201,7 +201,7 @@
 /* Drawing clockwise border Animation */
 /* animation-fill-mode set to forwards to ensure that border stays at 100% keyframe value -- with help from: https://www.joshwcomeau.com/animation/keyframe-animations/ */
 
-.c-swatch:hover {
+/* c-swatch:hover {
     animation: drawBorder 1.5s ease-in forwards;
 }
   
@@ -228,13 +228,15 @@
 
 
 /* Draw border on hover */
-.u-drawborder {
+/*.u-drawborder {
     border: 1.5px solid transparent;
 }
 
 .u-drawborder:hover {
     animation: drawBorder 1.5s ease-in forwards;
 }
+
+*/
 
 /** STATES **/
 
