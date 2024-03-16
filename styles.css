@@ -55,12 +55,15 @@ body {
 img {
     width: 100%;
 }
+body {
+    overscroll-behavior: none;
+}
 
 /* Border Box Fix */
 :root {
     box-sizing: border-box;
 
-    /* Prevent Scroll Bounce */
+    /* Prevent Scroll Bounce, code from: https://css-irl.info/preventing-overscroll-bounce-with-css/ */
     overscroll-behavior: none;
 
     /* COLOUR VARIABLES */
