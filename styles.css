@@ -1357,19 +1357,6 @@ body {
  text-align: left;
 }
 
-/* Column layout */
-
-.column-layout {
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid;
-    max-width: 93%;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: var(--fw-light);
-    font-size: var(--fs-small);
-}
-
 /* Constrain width classes */
 
 .c-swatch {
@@ -1540,6 +1527,18 @@ table.l-table--col-width-112 {
     .l-grid-row-10 {
         grid-template-rows: 12em
     }
+
+    /* Column layout */
+
+.desktop-column-layout {
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid;
+    min-width: 100ch;
+    max-width: 150ch;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
 }
