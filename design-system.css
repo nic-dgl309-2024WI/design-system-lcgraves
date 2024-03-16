@@ -226,6 +226,16 @@
     }
   }
 
+
+/* Draw border on hover */
+.u-drawborder {
+    border: 1.5px solid transparent;
+}
+
+.u-drawborder:hover {
+    animation: drawBorder 1.5s ease-in forwards;
+}
+
 /** STATES **/
 
 /* Visibility */
