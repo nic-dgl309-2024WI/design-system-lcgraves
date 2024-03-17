@@ -1316,8 +1316,13 @@ body {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.width-375-550 {
+    min-width: 325px;
+    max-width: 550px;
 }
 
 .full-width {
@@ -1333,8 +1338,8 @@ body {
     max-width: 95%;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
 }   
 
 .text-wrapper {
@@ -1355,6 +1360,10 @@ body {
 
 .text-left {
  text-align: left;
+}
+
+.u-text-center {
+text-align: center;
 }
 
 /* Constrain width classes */
