@@ -174,15 +174,17 @@
     border-collapse: collapse;
 }
 
-.c-table td, th {   
+.c-table td, .c-table th {   
     padding: var(--rem-space-05);
     text-align: center;
+    padding: .75em 1.5em;
 }
 
 .c-table th {
     background-color: var(--clr-primary-80);
     font-weight: var(--fw-bold);
     text-align: center;
+    border-bottom: 1px solid;
 }
 
 .c-table td:not(:last-child), .c-table th:not(:last-child) {
