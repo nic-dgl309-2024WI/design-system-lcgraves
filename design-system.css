@@ -170,20 +170,30 @@
     table-layout: fixed;
     margin-right: auto;
     margin-left: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
 }
 
 .c-table td, th {   
     padding: var(--rem-space-05);
     text-align: left;
-    border: 1px solid;
 }
 
 .c-table th {
-    background-color: var( --clr-accent-one-80);
+    background-color: var(--clr-primary-80);
+    font-weight: var(--fw-bold);
+}
+
+.c-table td:not(:last-child), .c-table th:not(:last-child) {
+    border-right: 1px solid;
+}
+
+.c-table tr:not(:last-child), .c-table tr:not(:last-child) {
+    border-bottom: 1px solid black;
 }
 
 /* Zebra striping for rows */
-.c-table tr:nth-child(even) {
+/*.c-table tr:nth-child(even) {
         background-color: var(--clr-soft-white);
       }
 
