@@ -1388,9 +1388,6 @@ text-align: center;
  table-layout: fixed;
  border-collapse: collapse;
 }
-table.l-table--col-width-112 {
-    border: none;
-}
 
 .l-table--col-width-112 td:not(:last-child) {
    width: 120px;
