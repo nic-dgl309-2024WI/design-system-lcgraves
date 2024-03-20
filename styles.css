@@ -1440,9 +1440,6 @@ text-align: center;
 
     /* Container classes -desktop */
 
-    .width-main {
-        max-width: 1000px;
-    }
 
     .wrapper {
         max-width: 1200px;
