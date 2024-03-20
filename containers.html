@@ -2,453 +2,472 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Containers</title>
-  <link rel="stylesheet" type="text/css" href="design-system.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <!--Noto Sans-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <!--Add WT Solaire Font-->
-  <style media="screen, print">
-   @font-face {
-         font-family: 'wt_solairedisplay';
-         src: url('Fonts/wtsolaire-displayitalic-webfont.ttf') format('truetype');
-         font-weight: 400;
-         font-style: italic;
-         }
-         @font-face {
-         font-family: 'wt_solairedisplay';
-         src: url('Fonts/wtsolaire-displaylight-webfont.ttf') format('truetype');
-         font-weight: 300;
-         font-style: normal;
-         }
-    /* Add Helvetica Neue Font */
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueBlack.otf") format('opentype');
-        font-weight: 900;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueBold.otf") format('opentype');
-        font-weight: 700;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueHeavy.otf") format('opentype');
-        font-weight: 800;
-        font-style: normal;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers</title>
+    <link rel="stylesheet" type="text/css" href="design-system.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Noto Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Add WT Solaire Font-->
+    <style media="screen, print">
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displayitalic-webfont.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
 
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueItalic.ttf") format('opentype');
-        font-weight: 400;
-        font-style: italic;
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displaylight-webfont.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
 
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueLight.otf") format('opentype');
-        font-weight: 300;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueLightItalic.otf") format('opentype');
-        font-weight: 300;
-        font-style: italic;
+        /* Add Helvetica Neue Font */
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBlack.otf") format('opentype');
+            font-weight: 900;
+            font-style: normal;
+        }
 
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueMedium.otf") format('opentype');
-        font-weight: 500;
-        font-style: normal;
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBold.otf") format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
 
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueMediumItalic.otf") format('opentype');
-        font-weight: 500;
-        font-style: italic;
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueThin.otf") format('opentype');
-        font-weight: 100;
-        font-style: normal;
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueHeavy.otf") format('opentype');
+            font-weight: 800;
+            font-style: normal;
+        }
 
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueThinItalic.otf") format('opentype');
-        font-weight: 100;
-        font-style: italic;
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueUltraLight.otf") format('opentype');
-        font-weight: 200;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueUltraLightItalic.otf") format('opentype');
-        font-weight: 200;
-        font-style: italic;
-    }
-    @font-face {
-        font-family: 'Helvetica Neue';
-        src: url("Fonts/HelveticaNeueRoman.otf");
-        font-weight: 400;
-        font-style: normal;
-     }
-  </style>
-  <!--hamburger icon-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueItalic.ttf") format('opentype');
+            font-weight: 400;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLight.otf") format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLightItalic.otf") format('opentype');
+            font-weight: 300;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMedium.otf") format('opentype');
+            font-weight: 500;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMediumItalic.otf") format('opentype');
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThin.otf") format('opentype');
+            font-weight: 100;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThinItalic.otf") format('opentype');
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLight.otf") format('opentype');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLightItalic.otf") format('opentype');
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueRoman.otf");
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <!--hamburger icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div class="grid-sticky border-right-1">
-    <header class="topnav-sticky">
-        <!-- Top navbar (desktop)-->
-        <div class="c-desktop-navbar l-flex-separate l-p-1">
-            <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small" href="index.html">Design System</a>
-            <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
-                <ul class="l-flex u-ff-sans-serif u-fs-small">
-                    <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1"
-                            href="about-me.html">About Me</a></li>
-                    <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="#">Demo Site</a></li>
+    <div class="grid-sticky border-right-1">
+        <header class="topnav-sticky">
+            <!-- Top navbar (desktop)-->
+            <div class="c-desktop-navbar l-flex-separate l-p-1">
+                <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small" href="index.html">Design System</a>
+                <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
+                    <ul class="l-flex u-ff-sans-serif u-fs-small">
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1"
+                                href="about-me.html">About Me</a></li>
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="#">Demo Site</a></li>
+                    </ul>
+                </nav>
+                <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </div>
+        </header>
+        <!-- Mobile nanvbar & Sidebar (for desktop)-->
+        <aside>
+            <nav class="c-side-navbar sidebar-sticky l-p-1">
+                <ul id="c-mobile-menu__first"
+                    class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a>
+                    </li>
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="#">Demo Site</a></li>
+                </ul>
+                <ul id="c-mobile-menu__second"
+                    class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="colours.html">01
+                            Colours</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="typography.html">02
+                            Typography</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">03 Logo</a>
+                    </li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">04
+                            Spacing</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link is-active"
+                            href="containers.html">05
+                            Containers</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">06 Images</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">07
+                            Interactive</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">08
+                            Feedback</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">09 Navbars</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">10
+                            Breadcrumbs</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">11
+                            Pagination</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">12 Hero</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">13
+                            Carousel</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">14 Slats</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">15 Footer</a>
+                    </li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">16 Cards</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">17 Forms</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">18
+                            Accordion</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">19 Lists</a>
+                    </li>
                 </ul>
             </nav>
-            <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
-        </div>
-    </header>
-    <!-- Mobile nanvbar & Sidebar (for desktop)-->
-    <aside>
-        <nav class="c-side-navbar sidebar-sticky l-p-1">
-            <ul id="c-mobile-menu__first"
-                class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
-                <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a>
-                </li>
-                <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="#">Demo Site</a></li>
-            </ul>
-            <ul id="c-mobile-menu__second"
-                class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="colours.html">01
-                        Colours</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
-                        href="typography.html">02
-                        Typography</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">03 Logo</a>
-                </li>
-                <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">04
-                        Spacing</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link is-active" href="containers.html">05
-                        Containers</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">06 Images</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">07
-                        Interactive</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">08
-                        Feedback</a></li>
-                <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">09 Navbars</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">10
-                        Breadcrumbs</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">11
-                        Pagination</a></li>
-                <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">12 Hero</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">13
-                        Carousel</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">14 Slats</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">15 Footer</a>
-                </li>
-                <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">16 Cards</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">17 Forms</a>
-                </li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">18
-                        Accordion</a></li>
-                <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="#">19 Lists</a>
-                </li>
-            </ul>
-        </nav>
-    </aside>
-  <main>
-<div class="width-700--desktop">
-    <h1 class="u-heading--2 u-fs-xxx-large l-pt-3 l-pb-2 wrapper-center-padding ">05 Containers</h1>
-    <div class="u-ff-sans-serif l-flex l-flex-column l-flex-align-center u-line-height-2 l-pb-3">
-      <a class="l-pb-05" href="#flex-layout">I. Flex</a>
-      <a class="l-pb-05" href="#grid-layout">II. Grid</a>
-      <a class="l-pb-05" href="#max-width">III. Max Width</a>
-      <a class="l-pb-05" href="#full-width">IV. Full Width</a>
+        </aside>
+        <main>
+            <div class="width-630--desktop">
+                <h1 class="u-heading--2 u-fs-xxx-large l-pt-3 l-pb-2 wrapper-center-padding ">05 Containers</h1>
+                <div class="u-ff-sans-serif l-flex l-flex-column l-flex-align-center u-line-height-2 l-pb-3">
+                    <a class="l-pb-05" href="#flex-layout">I. Flex</a>
+                    <a class="l-pb-05" href="#grid-layout">II. Grid</a>
+                    <a class="l-pb-05" href="#max-width">III. Max Width</a>
+                    <a class="l-pb-05" href="#full-width">IV. Full Width</a>
+                </div>
+
+                <!--Flex Layout Classes-->
+                <h2 id="flex-layout" class="u-heading--5 u-fs-regular u-fw-light l-mb-1">I. Flex layout</h2>
+
+                <table class="u-ff-sans-serif u-fw-light u-fs-small c-table  l-mb-3">
+                    <thead>
+                        <tr>
+                            <th>Functionality</th>
+                            <th>Class Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Flex Container</td>
+                            <td>l-flex</td>
+                            <td>Set display to flex.</td>
+                        </tr>
+                        <tr>
+                            <td>l-flex-row</td>
+                            <td>Set flex direction to row.</td>
+                        </tr>
+                        <tr>
+                            <td>l-flex-column</td>
+                            <td>Set flex direction to column.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flex Wrap</td>
+                            <td>l-flex-wrap</td>
+                            <td>Set flex items to wrap.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="6">Justify Content</td>
+                            <td>l-flex-justify-start</td>
+                            <td>Justify content to the start of the flex container.</td>
+                        </tr>
+                        <tr>
+                            <td>l-flex-justify-end</td>
+                            <td>Justify content to the end of the flex container.</td>
+                        </tr>
+                        <tr>
+                            <td>l-flex-justify-center</td>
+                            <td>Justify content to the center of the flex container.</td>
+                        </tr>
+                        <tr>
+                            <td>l-flex-justify-between</td>
+                            <td>Justify content with space between the items.</td>
+                        </tr>
+                        <tr>
+                            <td>l-flex-justify-around</td>
+                            <td>Justify content with space around the items.</td>
+                        </tr>
+                        <tr>
+                            <td>l-flex-justify-evenly</td>
+                            <td>Justify content with space evenly distributed.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4">Align Items</td>
+                            <td>l-flex-align-start</td>
+                            <td>Align items to the start of the cross axis.</td>
+                        </tr>
+                        <tr>
+                            <td>.l-flex-align-center</td>
+                            <td>Align items to the center of the cross axis.</td>
+                        </tr>
+                        <tr>
+                            <td>l-flex-align-end</td>
+                            <td>Align items to the end of the cross axis.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Grid Layout Classes-->
+                <h2 id="grid-layout" class="u-heading--5 u-fs-regular u-fw-light l-mt-5 l-mb-1">II. Grid layout</h2>
+
+                <table class="u-ff-sans-serif u-fw-light u-fs-small c-table l-mb-3">
+                    <thead>
+                        <tr>
+                            <th>Functionality</th>
+                            <th>Class Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grid Container</td>
+                            <td>l-grid</td>
+                            <td>Set display to grid.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">Grid Columns</td>
+                            <td>l-grid-cols-2</td>
+                            <td>Define 2 columns.</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-cols-3</td>
+                            <td>Define 3 columns.</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-cols-4</td>
+                            <td>Define 4 columns.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">Grid Rows</td>
+                            <td>l-grid-rows-2</td>
+                            <td>Define 2 rows.</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-rows-3</td>
+                            <td>Define 3 rows.</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-rows-4</td>
+                            <td>Define 4 rows.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4">Grid Gap</td>
+                            <td>l-grid-gap-1</td>
+                            <td>Set gap to 1rem.</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-gap-1-5</td>
+                            <td>Set gap to 1.5rem.</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-gap-2</td>
+                            <td>Set gap to 2rem.</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-gap-3</td>
+                            <td>Set gap to 3rem.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Grid Gap Columns</td>
+                            <td>l-grid-gap-column-1-5</td>
+                            <td>Set column gap to 1.5rem.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">Justify Items</td>
+                            <td>l-grid-justify-items-start</td>
+                            <td>Justify items to start.</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-justify-items-center</td>
+                            <td>Justify items to center.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">Align Items</td>
+                            <td>.l-grid-align-items-start</td>
+                            <td>Align items to start.</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-align-items-center</td>
+                            <td>Align items to center.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">Justify Content</td>
+                            <td>l-grid-justify-content-start</td>
+                            <td>Justify content to start.</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-justify-content-center</td>
+                            <td>Justify content to center.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">Align Content</td>
+                            <td>l-grid-align-content-start</td>
+                            <td>Align content to start.</td>
+                        </tr>
+                        <tr>
+                            <td>.l-grid-align-content-center</td>
+                            <td>Align content to center.</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2">Align Self</td>
+                            <td>.l-grid-align-self-start</td>
+                            <td>Align self to start (individual item).</td>
+                        </tr>
+                        <tr>
+                            <td>l-grid-align-self-end</td>
+                            <td>Align self to end (individual item).</td>
+                        </tr>
+
+                        <tr>
+                            <td>Justify Self</td>
+                            <td>l-grid-justify-self-end</td>
+                            <td>Justify self to end (individual item).</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Max Width Classes-->
+                <h2 id="max-width" class="u-heading--5 u-fs-regular u-fw-light l-mt-5 l-mb-1">III. Max width</h2>
+
+                <table class="c-table u-ff-sans-serif u-fw-light  u-fs-small l-mb-3">
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>width-90</td>
+                        <td>Container width set to 90% of the parent element, centered with auto margins.</td>
+                    </tr>
+                    <tr>
+                        <td>width-90--desktop</td>
+                        <td>Container max-width set to 90% of its parent element, including padding and centered.</td>
+                    </tr>
+                    <tr>
+                        <td>width-80</td>
+                        <td>Container with max-width set to 80% of the parent, centered, and includes padding.</td>
+                    </tr>
+                    <tr>
+                        <td>text-wrapper</td>
+                        <td>Container designed for text, with a max and min width for optimal reading and centered.</td>
+                    </tr>
+                    <tr>
+                        <td>width-630--desktop</td>
+                        <td>Container with a max-width of 630px on desktop, centered, and includes padding.</td>
+                    </tr>
+                    <tr>
+                        <td>width-325-550</td>
+                        <td>Container with a minimum width of 325px and a maximum width of 550px.</td>
+                    </tr>
+                    </tr>
+                </table>
+
+                <!--Full Width Classes-->
+                <h2 id="full-width" class="u-heading--5 u-fs-regular u-fw-light l-mb-1 l-mt-5">IV. Full width</h2>
+
+                <table class="c-table u-ff-sans-serif u-fw-light u-fs-small l-mb-3">
+                    <tr>
+                        <th>Class Name</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>full-width</td>
+                        <td>Full-width container with auto margins to center it.</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+        </footer>
     </div>
-
-    <!--Flex Layout Classes-->
-    <h2 id="flex-layout" class="u-heading--5 u-fs-regular u-fw-light l-mb-1">I. Flex layout</h2>
-
-<table class="u-ff-sans-serif u-fw-light u-fs-small c-table  l-mb-3">
-        <thead>
-            <tr>
-                <th>Functionality</th>
-                <th>Class Name</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="3">Flex Container</td>
-                <td>l-flex</td>
-                <td>Set display to flex.</td>
-            </tr>
-            <tr>
-                <td>l-flex-row</td>
-                <td>Set flex direction to row.</td>
-            </tr>
-            <tr>
-                <td>l-flex-column</td>
-                <td>Set flex direction to column.</td>
-            </tr>
-    
-            <tr>
-                <td>Flex Wrap</td>
-                <td>l-flex-wrap</td>
-                <td>Set flex items to wrap.</td>
-            </tr>
-    
-            <tr>
-                <td rowspan="6">Justify Content</td>
-                <td>l-flex-justify-start</td>
-                <td>Justify content to the start of the flex container.</td>
-            </tr>
-            <tr>
-                <td>l-flex-justify-end</td>
-                <td>Justify content to the end of the flex container.</td>
-            </tr>
-            <tr>
-                <td>l-flex-justify-center</td>
-                <td>Justify content to the center of the flex container.</td>
-            </tr>
-            <tr>
-                <td>l-flex-justify-between</td>
-                <td>Justify content with space between the items.</td>
-            </tr>
-            <tr>
-                <td>l-flex-justify-around</td>
-                <td>Justify content with space around the items.</td>
-            </tr>
-            <tr>
-                <td>l-flex-justify-evenly</td>
-                <td>Justify content with space evenly distributed.</td>
-            </tr>
-    
-            <tr>
-                <td rowspan="4">Align Items</td>
-                <td>l-flex-align-start</td>
-                <td>Align items to the start of the cross axis.</td>
-            </tr>
-            <tr>
-                <td>.l-flex-align-center</td>
-                <td>Align items to the center of the cross axis.</td>
-            </tr>
-            <tr>
-                <td>l-flex-align-end</td>
-                <td>Align items to the end of the cross axis.</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!--Grid Layout Classes-->
-    <h2 id="grid-layout" class="u-heading--5 u-fs-regular u-fw-light l-mt-5 l-mb-1">II. Grid layout</h2>
-
-    <table class="u-ff-sans-serif u-fw-light u-fs-small c-table l-mb-3">
-    <thead>
-        <tr>
-            <th>Functionality</th>
-            <th>Class Name</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Grid Container</td>
-            <td>l-grid</td>
-            <td>Set display to grid.</td>
-        </tr>
-
-        <tr>
-            <td rowspan="3">Grid Columns</td>
-            <td>l-grid-cols-2</td>
-            <td>Define 2 columns.</td>
-        </tr>
-        <tr>
-            <td>l-grid-cols-3</td>
-            <td>Define 3 columns.</td>
-        </tr>
-        <tr>
-            <td>l-grid-cols-4</td>
-            <td>Define 4 columns.</td>
-        </tr>
-
-        <tr>
-            <td rowspan="3">Grid Rows</td>
-            <td>l-grid-rows-2</td>
-            <td>Define 2 rows.</td>
-        </tr>
-        <tr>
-            <td>l-grid-rows-3</td>
-            <td>Define 3 rows.</td>
-        </tr>
-        <tr>
-            <td>l-grid-rows-4</td>
-            <td>Define 4 rows.</td>
-        </tr>
-
-        <tr>
-            <td rowspan="4">Grid Gap</td>
-            <td>l-grid-gap-1</td>
-            <td>Set gap to 1rem.</td>
-        </tr>
-        <tr>
-            <td>l-grid-gap-1-5</td>
-            <td>Set gap to 1.5rem.</td>
-        </tr>
-        <tr>
-            <td>l-grid-gap-2</td>
-            <td>Set gap to 2rem.</td>
-        </tr>
-        <tr>
-            <td>l-grid-gap-3</td>
-            <td>Set gap to 3rem.</td>
-        </tr>
-
-        <tr>
-            <td>Grid Gap Columns</td>
-            <td>l-grid-gap-column-1-5</td>
-            <td>Set column gap to 1.5rem.</td>
-        </tr>
-
-        <tr>
-            <td rowspan="2">Justify Items</td>
-            <td>l-grid-justify-items-start</td>
-            <td>Justify items to start.</td>
-        </tr>
-        <tr>
-            <td>l-grid-justify-items-center</td>
-            <td>Justify items to center.</td>
-        </tr>
-
-        <tr>
-            <td rowspan="2">Align Items</td>
-            <td>.l-grid-align-items-start</td>
-            <td>Align items to start.</td>
-        </tr>
-        <tr>
-            <td>l-grid-align-items-center</td>
-            <td>Align items to center.</td>
-        </tr>
-
-        <tr>
-            <td rowspan="2">Justify Content</td>
-            <td>l-grid-justify-content-start</td>
-            <td>Justify content to start.</td>
-        </tr>
-        <tr>
-            <td>l-grid-justify-content-center</td>
-            <td>Justify content to center.</td>
-        </tr>
-
-        <tr>
-            <td rowspan="2">Align Content</td>
-            <td>l-grid-align-content-start</td>
-            <td>Align content to start.</td>
-        </tr>
-        <tr>
-            <td>.l-grid-align-content-center</td>
-            <td>Align content to center.</td>
-        </tr>
-
-        <tr>
-            <td rowspan="2">Align Self</td>
-            <td>.l-grid-align-self-start</td>
-            <td>Align self to start (individual item).</td>
-        </tr>
-        <tr>
-            <td>l-grid-align-self-end</td>
-            <td>Align self to end (individual item).</td>
-        </tr>
-
-        <tr>
-            <td>Justify Self</td>
-            <td>l-grid-justify-self-end</td>
-            <td>Justify self to end (individual item).</td>
-        </tr>
-    </tbody>
-</table>
-
-<!--Max Width Classes-->
-    <h2 id="max-width" class="u-heading--5 u-fs-regular u-fw-light l-mt-5 l-mb-1">III. Max width</h2>
-
-    <table class="c-table u-ff-sans-serif u-fw-light  u-fs-small l-mb-3">
-        <tr>
-            <th>Class Name</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>width-325-550</td>
-            <td>Container with a minimum width of 325px and a maximum width of 550px.</td>
-        </tr>
-        <tr>
-            <td>wrapper-95-width</td>
-            <td>Container width set to 95% of its parent element, including padding and centered.</td>
-        </tr>
-        <tr>
-            <td>text-wrapper</td>
-            <td>Container designed for text, with a max-width for optimal reading and centered.</td>
-        </tr>
-        <tr>
-            <td>width-80</td>
-            <td>Container with max-width set to 80% of the parent, centered, and includes padding.</td>
-        </tr>
-    </table>
-
-    <!--Full Width Classes-->
-    <h2 id="full-width" class="u-heading--5 u-fs-regular u-fw-light l-mb-1 l-mt-5">IV. Full width</h2>
-
-    <table class="c-table u-ff-sans-serif u-fw-light u-fs-small l-mb-3">
-        <tr>
-            <th>Class Name</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>full-width</td>
-            <td>Full-width container with auto margins to center it.</td>
-        </tr>
-        <tr>
-            <td>width-90</td>
-            <td>Container width set to 90% of the parent element, centered with auto margins.</td>
-        </tr>
-    </table>
-</div>
-</main>
-<footer>
-</footer>
-</div>
     <script src="design-system.js"></script>
 </body>
 
