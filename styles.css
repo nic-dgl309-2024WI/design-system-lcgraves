@@ -1286,7 +1286,7 @@ body {
 
 /* Borders */
 
-.border-bottom-1 {
+.u-border-bottom-1 {
     border-bottom: 1px solid;
 }
 .u-border-round {
@@ -1305,6 +1305,17 @@ body {
 }
 
 /* Container Classes */
+/* Base (mobile first) styles */
+
+.full-width {
+    width: 100%;
+    margin: 0 auto;
+} 
+
+.width-90 {
+    width: 90%;
+    margin: 0 auto;
+}
 
 .wrapper-center-content {
     width: fit-content;
@@ -1320,17 +1331,9 @@ body {
     padding-left: 16px;
 }
 
-.width-375-550 {
+.width-325-550 {
     min-width: 325px;
     max-width: 550px;
-}
-
-.full-width {
-    width: 100%;
-} 
-
-.width-90 {
-    width: 90%;
 }
 
 .wrapper-95-width {
@@ -1438,18 +1441,11 @@ table.l-table--col-width-112 {
         --rem-space-6: 6rem;
     }
 
-    /* constrain width classes */
+    /* Container classes - desktop */
 
     .width-main {
         max-width: 1000px;
     }
-
-    /* No letter break on desktop */
-    /*.letter-break {
-        overflow-wrap:unset;
-    }*/
-
-    /* wrapper-center for desktop */
 
     .wrapper {
         max-width: 1200px;
@@ -1461,7 +1457,6 @@ table.l-table--col-width-112 {
         margin: 0 auto;
     }
 
-    /* Full-width wrapper-center-padding */
 
     /* Desktop grid layout to keep top and side navigation sticky --> adapted from your 'Spacing Recipes' ******THANK YOU!!!!!******* */
 
