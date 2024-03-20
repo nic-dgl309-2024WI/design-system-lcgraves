@@ -1347,7 +1347,6 @@ body {
 
 .width-80 {
     max-width: 80%;
-    padding: 32px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1443,9 +1442,10 @@ text-align: center;
         margin-right: auto;
     }
 
-    .width-630--desktop {
+    .width-630-center--desktop {
         max-width: 630px;
-        padding: 32px;
+        padding-right: 32px;
+        padding-left: 32px;
         margin-left: auto;
         margin-right: auto;
     }
