@@ -179,6 +179,13 @@
         min-width: 24rem;
         max-width: 24rem;
     }
+
+    .width-325-550 {
+        min-width: 325px;
+        max-width: 550px;
+    }
+
+    
     
     /* To allow break in paragraph for long string of characters */
     .letter-break {
@@ -439,5 +446,38 @@ footer {
     .c-desktop-navbar {
         background-color: var(--clr-primary-40);
     }
+
+    /* Containers */
+
+    .width-630-center--desktop {
+        max-width: 630px;
+        padding-right: 32px;
+        padding-left: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .c-swatch {
+        min-width: 472px;
+        max-width: 650px;
+    }
+
+/* Column layout */
+
+.desktop-column-layout {
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid;
+    min-width: 100ch;
+    max-width: 150ch;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Layout for desktop */
+
+.l-grid-row-12 {
+    grid-template-rows: 12em
+}
 
 }
