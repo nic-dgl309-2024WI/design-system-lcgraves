@@ -1390,12 +1390,6 @@ body {
         margin-right: auto;
     }
 
-    /* Center contents */
-
-    .u-margin-auto {
-        margin: 0 auto;
-    }
-
     /* Layout classes for just desktop */
 
     .l-flex-desktop {
