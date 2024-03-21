@@ -1347,6 +1347,8 @@ body {
     margin-right: auto;
 }
 
+
+
 /* Desktop CSS Rulesets */
 @media (min-width: 1170px) {
 
@@ -1377,7 +1379,6 @@ body {
     }
 
     /* Container classes - desktop */
-
 
     .wrapper {
         max-width: 1200px;
