@@ -1347,6 +1347,56 @@ body {
     margin-right: auto;
 }
 
+/* Components */
+
+/* Banner Component */
+
+.c-banner {
+    background-color: var(--clr-secondary-80);
+    overflow: hidden;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+  
+.c-banner__text {
+    font-family: var(--ff-sans-serif);
+    color: var(--clr-secondary-200);
+    font-size: var(--fs-small);
+    display: flex;
+    align-content: center;
+    width: 100%;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.c-banner__text--scrolling {
+    animation: scroll-right 30s linear infinite;
+  }
+  
+.c-banner__text-scrolling span {
+    flex-shrink: 0;
+    padding-right: 50px; /* Space between repeats */
+  }
+
+/* CSS rule to pause animation */
+
+.paused {
+    animation-play-state: paused;
+  }
+  
+/* Keyframes for scrolling animation */
+  @keyframes scroll-right {
+    from {
+      transform: translateX(-90%);
+    }
+    to {
+      transform: translateX(5%);
+    }
+  }   
+
 
 
 /* Desktop CSS Rulesets */
