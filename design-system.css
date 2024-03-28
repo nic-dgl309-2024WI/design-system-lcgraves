@@ -480,4 +480,12 @@ footer {
     grid-template-rows: 12em
 }
 
+.l-flex-desktop {
+    display: flex;
+}
+
+.l-flex-wrap-desktop {
+    flex-wrap: wrap;
+}
+
 }
