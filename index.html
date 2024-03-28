@@ -317,3 +317,42 @@
             </div>
         </section>
 
+<!--Gift Cards Section-->
+<section>
+    <img src="" alt="flower">
+    <h2>Gift Cards</h2>
+    <form action="/submit-giftcard" method="post">
+        <p>Give the gift of greenery with one of our gift cards*</p>
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" name="amount">
+
+        <label for="message">Personal Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <fieldset>
+            <legend>Your Information</legend>
+            <label for="your-name">Name</label>
+            <input type="text" id="your-name" name="your-name">
+
+            <label for="your-email">Email</label>
+            <input type="email" id="your-email" name="your-email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Recipient Information</legend>
+            <label for="recipient-name">Name</label>
+            <input type="text" id="recipient-name" name="recipient-name">
+
+            <label for="recipient-email">Email</label>
+            <input type="email" id="recipient-email" name="recipient-email">
+        </fieldset>
+
+        <div class="form-actions">
+            <button type="reset">Cancel</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <p>
+    *Send an e-transfer to info@botanica-nursery.ca with the Gift Card amount. We will send an electronic gift card to the recipient's email.
+</p>
+</section>
