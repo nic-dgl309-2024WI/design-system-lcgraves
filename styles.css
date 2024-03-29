@@ -40,9 +40,10 @@ ol {
     list-style: none;
 }
 
-/* Remove underline from links */
+/* Remove underline from links and remove link color */
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 
@@ -130,6 +131,7 @@ body {
 
     /* Line Height variables */
     --line-height-0: 0.85;
+    --line-height-05: 1;
     --line-height-1: 1.2;
     --line-height-2: 1.4;
     --line-height-3: 1.6;
@@ -1287,7 +1289,7 @@ body {
 /* Borders */
 
 .u-border-bottom-1 {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--clr-primary-200);
 }
 
 .u-border-round {
@@ -1347,6 +1349,26 @@ body {
     margin-right: auto;
 }
 
+/* States */
+
+.is-hidden--mobile {
+    display: none;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.show-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.show-plants {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Components */
 
 /* Banner Component */
@@ -1355,10 +1377,12 @@ body {
     background-color: var(--clr-secondary-80);
     overflow: hidden;
     position: relative;
-    height: 40px;
+    height: var(--rem-space-2-5);
     display: flex;
     align-items: center;
     width: 100%;
+    padding-top: var(--rem-space-05);
+    padding-bottom: var(--rem-space-025);
 }
   
 .c-banner__text {
@@ -1374,11 +1398,6 @@ body {
 
 .c-banner__text--scrolling {
     animation: scroll-right 30s linear infinite;
-  }
-  
-.c-banner__text-scrolling span {
-    flex-shrink: 0;
-    padding-right: 50px; /* Space between repeats */
   }
 
 /* CSS rule to pause animation */
@@ -1396,6 +1415,110 @@ body {
       transform: translateX(5%);
     }
   }   
+
+/* Navigation Component */
+
+.c-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--rem-space-025) var(--rem-space-1);
+    background-color: var(--clr-primary-60);
+    color: var(--clr-primary-200);
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.c-nav__home-link {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-200);
+    font-style: var(--fs-italic);   
+    line-height: var(--line-height-0);
+    padding-left: var(--rem-space-1);
+}
+
+.c-nav__list-items {
+    padding-right: var(--rem-space-1-5);
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-small);
+    text-transform: var(--tt-uppercase);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.c-nav__links {
+    transform: scale(1);
+    transform-origin: left top;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.c-nav__links:hover {
+    color: var(--clr-primary-);
+    text-decoration: var(--td-underline);
+    transform: scale(1.2);
+}
+
+.c-nav__mobile {
+    justify-content: space-evenly;
+    align-items: left;
+    padding-left: var(--rem-space-1);
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    background-color: var(--clr-primary-60);
+    width: 100%;
+    height: 30rem;;
+}
+
+.c-nav__plants-item {
+    font-family: var(--ff-sans-serif);
+    text-indent: var(--rem-space-1);
+    justify-content: space-evenly;
+    height: 10rem;
+}
+
+/* Hero Section */
+
+.c-hero__title {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-xxx-large);
+    color: var(--clr-primary-200);
+    font-style: var(--fs-italic);
+    line-height: var(--line-height-05);
+    padding-left: var(--rem-space-1);
+    text-align: center;
+    padding: var(--rem-space-4);
+}
+
+.c-button {
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-small);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-1);
+    text-transform: var(--tt-uppercase);
+    border: 1px solid var(--clr-primary-200);
+    padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-2);
+    width: 20rem;
+    margin-bottom: var(--rem-space-1-5);
+    color: var(--clr-primary-300)
+}
+
+.c-button--primary {
+    background-color: var(--clr-accent-one-80);
+}
+
+.c-hero__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 
 
@@ -1439,6 +1562,16 @@ body {
         padding: 32px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    /* states */
+
+    .is-hidden--mobile {
+        display: initial;
+    }
+
+    .is-hidden--desktop {
+        display: none;
     }
 
 }
