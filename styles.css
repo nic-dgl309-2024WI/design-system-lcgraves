@@ -156,7 +156,7 @@ body {
        --rem-space-05: .35rem;
        --rem-space-075: .6rem;
        --rem-space-1: .75rem;
-       --rem-space-1-5: 1rem;
+       --rem-space-1-5: 1.25rem;
        --rem-space-2: 1.5rem;
        --rem-space-2-5: 1.75rem;
        --rem-space-3: 2rem;
@@ -1316,7 +1316,11 @@ body {
 
 .u-border-right {
     border-right: 1px solid;
-}   
+}  
+
+.u-border-left {
+    border-left: 1px solid var(--clr-primary-200);
+}
 
 /* Drop Shadow */
 
@@ -1519,13 +1523,13 @@ body {
 
 .c-button {
     font-family: var(--ff-sans-serif);
-    font-size: var(--fs-small);
+    font-size: var(--fs-x-small);
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
     text-transform: var(--tt-uppercase);
     border: 1px solid var(--clr-primary-200);
-    padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-2);
-    width: 20rem;
+    padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-1);
+    width: 18rem;
     color: var(--clr-primary-300)
 }
 
@@ -1548,6 +1552,7 @@ body {
 .c-section__text {
     font-family: var(--ff-sans-serif);
     font-size: var(--fs-regular);
+    font-weight: var(--fw-light);
     color: var(--clr-primary-200);
     padding-top: var(--rem-space-1);
 }
