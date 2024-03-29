@@ -1608,6 +1608,26 @@ body {
     text-align: center;
 }
 
+/* SUPPLIES. SERVICES & PLANT CARE */
+
+.c-card {
+    border: 1px solid var(--clr-primary-200);
+    background-color: var(--clr-primary-40);
+    margin: var(--rem-space-1);
+    padding: var(--rem-space-2);
+}
+
+.c-card__title {
+
+}
+
+.c-card__text {
+
+}
+
+.c-card__list {
+
+}
 
 
 /* Desktop CSS Rulesets */
