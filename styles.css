@@ -1529,8 +1529,15 @@ body {
     text-transform: var(--tt-uppercase);
     border: 1px solid var(--clr-primary-200);
     padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-1);
-    width: 18rem;
     color: var(--clr-primary-300)
+}
+
+.c-button--width-18 {
+    width: 18rem;
+}
+
+.c-button--width-16 {
+    width: 16rem;
 }
 
 .c-button--primary {
@@ -1555,6 +1562,7 @@ body {
     font-weight: var(--fw-light);
     color: var(--clr-primary-200);
     padding-top: var(--rem-space-1);
+    text-align: left;
 }
 
 /* Accordion */
@@ -1615,18 +1623,35 @@ body {
     background-color: var(--clr-primary-40);
     margin: var(--rem-space-1);
     padding: var(--rem-space-2);
+    text-align: center;
+}
+
+.c-card__icon {
+    text-align: center;
 }
 
 .c-card__title {
-
+    font-family: var(--ff-serif);
+    font-size: var(--fs-x-large);
+    color: var(--clr-primary-200);
+    font-style: var(--fs-italic);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-1);
+    text-align: center;
 }
 
-.c-card__text {
-
-}
 
 .c-card__list {
+    text-align: left;
 
+}
+
+.c-card__list-item {
+   padding-left: var(--rem-space-2-5);
+   background-image: url(Icons/leaf-bullet-point.svg);
+   background-repeat: no-repeat;
+   background-position: 0 50%;
+   background-size: 16px 16px;
 }
 
 
