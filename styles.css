@@ -29,6 +29,20 @@ li {
     padding: unset;
 }
 
+/* Reset button styles */
+
+button {
+    background-color: transparent;
+    color: inherit;
+    border: none; 
+    padding: 0;
+    margin: 0; 
+    font-family: inherit; 
+    font-size: inherit;
+    cursor: pointer; 
+  }
+  
+
 p {
     font-family: var(--ff-sans-serif);
 }
@@ -1317,7 +1331,8 @@ body {
 
 .width-90 {
     width: 90%;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .wrapper-center-content {
@@ -1416,7 +1431,7 @@ body {
     }
   }   
 
-/* Navigation Component */
+/* NAVIGATION */
 
 .c-nav {
     display: flex;
@@ -1482,13 +1497,14 @@ body {
     height: 10rem;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 
 .c-hero__title {
     margin: 0 auto;
     font-family: var(--ff-serif);
     font-size: var(--fs-xxx-large); 
     color: var(--clr-primary-200);
+    font-weight: var(--fw-light);
     font-style: var(--fs-italic);
     line-height: var(--line-height-05);
     letter-spacing: var(--letter-spacing-1);
@@ -1522,6 +1538,32 @@ body {
     padding-bottom: var(--rem-space-2-5);
 }
 
+/* PLANT SECTION */
+
+.c-section__title {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-xx-large);
+    color: var(--clr-primary-200);
+    font-style: var(--fs-italic);
+    line-height: var(--line-height-2);
+    letter-spacing: var(--letter-spacing-1);
+    padding-top: var(--rem-space-2);
+}
+
+.c-section__text {
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-regular);
+    color: var(--clr-primary-200);
+    padding-top: var(--rem-space-1);
+}
+
+/* Accordion */
+
+.c-accordion__panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
 
 
