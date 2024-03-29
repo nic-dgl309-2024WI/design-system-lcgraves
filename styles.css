@@ -1544,7 +1544,7 @@ body {
     font-size: var(--fs-xx-large);
     color: var(--clr-primary-200);
     font-style: var(--fs-italic);
-    line-height: var(--line-height-2);
+    line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
     padding-top: var(--rem-space-2);
 }
