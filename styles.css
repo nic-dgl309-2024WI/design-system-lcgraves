@@ -1526,19 +1526,11 @@ body {
     border: 1px solid var(--clr-primary-200);
     padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-2);
     width: 20rem;
-    margin-bottom: var(--rem-space-2);
     color: var(--clr-primary-300)
 }
 
 .c-button--primary {
     background-color: var(--clr-accent-one-80);
-}
-
-.c-hero__buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: var(--rem-space-2-5);
 }
 
 /* PLANT SECTION */
@@ -1566,8 +1558,9 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    width: 90%;
-    margin: 0 auto;
+    background-color: var(--clr-secondary-60);
+    padding-right: var(--rem-space-2);
+    padding-left: var(--rem-space-2);
 }
 
 .c-accordion__button {
@@ -1587,6 +1580,28 @@ body {
     padding-left: var(--rem-space-1-5);
 }
 
+
+.c-accordion__card-image {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.c-accordion__card {
+    margin: var(--rem-space-2) 0;
+    border: 1px solid var(--clr-primary-200);
+    background-color: var(--clr-primary-40)
+}
+
+.c-accordion__card-title {
+    font-family: var(--ff-serif);
+    font-size: var(--fs-medium);
+    color: var(--clr-primary-200);
+    font-style: var(--fs-italic);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-1);
+    padding: var(--rem-space-1);
+    text-align: center;
+}
 
 
 
