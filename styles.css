@@ -1621,7 +1621,7 @@ body {
 .c-card {
     border: 1px solid var(--clr-primary-200);
     background-color: var(--clr-primary-40);
-    margin: var(--rem-space-1);
+    margin: var(--rem-space-1) var(--rem-space-1) var(--rem-space-2) var(--rem-space-1);
     padding: var(--rem-space-2);
     text-align: center;
 }
