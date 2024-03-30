@@ -1671,6 +1671,21 @@ body {
     object-fit: cover;
 }
 
+.c-form {
+    background-color: var(--clr-primary-40);
+    padding: var(--rem-space-2);
+    border: 1px solid var(--clr-primary-200);
+    color:var(--clr-primary-200);
+    font-family: var(--ff-sans-serif);  
+}
+
+
+.c-form__legend
+
+.c-form__label
+
+.c-form__input  
+
 
 /* Desktop CSS Rulesets */
 @media (min-width: 1170px) {
