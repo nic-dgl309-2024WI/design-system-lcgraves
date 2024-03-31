@@ -1574,11 +1574,14 @@ body {
 
 .c-section__text {
     font-family: var(--ff-sans-serif);
-    font-size: var(--fs-regular);
     font-weight: var(--fw-light);
     color: var(--clr-primary-200);
     padding-bottom: var(--rem-space-1);
     text-align: left;
+}
+
+.c-section__text--small {
+    font-size: var(--fs-small);
 }
 
 /* Accordion */
