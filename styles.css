@@ -148,6 +148,7 @@ body {
     /* Line Height variables */
     --line-height-0: 0.85;
     --line-height-05: 1;
+    --line-height-075:1.1;
     --line-height-1: 1.2;
     --line-height-2: 1.4;
     --line-height-3: 1.6;
@@ -1563,7 +1564,7 @@ body {
     font-size: var(--fs-xx-large);
     color: var(--clr-primary-200);
     font-style: var(--fs-italic);
-    line-height: var(--line-height-1);
+    line-height: var(--line-height-075);
     letter-spacing: var(--letter-spacing-1);
 }
 
