@@ -24,7 +24,9 @@ figure,
 image,
 ul,
 ol,
-li {
+li, 
+fieldset, 
+legend {
     margin: 0;
     padding: unset;
 }
@@ -1680,11 +1682,26 @@ body {
 }
 
 
-.c-form__legend
+.c-form__legend {
+    text-transform: var(--tt-uppercase);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-1);
+    margin-top: var(--rem-space-1);
+    margin-bottom: var(--rem-space-1);
+    font-weight: var(--fw-medium);
+}
 
-.c-form__label
+.c-form__label {
 
-.c-form__input  
+}
+
+.c-form__input, .c-form__textarea {
+    width: 100%;
+    padding: var(--rem-space-1);
+    margin-bottom: var(--rem-space-1);
+    border: 1px solid var(--clr-primary-200);
+    background-color: var(--clr-primary-40);
+}
 
 
 /* Desktop CSS Rulesets */
