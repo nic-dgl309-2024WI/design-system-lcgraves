@@ -1811,7 +1811,12 @@ body {
     font-weight: var(--fw-medium);
 }
 
-
+.c-footer__text {
+    font-family: var(--ff-sans-serif);
+    color: var(--clr-primary-200);
+    line-height: var(--line-height-1);
+    font-weight: var(--fw-light);
+}
 
 /* Desktop CSS Rulesets */
 @media (min-width: 1170px) {
