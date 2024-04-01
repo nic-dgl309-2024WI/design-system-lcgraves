@@ -1306,11 +1306,11 @@ body {
 /* Borders */
 
 .u-border-bottom-1 {
-    border-bottom: 1px solid var(--clr-primary-200);
+    border-bottom: 1px solid var(--clr-secondary-100);
 }
 
 .u-border-top-1 {
-    border-top: 1px solid var(--clr-primary-200);
+    border-top: 1px solid var(--clr-secondary-100);
 }
 
 .u-border-round {
@@ -1615,7 +1615,7 @@ body {
     font-family: var(--ff-serif);
     font-size: var(--fs-large);
     font-style: var(--fs-italic);
-    border-bottom: 1px solid var(--clr-primary-200);
+    border-bottom: 1px solid var(--clr-secondary-100);
     padding-left: var(--rem-space-3);
 }
 
@@ -1627,7 +1627,7 @@ body {
 
 .c-accordion__card {
     margin: var(--rem-space-2) 0;
-    border: 1px solid var(--clr-primary-200);
+    border: 1px solid var(--clr-secondary-100);
     background-color: var(--clr-primary-40)
 }
 
@@ -1645,7 +1645,7 @@ body {
 /* SUPPLIES. SERVICES & PLANT CARE */
 
 .c-card {
-    border: 1px solid var(--clr-primary-200);
+    border: 1px solid var(--clr-secondary-100);
     background-color: var(--clr-primary-40);
     margin-bottom: var(--rem-space-2-5);
     padding: var(--rem-space-2);
@@ -1690,7 +1690,7 @@ body {
 .c-form {
     background-color: var(--clr-primary-40);
     padding: var(--rem-space-2);
-    border: 1px solid var(--clr-primary-200);
+    border: 1px solid var(--clr-secondary-100);
     color:var(--clr-primary-200);
     font-family: var(--ff-sans-serif);  
 }
@@ -1741,8 +1741,8 @@ body {
     overflow-y: auto;
     color: var(--clr-primary-200);
     font-weight: var(--fw-light);
-    background-color: var(--clr-soft-white);
-    border: 1px solid var(--clr-primary-200);
+    background-color: var(--clr-primary-40);
+    border: 1px solid var(--clr-secondary-100);
   }
 
   .c-carousel__item-title {
