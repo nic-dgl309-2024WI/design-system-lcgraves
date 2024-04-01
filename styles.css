@@ -1717,6 +1717,79 @@ body {
     background-color: var(--clr-primary-80);
 }
 
+/* Testimonials Section */
+
+/* Carousel & Pagination with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
+
+.c-carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .c-carousel__items .c-carousel__item {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .c-carousel__items .active {
+    display: block;
+  }
+  
+  .c-carousel__control {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .c-carousel__control.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .c-carousel__control.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .c-carousel__control:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .c-carousel__pagination {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .c-carousel__dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .c-carousel__dot.active, .c-carousel__dot:hover {
+    background-color: #717171;
+  }
+  
+
+
+
 
 /* Desktop CSS Rulesets */
 @media (min-width: 1170px) {
