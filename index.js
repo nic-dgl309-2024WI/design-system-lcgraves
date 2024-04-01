@@ -27,21 +27,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // Iterate through each button
     accButtons.forEach(function(btn) {
         btn.addEventListener('click', function() {
-            // This variable will toggle between true and false
-            var panel = this.nextElementSibling;
+            // Use data-target attribute to find the panel
+            var panelId = this.getAttribute('data-target');
+            var panel = document.getElementById(panelId);
 
             if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                // Close any already open panels
-                var openPanel = document.querySelector('.c-accordion__panel[style]');
-                if (openPanel) openPanel.style.maxHeight = null;
+              // If panel is open, close it
+              panel.style.maxHeight = null;
+          } else {
+              // Close any open panels first
+              document.querySelectorAll('.c-accordion__panel').forEach(function(otherPanel) {
+                  otherPanel.style.maxHeight = null;
+              });
 
-                // Open the clicked panel
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-        });
-    });
+              // Then open the clicked panel
+              panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+      });
+  });
 });
 
 /* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/

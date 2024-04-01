@@ -1930,4 +1930,15 @@ body {
         margin: 0 3rem;
     }   
 
+    /* Plant Section */
+
+    /* Accordion */
+
+    .c-accordion__button-container {
+        display: flex;
+        align-items: center;
+    }
+
+
+
 }

@@ -217,8 +217,14 @@
 
             <!--Accordion for Plant Categories-->
             <!--Trees-->
-            <button class="u-border-top-1 c-accordion__button u-border-top-1">Trees</button>
-            <div class="c-accordion__panel">
+            <div class="c-accordion__button-container">
+                <button class="u-border-top-1 c-accordion__button u-border-top-1" data-target="trees-panel">Trees</button>
+                <button class="c-accordion__button" data-target="shrubs-panel">Shrubs</button>
+                <button class="c-accordion__button" data-target="hedging-panel">Hedging</button>
+                <button class="c-accordion__button" data-target="edible-panel">Edible Plants</button>
+                <button class="c-accordion__button" data-target="vines-panel">Vines, Grasses and Other Plants</button>
+            </div>
+            <div id="trees-panel" class="c-accordion__panel">
                 <div class="c-accordion__card">
                     <img class="c-accordion__card-image" src="images/coniferous-saplings.jpeg"
                         alt="coniferous saplings">
@@ -250,8 +256,7 @@
             </div>
 
             <!--Shrubs-->
-            <button class="c-accordion__button">Shrubs</button>
-            <div class="c-accordion__panel">
+            <div id="shrubs-panel" class="c-accordion__panel">
                 <div class="c-accordion__card">
                     <img class="c-accordion__card-image" src="images/evergreen-shrubs.jpeg" alt="evergreen shrubs">
                     <h3 class="c-accordion__card-title">Evergreen Shrubs</h3>
@@ -267,8 +272,7 @@
             </div>
 
             <!--Hedging-->
-            <button class="c-accordion__button">Hedging</button>
-            <div class="c-accordion__panel">
+            <div id="hedging-panel" class="c-accordion__panel">
                 <div class="c-accordion__card">
                     <img class="c-accordion__card-image" src="images/conifers.jpeg" alt="evergreen hedging">
                     <h3 class="c-accordion__card-title">Evergreen Hedging</h3>
@@ -285,8 +289,7 @@
             </div>
 
             <!--Edibles-->
-            <button class="c-accordion__button">Edible Plants</button>
-            <div class="c-accordion__panel">
+            <div id="edible-panel" class="c-accordion__panel">
                 <div class="c-accordion__card">
                     <img class="c-accordion__card-image" src="images/fruit-trees.jpeg" alt="apple tree">
                     <h3>Fruit trees</h3>
@@ -302,8 +305,7 @@
             </div>
 
             <!--Vines, Grasses, and Other Plants-->
-            <button class="c-accordion__button">Vines, Grasses and Other Plants</button>
-            <div class="c-accordion__panel">
+            <div id="vines-panel" class="c-accordion__panel">
                 <div class="c-accordion__card">
                     <img class="c-accordion__card-image" src="images/vines.jpeg" alt="vines">
                     <h3 class="c-accordion__card-title">Vines</h3>
