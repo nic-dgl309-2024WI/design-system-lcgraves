@@ -1883,4 +1883,33 @@ body {
         display: none;
     }
 
+    /* Navigation */
+
+    .c-nav {
+        display: flex;
+    }
+
+    .c-nav__mobile {
+        display: flex;
+        align-items: center;
+        height: initial;
+        position: initial;
+    }
+
+    .c-nav__plants-item {
+        background-color: var(--clr-primary-60);
+        height: initial;
+        position: absolute;
+        top: 3rem;
+        left: 30rem;
+        padding-right: var(--rem-space-1);
+        height: 12rem;
+    }
+
+    .c-nav__plant-menu {
+        position: relative;
+    }
+
+    show-plants
+
 }
