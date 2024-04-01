@@ -1738,6 +1738,12 @@ body {
     background-color: var(--clr-soft-white);
     border: 1px solid var(--clr-primary-200);
   }
+
+  .c-carousel__item-title {
+    font-family: car(--ff-serif);
+    font-size: var(--fs-large);
+
+  }
   
   .c-carousel__items .active {
     display: block;
