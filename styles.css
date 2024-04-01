@@ -1798,7 +1798,18 @@ body {
     background-color: var(--clr-secondary-200);
   }
   
+/* FOOTER */
 
+.c-footer__subheadings {
+    font-family: var(--ff-sans-serif);
+    color: var(--clr-primary-200);
+    text-transform: var(--tt-uppercase);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-1);
+    padding-top: var(--rem-space-1);
+    padding-bottom: var(--rem-space-1);
+    font-weight: var(--fw-medium);
+}
 
 
 
