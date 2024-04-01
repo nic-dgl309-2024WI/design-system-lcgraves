@@ -1807,7 +1807,7 @@ body {
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
     padding-top: var(--rem-space-1);
-    padding-bottom: var(--rem-space-1);
+    padding-bottom: var(--rem-space-05);
     font-weight: var(--fw-medium);
 }
 
