@@ -1732,6 +1732,8 @@ body {
     display: none;
     width: 100%;
     text-align: center;
+    height: 25rem;
+    overflow-y: auto;
   }
   
   .c-carousel__items .active {
