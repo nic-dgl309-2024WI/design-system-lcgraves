@@ -1564,8 +1564,8 @@ body {
     font-size: var(--fs-xx-large);
     color: var(--clr-primary-200);
     font-style: var(--fs-italic);
-    line-height: var(--line-height-075);
-    letter-spacing: var(--letter-spacing-1);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-2);
 }
 
 .c-section__title--y-padding {
@@ -1590,7 +1590,7 @@ body {
 .c-accordion__panel {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.3s ease-in-out;
     background-color: var(--clr-secondary-60);
     padding-right: var(--rem-space-3);
     padding-left: var(--rem-space-3);
