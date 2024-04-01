@@ -1362,10 +1362,6 @@ body {
     min-width: 60%;
 }
 
-.width-50 {
-    width: 55%;
-}
-
 .wrapper-center-content {
     width: fit-content;
     margin-right: auto;
@@ -1910,6 +1906,21 @@ body {
         position: relative;
     }
 
-    show-plants
+    /* Hero Section */
+
+    .c-hero {
+        display: flex;
+    }
+
+    .c-hero__image {
+        max-width: 55%;
+        order: 1;
+    }
+
+    .c-hero__title {
+        font-size: var(--fs-xxx-large);
+        width: 100%;
+        padding: var(--rem-space-4);
+    }   
 
 }

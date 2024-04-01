@@ -183,18 +183,20 @@
     <main>
 
         <!--Hero-->
-        <section class="u-bg-primary-60 u-border-bottom-1">
-            <img src="images/outback-nursery-grounds-1.jpg" alt="outback nursery grounds">
-            <h1 class="c-hero__title">We love plants and trees as much as you do.</h1>
-            <div class="l-flex l-flex-column l-flex-align-center l-pb-2-5">
-                <div
-                    class="l-flex l-flex-justify-between c-button c-button--primary l-mb-1-5 c-button--width-18 c-button--padding">
-                    <a href="#map">Get Inspired - Visit Us!</a>
-                    <img src="Icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
-                </div>
-                <div class="l-flex l-flex-justify-between c-button c-button--width-18 l-mb-1-5 c-button--padding">
-                    <a href="#plants">Find Your Perfect Plant</a>
-                    <img src="Icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+        <section class="u-bg-primary-60 u-border-bottom-1 c-hero">
+            <img class="c-hero__image" src="images/outback-nursery-grounds-1.jpg" alt="outback nursery grounds">
+            <div>
+                <h1 class="c-hero__title">We love plants and trees as much as you do.</h1>
+                <div class="l-flex l-flex-column l-flex-align-center l-pb-2-5">
+                    <div
+                        class="l-flex l-flex-justify-between c-button c-button--primary l-mb-1-5 c-button--width-18 c-button--padding">
+                        <a href="#map">Get Inspired - Visit Us!</a>
+                        <img src="Icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                    </div>
+                    <div class="l-flex l-flex-justify-between c-button c-button--width-18 l-mb-1-5 c-button--padding">
+                        <a href="#plants">Find Your Perfect Plant</a>
+                        <img src="Icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                    </div>
                 </div>
             </div>
         </section>
@@ -598,12 +600,14 @@
         </div>
         <div class="l-p-1-5 u-border-bottom-1">
             <form class="c-form l-p-1" action="/submit-newsletter" method="post">
-                <h4 class="u-ff-serif u-fs-medium u-fs-italic u-text-primary-200 l-pb-1">Join our plant community today</h4>
+                <h4 class="u-ff-serif u-fs-medium u-fs-italic u-text-primary-200 l-pb-1">Join our plant community today
+                </h4>
                 <label class="is-hidden--mobile" for="name">Name</label>
                 <input class="is-hidden--mobile" type="text" id="name" name="name">
                 <label class="is-hidden--mobile" for="email">Email</label>
                 <div class="l-flex l-flex-justify-between">
-                    <input class="l-pl-05 c-form__input width-60" placeholder="Enter your email address" type="email" id="email" name="email" required>
+                    <input class="l-pl-05 c-form__input width-60" placeholder="Enter your email address" type="email"
+                        id="email" name="email" required>
                     <div
                         class="l-flex l-flex-justify-between c-button c-button--primary c-button--width-18 c-button--width-6 l-p-05 l-mb-075">
                         <button class="u-tt-uppercase" type="submit">Sign up</button>
