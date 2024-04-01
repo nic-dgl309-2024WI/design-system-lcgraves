@@ -1731,9 +1731,12 @@ body {
   .c-carousel__items .c-carousel__item {
     display: none;
     width: 100%;
-    text-align: center;
-    height: 25rem;
+    height: 30rem;
     overflow-y: auto;
+    color: var(--clr-primary-200);
+    font-weight: var(--fw-light);
+    background-color: var(--clr-soft-white);
+    border: 1px solid var(--clr-primary-200);
   }
   
   .c-carousel__items .active {
