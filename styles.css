@@ -1821,7 +1821,7 @@ body {
     color: var(--clr-primary-200);
     line-height: var(--line-height-1);
     font-weight: var(--fw-light);
-    font-size: var(--fs-small);
+    font-size: var(--fs-x-small);
 }
 
 /* Desktop CSS Rulesets */
