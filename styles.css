@@ -1543,8 +1543,11 @@ body {
     letter-spacing: var(--letter-spacing-1);
     text-transform: var(--tt-uppercase);
     border: 1px solid var(--clr-primary-200);
-    padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-1);
     color: var(--clr-primary-300)
+}
+
+.c-button--padding {
+    padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-1);
 }
 
 .c-button--width-18 {
@@ -1689,7 +1692,6 @@ body {
 
 .c-form {
     background-color: var(--clr-primary-40);
-    padding: var(--rem-space-2);
     border: 1px solid var(--clr-secondary-100);
     color:var(--clr-primary-200);
     font-family: var(--ff-sans-serif);  
@@ -1716,7 +1718,6 @@ body {
 }
 
 .c-form__input, .c-form__textarea {
-    width: 100%;
     padding: var(--rem-space-05);
     margin-bottom: var(--rem-space-075);
     border: 1px solid var(--clr-primary-200);
