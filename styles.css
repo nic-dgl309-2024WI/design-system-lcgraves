@@ -1983,4 +1983,16 @@ body {
         background-color: var(--clr-secondary-100);
     }
 
+    .c-accordion__panel {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+
+    .c-accordion__card {
+        min-width: 18rem;
+        max-width: 22rem;
+        flex: 1;
+    }
+
 }
