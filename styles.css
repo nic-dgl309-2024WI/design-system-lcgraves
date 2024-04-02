@@ -1358,7 +1358,7 @@ body {
     margin-right: auto;
 }
 
-.width-60 {
+.width-60--mobile {
     min-width: 60%;
 }
 
@@ -1403,6 +1403,18 @@ body {
 .show-plants {
     display: flex;
     flex-direction: column;
+}
+
+/* Mobile Layouts */
+
+.l-flex-column--mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.l-flex-between--mobile {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Components */
@@ -1553,6 +1565,10 @@ body {
 }
 
 .c-button--width-medium {
+    width: 16rem;
+}
+
+.c-button-width-x-regular {
     width: 16rem;
 }
 
@@ -1847,6 +1863,9 @@ body {
     font-size: var(--fs-x-small);
 }
 
+
+
+
 /* Desktop CSS Rulesets */
 @media (min-width: 1000px) {
 
@@ -1879,6 +1898,10 @@ body {
     /* Container classes - desktop */
 
     /* Reset mobile 85% to max-width 1200px */
+
+    .c-mobile {
+        width: auto;
+    }
     
     .width-85--mobile {
         width: auto;
@@ -1899,6 +1922,12 @@ body {
         margin-right: auto;
     }
 
+    .width-10rem {
+        width: 14rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .wrapper {
         max-width: 1200px;
     }
@@ -1914,7 +1943,16 @@ body {
         margin-left: auto;
     }
     
+
+    /* Reset mobile layout classes */
+
+    .l-flex-between--mobile {
+        flex-direction: column;
+    }
+
     /* Layout classes for desktop */
+
+
 
     .l-grid-cols-2--desktop {
         grid-template-columns: repeat(2, 1fr);
@@ -1950,11 +1988,16 @@ body {
         width: 18rem;
     }
     
+    .c-button-width-x-regular {
+        width: 16rem;
+    }
+
     .c-button--width-regular {
         width: 12rem;
     }
+
     .c-button--width-small {
-        width: 8rem
+        width: auto;
     }
     
     
