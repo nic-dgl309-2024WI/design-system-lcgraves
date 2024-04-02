@@ -1596,6 +1596,13 @@ body {
     font-size: var(--fs-small);
 }
 
+.c-plants__intro {
+    padding-right: var(--rem-space-3);
+    padding-left: var(--rem-space-3);
+    padding-bottom: var(--rem-space-2);
+    border-bottom: 1px solid var(--clr-secondary-100);
+}
+
 /* Accordion */
 
 .c-accordion__panel {
