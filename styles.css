@@ -2123,7 +2123,6 @@ body {
 .c-carousel__item-para {
     min-width: 50ch;
     max-width: 50ch;
-    font-size: var(--fs-medium);
 }
 
 .c-carousel__item-image {  
