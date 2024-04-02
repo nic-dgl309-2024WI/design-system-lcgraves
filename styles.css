@@ -1650,7 +1650,7 @@ text-decoration: underline;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    background-color: var(--clr-secondary-60);
+    background-color: var(--clr-soft-white);
     padding-right: var(--rem-space-3);
     padding-left: var(--rem-space-3);
 }
@@ -1670,7 +1670,13 @@ text-decoration: underline;
     font-style: var(--fs-italic);
     border-bottom: 1px solid var(--clr-secondary-100);
     padding-left: var(--rem-space-3);
+    transition: background-color 0.3s ease-in-out;
 }
+
+.c-accordion__button:hover, .c-accordion__button.accordion-active {
+    background-color: #B3D0D1;
+}  
+
 
 
 .c-accordion__card-image {
