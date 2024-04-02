@@ -1543,7 +1543,6 @@ body {
 /* HERO SECTION */
 
 .c-hero__title {
-    margin: 0 auto;
     font-family: var(--ff-serif);
     font-size: var(--fs-xxx-large); 
     color: var(--clr-primary-200);
