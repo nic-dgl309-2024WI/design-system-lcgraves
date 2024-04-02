@@ -1990,9 +1990,23 @@ body {
     }
 
     .c-accordion__card {
-        min-width: 18rem;
-        max-width: 22rem;
-        flex: 1;
+        flex: 0 0 30%;
+        margin-left: var(--rem-space-05);
+        margin-right: var(--rem-space-05);
     }
+
+    /* Supplies, Services & Plant Care */
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .c-card {
+        
+    }
+
+
 
 }
