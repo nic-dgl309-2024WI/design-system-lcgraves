@@ -1910,6 +1910,8 @@ body {
 
     .c-nav {
         display: flex;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .c-nav__mobile {
