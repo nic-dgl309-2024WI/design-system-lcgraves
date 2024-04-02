@@ -1548,19 +1548,19 @@ body {
     padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-1);
 }
 
-.c-button--width-18 {
+.c-button--width-large {
     width: 18rem;
 }
 
-.c-button--width-16 {
+.c-button--width-medium {
     width: 16rem;
 }
 
-.c-button--width-7-5 {
+.c-button--width-regular {
     width: 7.5rem;
 }
 
-.c-button--width-6 {
+.c-button--width-small {
     width: 6rem;
 }
 
@@ -1859,7 +1859,7 @@ body {
         --fs-medium: 1.25rem;
         --fs-large: 1.50rem;
         --fs-x-large: 2.25rem;
-        --fs-xx-large: 3rem;
+        --fs-xx-large: 3.5rem;
         --fs-xxx-large: 4.75rem;
 
         /* Spacing variables for desktop */
@@ -1887,6 +1887,18 @@ body {
         margin-left: auto;
     }
 
+    .width-45rem {
+        width: 45rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .width-15rem {
+        width: 18rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .wrapper {
         max-width: 1200px;
     }
@@ -1901,6 +1913,7 @@ body {
         margin-right: auto;
         margin-left: auto;
     }
+    
 
     /* Layout classes for desktop */
 
@@ -1917,6 +1930,37 @@ body {
     .l-flex-container {
         display: flex;
         align-items: center;
+    }
+
+    /* Global styles */
+
+    .c-button {
+        font-size: var(--fs-small);
+       
+    }
+    
+    .c-button--padding {
+        padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-1);
+    }
+    
+    .c-button--width-large {
+        width: 21rem;
+    }
+    
+    .c-button--width-medium {
+        width: 18rem;
+    }
+    
+    .c-button--width-regular {
+        width: 12rem;
+    }
+    .c-button--width-small {
+        width: 8rem
+    }
+    
+    
+    .c-button--primary {
+        background-color: var(--clr-accent-one-80);
     }
 
     /* states */
