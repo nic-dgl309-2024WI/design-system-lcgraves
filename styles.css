@@ -1577,6 +1577,7 @@ body {
     font-style: var(--fs-italic);
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-2);
+    font-weight: var(--fw-light);
 }
 
 .c-section__title--y-padding-4 {
@@ -1681,6 +1682,7 @@ body {
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
     text-align: center;
+    font-weight: var(--fw-light);
 }
 
 
@@ -1870,6 +1872,10 @@ body {
 
     /* Container classes - desktop */
 
+    .width-85 {
+        max-width: none;
+    }
+
     .wrapper {
         max-width: 1200px;
     }
@@ -2003,8 +2009,7 @@ body {
 
     .c-card {
         height: 440px;
-        flex: 0 0 30%
-        
+        flex: 0 0 30%  
     }
 
 
