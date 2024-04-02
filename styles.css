@@ -1491,6 +1491,15 @@ body {
     font-style: var(--fs-italic);   
     line-height: var(--line-height-0);
     padding-left: var(--rem-space-1);
+    transform: scale(1);
+    transform-origin: left top;
+    transition: transform 0.3s ease-in-out;
+}
+
+.c-nav__home-link:hover {
+    transform: scale(1.1);
+    font-weight: var(--fw-medium);
+    color: var(--clr-primary-300);
 }
 
 .c-nav__list-items {
@@ -1498,13 +1507,9 @@ body {
     font-family: var(--ff-sans-serif);
     font-size: var(--fs-small);
     text-transform: var(--tt-uppercase);
-    transform: scale(1);
-    transition: transform 0.3s ease-in-out;
 }
 
 .c-nav__links {
-    transform: scale(1);
-    transform-origin: left top;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -1512,7 +1517,8 @@ body {
 .c-nav__links:hover {
     color: var(--clr-primary-);
     text-decoration: var(--td-underline);
-    transform: scale(1.2);
+    font-weight: var(--fw-medium);
+    color: var(--clr-primary-300);
 }
 
 .c-nav__mobile {
