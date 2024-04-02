@@ -26,22 +26,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Iterate through each button
     accButtons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            // Use data-target attribute to find the panel
-            var panelId = this.getAttribute('data-target');
-            var panel = document.getElementById(panelId);
+      btn.addEventListener('click', function() {
+          // Check if this panel is already open
+          var isOpen = this.classList.contains('accordion-active');
 
-            if (panel.style.maxHeight) {
-              // If panel is open, close it
-              panel.style.maxHeight = null;
-          } else {
-              // Close any open panels first
-              document.querySelectorAll('.c-accordion__panel').forEach(function(otherPanel) {
-                  otherPanel.style.maxHeight = null;
-              });
+          // Use data-target attribute to find the panel
+          var panelId = this.getAttribute('data-target');
+          var panel = document.getElementById(panelId);
 
-              // Then open the clicked panel
-              panel.style.maxHeight = panel.scrollHeight + "px";
+          // First, remove 'active' class from all buttons and close all panels
+          accButtons.forEach(function(otherBtn) {
+              otherBtn.classList.remove('accordion-active');
+          });
+          document.querySelectorAll('.c-accordion__panel').forEach(function(otherPanel) {
+              otherPanel.style.maxHeight = null;
+          });
+
+          // Then, if the panel was not already open, open it and add 'active' class
+          if (!isOpen) {
+              this.classList.add('accordion-active'); // Add 'active' class to the clicked button
+              panel.style.maxHeight = panel.scrollHeight + "px"; // Open the panel
           }
       });
   });
