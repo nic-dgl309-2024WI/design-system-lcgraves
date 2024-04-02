@@ -1579,9 +1579,14 @@ body {
     letter-spacing: var(--letter-spacing-2);
 }
 
-.c-section__title--y-padding {
+.c-section__title--y-padding-4 {
     padding-top: var(--rem-space-4);
-    padding-bottom: var(--rem-space-4);
+    padding-bottom: var(--rem-space-4)
+}
+
+.c-section__title--y-padding-4-2 {
+    padding-top: var(--rem-space-4);
+    padding-bottom: var(--rem-space-2);
 }
 
 .c-section__text {
@@ -1941,11 +1946,41 @@ body {
 
     /* Accordion */
 
+    .c-plants__intro {
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: var(--rem-space-1);
+        border-bottom: none;
+    }
+
     .c-accordion__button-container {
         display: flex;
         align-items: center;
+        border: 1px solid var(--clr-secondary-100);
+        background-color: var(--clr-primary-40);
     }
 
+    .c-accordion__button {
+        flex: 1;
+        position: relative;
+        border: none;
+        text-align: center;
+        padding-left: 0;
+    }
 
+    .c-accordion__button--y-padding {
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+
+    .c-accordion__button:not(:first-child)::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top:0;
+        bottom:0;
+        width: 1px;
+        background-color: var(--clr-secondary-100);
+    }
 
 }
