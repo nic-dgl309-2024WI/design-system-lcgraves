@@ -1346,7 +1346,7 @@ body {
     margin-left: auto;
 }
 
-.width-85 {
+.width-85--mobile{
     width: 85%;
     margin-right: auto;
     margin-left: auto;
@@ -1872,8 +1872,12 @@ body {
 
     /* Container classes - desktop */
 
-    .width-85 {
-        max-width: none;
+    /* Reset mobile 85% to max-width 1200px */
+    .width-85--mobile {
+        width: auto;
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .wrapper {
@@ -1888,8 +1892,8 @@ body {
     }
     .max-width {
         max-width: 1200px;
-        margin: auto;
-        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     /* states */
@@ -2001,9 +2005,14 @@ body {
 
     /* Supplies, Services & Plant Care */
 
-    .flex-container {
+    .l-flex-container--space-between {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .l-flex-container {
+        display: flex;
         align-items: center;
     }
 
@@ -2016,6 +2025,12 @@ body {
         margin-top: var(--rem-space-1-5);
     }
 
+/* Gift Cards */
 
+.c-gift-card__image {
+    height: unset;
+    width: 60%;
+
+}
 
 }
