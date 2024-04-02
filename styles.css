@@ -1566,6 +1566,10 @@ body {
     color: var(--clr-primary-300)
 }
 
+.c-button:hover {
+text-decoration: underline;
+}
+
 .c-button--padding {
     padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-1);
 }
@@ -1592,6 +1596,11 @@ body {
 
 .c-button--primary {
     background-color: var(--clr-accent-one-80);
+}
+
+.c-button--primary:hover {
+    background-color: var(--clr-accent-one-100);
+    text-decoration: underline;
 }
 
 /* PLANT SECTION */
