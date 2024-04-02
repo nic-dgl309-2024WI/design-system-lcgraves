@@ -414,7 +414,7 @@
             <section class="max-width l-grid l-grid-cols-2--desktop">
                 <img class="c-gift-card__image" src="images/genie-magnolia.jpeg" alt="flower">
                 <div>
-                    <div class="c-gift-card__title-icon width-90-right-alight--desktop l-pt-3 l-pb-1-5">
+                    <div class="c-gift-card__title-icon width-90-right-align--desktop l-pt-3 l-pb-1-5">
                         <h2 class="c-gift-card--title c-section__title u-text-center l-pr-1">Gift Cards</h2>
                         <img class="l-pb-2" src="icons/gift-card.svg" alt="gift card icon" style="width: 60px">
                     </div>
@@ -461,7 +461,7 @@
                                 </div>
                             </div>
                         </form>
-                        <p class="c-section__text c-section__text--small l-mt-2 width-90-right-alight--desktop">
+                        <p class="c-section__text c-section__text--small l-mt-2 width-90-right-align--desktop">
                             *Send an e-transfer to info@botanica-nursery.ca with the Gift Card amount. We will send an
                             electronic
                             gift card to the recipient's email.
@@ -599,10 +599,11 @@
     </main>
 
     <!--Footer-->
-    <footer class="u-bg-primary-60 l-pt-1">
+    <div class="u-bg-primary-60">
+    <footer class="max-width l-pt-1">
         <div class="l-flex-container">
-            <div class="l-flex l-py-1 u-border-bottom-1">
-                <div class="l-pl-2">
+            <div class="l-flex c-footer__item">
+                <div>
                     <div class="l-flex l-flex-align-center">
                         <img src="Icons/tree-roots-lighter-green.svg" alt="tree icon" style="width: 40px">
                         <a class="c-nav__home-link" href="index.html">Outback<br>Nursery</a>
@@ -616,7 +617,7 @@
                     <img class="l-mr-1" src="Icons/facebook-logo.png" alt="facebook logo" style="width: 30px">
                     <img src="Icons/instagram-logo.png" alt="instagram logo" style="width: 30px">
                 </div>
-                <div class="l-pr-1-5 l-pl-1">
+                <div class="l-pl-1">
                     <h4 class="c-footer__subheadings">Hours</h4>
                     <p class="u-ff-serif u-fs-italic u-text-primary-200 l-pt-1 l-pb-05 u-fs-medium u-letter-spacing-1">Open
                         Season</p>
@@ -630,9 +631,9 @@
                     </p>
                 </div>
             </div>
-        <div class="u-border-bottom-1">
-            <div class="l-grid l-grid-cols-2">
-                <div class="l-p-2 width-60--mobile l-flex-column--mobile">
+        <div class="c-footer__item">
+            <div class="l-grid l-grid-cols-2--mobile">
+                <div class="width-60--mobile l-flex-column--mobile">
                     <h4 class="c-footer__subheadings ">Visit Us</h4>
                     <p class="c-footer__text">6016 Headquarters Rd</p>
                     <p class="c-footer__text">Courtenay, BC V9J 1M7</p>
@@ -643,13 +644,13 @@
                 </div>
                 </div>
                 <!--Google map-->
-                <iframe class="l-pt-1 l-pb-2 l-pr-2"
+                <iframe class="c-footer__map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.806904334595!2d-125.05348338778744!3d49.75207693728265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dcfbd232dd%3A0x8790393154738312!2s6016%20Headquarters%20Rd%2C%20Courtenay%2C%20BC%20V9J%201M7!5e0!3m2!1sen!2sca!4v1711649277144!5m2!1sen!2sca"
                     width="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <div class="l-p-1-5 u-border-bottom-1">
+        <div class="c-footer__item">
             <form class="c-form l-p-1" action="/submit-newsletter" method="post">
                 <h4 class="u-ff-serif u-fs-medium u-fs-italic u-text-primary-200 l-pb-1">Join our plant community today
                 </h4>
@@ -665,11 +666,12 @@
             </form>
         </div>
     </div>
-        <div class="l-pt-1 l-flex l-flex-justify-between">
+        <div class="l-px-05 l-pt-1 l-flex l-flex-justify-between">
             <p class="c-section__text u-fs-x-small">© 2024 Outback Nursery</p>
             <p class="c-section__text u-fs-x-small">Privacy Policy | Terms &amp; Conditions</p>
         </div>
     </footer>
+</div>
 </body>
 <script src="index.js"></script>
 
