@@ -1706,6 +1706,12 @@ body {
     object-fit: cover;
 }
 
+.c-gift-card__title-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .c-form {
     background-color: var(--clr-primary-40);
     border: 1px solid var(--clr-secondary-100);
@@ -1885,11 +1891,10 @@ body {
         max-width: 1200px;
     }
 
-    .width-90--desktop {
+    .width-90-right-alight--desktop {
         max-width: 90%;
-        padding: 32px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 0;
     }
     .max-width {
         max-width: 1200px;
@@ -2042,7 +2047,8 @@ body {
    height: 100%;
 }
 
-.c-gift-card__info-form{
-    padding-left: 3rem;
-}
+.c-form {
+    width: 90%;
+    margin-right: 0;
+    margin-left: auto;
 }
