@@ -79,6 +79,12 @@
     font-family: var(--ff-sans-serif);
 }
 
+/* word break for long strings of characters */
+
+.u-letter-break {
+    word-break: break-all;
+}
+
 /** COMPONENTS **/
 
 /* Navigation */
