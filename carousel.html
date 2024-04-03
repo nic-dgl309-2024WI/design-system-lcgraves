@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="design-system.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Noto Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Add WT Solaire Font-->
+    <style media="screen, print">
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displayitalic-webfont.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displaylight-webfont.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        /* Add Helvetica Neue Font */
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBlack.otf") format('opentype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBold.otf") format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueHeavy.otf") format('opentype');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueItalic.ttf") format('opentype');
+            font-weight: 400;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLight.otf") format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLightItalic.otf") format('opentype');
+            font-weight: 300;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMedium.otf") format('opentype');
+            font-weight: 500;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMediumItalic.otf") format('opentype');
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThin.otf") format('opentype');
+            font-weight: 100;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThinItalic.otf") format('opentype');
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLight.otf") format('opentype');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLightItalic.otf") format('opentype');
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueRoman.otf");
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <!--hamburger icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="grid-sticky border-right-1">
+        <header class="topnav-sticky">
+            <!-- Top navbar (desktop)-->
+            <div class="c-desktop-navbar l-flex-separate l-p-1">
+                <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small" href="design-system.html">Design
+                    System</a>
+                <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
+                    <ul class="l-flex u-ff-sans-serif u-fs-small">
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1"
+                                href="about-me.html">About Me</a></li>
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="index.html"
+                                target="_blank">Demo Site</a></li>
+                    </ul>
+                </nav>
+                <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </div>
+        </header>
+        <!-- Mobile nanvbar & Sidebar (for desktop)-->
+        <aside>
+            <nav class="c-side-navbar sidebar-sticky l-p-1">
+                <ul id="c-mobile-menu__first"
+                    class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a>
+                    </li>
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="index.html"
+                            target="_blank">Demo Site</a></li>
+                </ul>
+                <ul id="c-mobile-menu__second"
+                    class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="colours.html">01
+                            Colours</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="typography.html">02
+                            Typography</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">03
+                            Spacing</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="containers.html">04
+                            Containers</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="images.html">05
+                            Images</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="interactive.html">06
+                            Interactive</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="navbars.html">07
+                            Navbars</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="breadcrumbs.html">08
+                            Breadcrumbs</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="hero.html">09
+                            Hero</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link is-active" href="carousel.html">10
+                            Carousel &amp; Pagination</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="footer.html">11
+                            Footer</a>
+                    </li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="cards.html">12
+                            Cards</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="forms.html">13
+                            Forms</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="accordion.html">14
+                            Accordion</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="lists.html">15
+                            Lists</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section class="width-80">
+                <h1 class="u-heading--2 u-fs-xxx-large l-py-3 wrapper-center-padding">10 Carousel and Pagination</h1>
+                <p class="u-body-text u-fw-light text-wrapper zero-auto">Carousels are a great way to showcase multiple
+                    images or pieces of content in a small space. They are often used on homepages to display a range of
+                    products or services. Carousels can be set to automatically scroll through the content or can be
+                    controlled by the user. Pagination is used to show the user how many slides there are in the carousel
+                    and which slide they are currently viewing.
+                </p>
+                    <div>
+                    <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-2">Carousel and Pagination example</h2>
+                    <div id="carousel" class="c-carousel">
+                        <div class="c-carousel__items l-mx-2-5">
+                            <div class="c-carousel__item active">
+                                <img class="c-carousel__item-image" src="images/Don-Michael.jpg" alt="Customer profile of Don and Michael">
+                                <div class="c-carousel__item-text">
+                                    <h3 class="l-p-1-5 c-carousel__item-title">Don and Michael</h3>
+                                    <p class="c-carousel__item-para l-px-1-5 l-pb-1-5">We've trusted Outback Nursery for eight years, drawn by its
+                                        unparalleled selection of Japanese maples and foundation trees. It's a
+                                        three-generation,
+                                        family-owned gem where passion for gardening is palpable. From walking through their
+                                        greenhouses to receiving tailored advice and healthy plants, Outback has become a
+                                        cornerstone of our garden's success. Plus, their fair prices are unbeatable.</p>
+                                </div>
+                            </div>
+                            <div class="c-carousel__item">
+                                <img class="c-carousel__item-image" src="images/richardManton.jpg" alt="Customer profile of Richard Manton">
+                                <div  class="c-carousel__item-text">
+                                    <h3 class="l-p-1-5 c-carousel__item-title">Richard Manton</h3>
+                                    <p class="c-carousel__item-para l-px-1-5 l-pb-1-5">I own a small landscaping business and Outback Nursery is
+                                        my go
+                                        to for all my plant &amp; garden needs and they're incredibly helpful. I would
+                                        recommend
+                                        Outback to anyone!</p>
+                                </div>
+                            </div>
+                            <div class="c-carousel__item">
+                                <img class="c-carousel__item-image" src="images/EmmaPeterson.jpeg" alt="Customer profile of Emma Peterson">
+                                <div  class="c-carousel__item-text">
+                                    <h3 class="l-p-1-5 c-carousel__item-title">Emma Peterson</h3>
+                                    <p class="c-carousel__item-para l-px-1-5 l-pb-1-5">Relocating to Ships Point introduced us to Outback Nursery,
+                                        and
+                                        it's been a game-changer. The family's depth of knowledge, combined with their
+                                        friendly
+                                        service and excellent pricing, has helped transform our acreage into a thriving
+                                        garden.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="c-carousel__item">
+                                <img class="c-carousel__item-image" src="images/IvyBlooms.jpeg" alt="Customer profile of Ivy Blooms Home & Garden Inc">
+                                <div  class="c-carousel__item-text">
+                                    <h3 class="l-p-1-5 c-carousel__item-title">Ivy Blooms Home &amp; Garden Inc</h3>
+                                    <p class="c-carousel__item-para l-px-1-5 l-pb-1-5">Outback Nursery isn't just a place to buy plants; it's a
+                                        haven
+                                        for garden enthusiasts. With an outstanding variety of plants, passionate staff, and
+                                        excellent value, shopping here is a delightful experience. It's the perfect place to
+                                        nurture your gardening passion.</p>
+                                </div>
+                            </div>
+                            <div class="c-carousel__item">
+                                <img class="c-carousel__item-image" src="images/KarenLatiff.jpeg" alt="Customer profile of Karen Latiff">
+                                <div  class="c-carousel__item-text">
+                                    <h3 class="l-p-1-5 c-carousel__item-title">Karen Latiff</h3>
+                                    <p class="l-px-1-5 l-pb-1-5 c-carousel__item-para">Recommended by a friend, Outback Nursery exceeded our
+                                        expectations. Their vast selection, coupled with the team's readiness to assist,
+                                        made
+                                        our garden project enjoyable. Their support in planning a water feature shows they
+                                        go
+                                        above and beyond.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-carousel__pagination">
+                            <span class="c-carousel__dot active" onclick="currentSlide(0)"></span>
+                            <span class="c-carousel__dot" onclick="currentSlide(1)"></span>
+                            <span class="c-carousel__dot" onclick="currentSlide(2)"></span>
+                            <span class="c-carousel__dot" onclick="currentSlide(3)"></span>
+                            <span class="c-carousel__dot" onclick="currentSlide(4)"></span>
+                        </div>
+                        <a class="c-carousel__control prev" onclick="moveSlide(-1)">&#10094;</a>
+                        <a class="c-carousel__control next" onclick="moveSlide(1)">&#10095;</a>
+                    </div>
+                    <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-075">HTML Code</h2>
+                    <div class="u-bg-primary-60">
+                        <p class="u-body-text u-fw-light">&lt;div id=&quot;carousel&quot; class=&quot;c-carousel&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-carousel__items l-mx-2-5&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-carousel__item active&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class=&quot;c-carousel__item-image&quot; src=&quot;images/Don-Michael.jpg&quot; alt=&quot;Customer profile of Don and Michael&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-carousel__item-text&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class=&quot;l-p-1-5 c-carousel__item-title&quot;&gt;Don and Michael&lt;/h3&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-carousel__item-para l-px-1-5 l-pb-1-5&quot;&gt;We've trusted Outback Nursery for eight years, drawn by its<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unparalleled selection of Japanese maples and foundation trees. It's a<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;three-generation,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;family-owned gem where passion for gardening is palpable. From walking through their<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;greenhouses to receiving tailored advice and healthy plants, Outback has become a<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cornerstone of our garden's success. Plus, their fair prices are unbeatable.&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-carousel__item&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class=&quot;c-carousel__item-image&quot; src=&quot;images/richardManton.jpg&quot; alt=&quot;Customer profile of Richard Manton&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;&nbsp;class=&quot;c-carousel__item-text&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class=&quot;l-p-1-5 c-carousel__item-title&quot;&gt;Richard Manton&lt;/h3&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-carousel__item-para l-px-1-5 l-pb-1-5&quot;&gt;I own a small landscaping business and Outback Nursery is<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my go<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to for all my plant &amp; garden needs and they're incredibly helpful. I would<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recommend<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outback to anyone!&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-carousel__item&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class=&quot;c-carousel__item-image&quot; src=&quot;images/EmmaPeterson.jpeg&quot; alt=&quot;Customer profile of Emma Peterson&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;&nbsp;class=&quot;c-carousel__item-text&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class=&quot;l-p-1-5 c-carousel__item-title&quot;&gt;Emma Peterson&lt;/h3&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-carousel__item-para l-px-1-5 l-pb-1-5&quot;&gt;Relocating to Ships Point introduced us to Outback Nursery,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it's been a game-changer. The family's depth of knowledge, combined with their<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;friendly<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;service and excellent pricing, has helped transform our acreage into a thriving<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;garden.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-carousel__item&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class=&quot;c-carousel__item-image&quot; src=&quot;images/IvyBlooms.jpeg&quot; alt=&quot;Customer profile of Ivy Blooms Home &amp; Garden Inc&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;&nbsp;class=&quot;c-carousel__item-text&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class=&quot;l-p-1-5 c-carousel__item-title&quot;&gt;Ivy Blooms Home &amp; Garden Inc&lt;/h3&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-carousel__item-para l-px-1-5 l-pb-1-5&quot;&gt;Outback Nursery isn't just a place to buy plants; it's a<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;haven<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for garden enthusiasts. With an outstanding variety of plants, passionate staff, and<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;excellent value, shopping here is a delightful experience. It's the perfect place to<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nurture your gardening passion.&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-carousel__item&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class=&quot;c-carousel__item-image&quot; src=&quot;images/KarenLatiff.jpeg&quot; alt=&quot;Customer profile of Karen Latiff&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;&nbsp;class=&quot;c-carousel__item-text&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class=&quot;l-p-1-5 c-carousel__item-title&quot;&gt;Karen Latiff&lt;/h3&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;l-px-1-5 l-pb-1-5 c-carousel__item-para&quot;&gt;Recommended by a friend, Outback Nursery exceeded our<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expectations. Their vast selection, coupled with the team's readiness to assist,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;made<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;our garden project enjoyable. Their support in planning a water feature shows they<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;go<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;above and beyond.&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-carousel__pagination&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;c-carousel__dot active&quot; onclick=&quot;currentSlide(0)&quot;&gt;&lt;/span&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;c-carousel__dot&quot; onclick=&quot;currentSlide(1)&quot;&gt;&lt;/span&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;c-carousel__dot&quot; onclick=&quot;currentSlide(2)&quot;&gt;&lt;/span&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;c-carousel__dot&quot; onclick=&quot;currentSlide(3)&quot;&gt;&lt;/span&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;c-carousel__dot&quot; onclick=&quot;currentSlide(4)&quot;&gt;&lt;/span&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class=&quot;c-carousel__control prev&quot; onclick=&quot;moveSlide(-1)&quot;&gt;&#10094;&lt;/a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class=&quot;c-carousel__control next&quot; onclick=&quot;moveSlide(1)&quot;&gt;&#10095;&lt;/a&gt;<br>
+                            &lt;/div&gt;
+                            
+                            </p>
+                    </div>
+                    </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </div>
+    <script src="design-system.js"></script>
+</body>
+
+</html>
