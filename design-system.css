@@ -194,18 +194,6 @@
     }
     
 
-/* Buttons */
-
-.c-button {
-    width: 12em;
-    font-size: var(--fs--small);
-    padding: .6em;
-    border: 1px solid var(--clr-primary-300);
-    background-color: var(--clr-accent-one-100);
-    text-align: center;
-    text-transform: var(--tt-uppercase);
-}
-
 /* Tables */
 
 .c-table {
