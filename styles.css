@@ -1376,11 +1376,6 @@ body {
     padding-left: 16px;
 }
 
-.text-wrapper {
-    max-width: 65ch;
-    min-width: 50ch;
-}
-
 .wrapper {
     width: fit-content;
 }
@@ -1963,6 +1958,11 @@ text-decoration: underline;
 
     .wrapper {
         max-width: 1200px;
+    }
+
+    .text-wrapper {
+        max-width: 65ch;
+        min-width: 50ch;
     }
 
     .width-90-right-align--desktop {
