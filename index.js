@@ -49,6 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       });
   });
+
+   // Automatically open the first panel
+   if(accButtons.length > 0) {
+    // Force click the first button to open the first panel
+    accButtons[0].click();
+   }
 });
 
 /* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
