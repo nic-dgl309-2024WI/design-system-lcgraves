@@ -1603,9 +1603,8 @@ text-decoration: underline;
     font-family: var(--ff-serif);
     font-size: var(--fs-xx-large);
     color: var(--clr-primary-200);
-    font-style: var(--fs-italic);
     line-height: var(--line-height-1);
-    letter-spacing: var(--letter-spacing-2);
+    letter-spacing: var(--letter-spacing-1);
     font-weight: var(--fw-light);
 }
 
