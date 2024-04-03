@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="design-system.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Noto Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Add WT Solaire Font-->
+    <style media="screen, print">
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displayitalic-webfont.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displaylight-webfont.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        /* Add Helvetica Neue Font */
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBlack.otf") format('opentype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBold.otf") format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueHeavy.otf") format('opentype');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueItalic.ttf") format('opentype');
+            font-weight: 400;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLight.otf") format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLightItalic.otf") format('opentype');
+            font-weight: 300;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMedium.otf") format('opentype');
+            font-weight: 500;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMediumItalic.otf") format('opentype');
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThin.otf") format('opentype');
+            font-weight: 100;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThinItalic.otf") format('opentype');
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLight.otf") format('opentype');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLightItalic.otf") format('opentype');
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueRoman.otf");
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <!--hamburger icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="grid-sticky border-right-1">
+        <header class="topnav-sticky">
+            <!-- Top navbar (desktop)-->
+            <div class="c-desktop-navbar l-flex-separate l-p-1">
+                <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small" href="design-system.html">Design
+                    System</a>
+                <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
+                    <ul class="l-flex u-ff-sans-serif u-fs-small">
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1"
+                                href="about-me.html">About Me</a></li>
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="index.html"
+                                target="_blank">Demo Site</a></li>
+                    </ul>
+                </nav>
+                <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </div>
+        </header>
+        <!-- Mobile nanvbar & Sidebar (for desktop)-->
+        <aside>
+            <nav class="c-side-navbar sidebar-sticky l-p-1">
+                <ul id="c-mobile-menu__first"
+                    class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a>
+                    </li>
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="index.html"
+                            target="_blank">Demo Site</a></li>
+                </ul>
+                <ul id="c-mobile-menu__second"
+                    class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="colours.html">01
+                            Colours</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="typography.html">02
+                            Typography</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">03
+                            Spacing</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="containers.html">04
+                            Containers</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="images.html">05
+                            Images</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="interactive.html">06
+                            Interactive</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="navbars.html">07
+                            Navbars</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="breadcrumbs.html">08
+                            Breadcrumbs</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="hero.html">09
+                            Hero</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="carousel.html">10
+                            Carousel &amp; Pagination</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="footer.html">11
+                            Footer</a>
+                    </li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link is-active" href="cards.html">12
+                            Cards</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="forms.html">13
+                            Forms</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="accordion.html">14
+                            Accordion</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="lists.html">15
+                            Lists</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section class="width-80">
+                <h1 class="u-heading--2 u-fs-xxx-large l-py-3 wrapper-center-padding">12 Cards</h1>
+                <p class="u-body-text u-fw-light text-wrapper zero-auto">Cards are a versatile and flexible content
+                    container. They can be used to display a variety of content, including images, text, and links. Cards
+                    are a great way to organize and present information in a visually appealing way. They can be used to
+                    create a grid layout, or to display content in a more structured format. Cards are a popular design
+                    element in web design, and can be used to create a wide range of different layouts and styles. In this
+                    section, we'll take a look at some examples of cards, and how they can be used to create different
+                    types of content.
+                </p>
+                    <div>
+                    <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-075">Cards example</h2>
+
+                    <div class="l-flex-container l-flex-container--space-between">
+                        <div class="c-card">
+                            <img src="icons/wheelbarrow.svg" style="height: 80px" alt="wheelbarrow icon">
+                            <h3 class="c-card__title l-pt-1"> Garden Supplies</h3>
+                            <p class="c-section__text l-pt-05">Bring your garden to life with our garden supplies:</p>
+                            <ol class="l-pt-05 l-pb-2 c-section__text u-fs-xx-small">
+                                <li class="c-card__list-item">mulch and soil</li>
+                                <li class="c-card__list-item">landscaping rocks</li>
+                                <li class="c-card__list-item">decorative pots</li>
+                                <li class="c-card__list-item">garden ornaments</li>
+                            </ol>
+                            <div
+                                class="l-flex l-flex-justify-between c-button c-button--primary c-button--width-medium l-mb-1 c-button--padding">
+                                <a href="coming-soon.html">Garden Supplies</a>
+                                <img src="Icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                            </div>
+                        </div>
+    
+                        <div class="c-card">
+                            <img src="icons/planting.svg" style="height: 80px" alt="planting icon">
+                            <h3 class="c-card__title l-pt-1">Services</h3>
+                            <p class="c-section__text l-pt-05">Not only do we deliver but we also do plant installations so
+                                you
+                                don't have to!</p>
+                            <ol class="l-pt-05 l-pb-2 c-section__text u-fs-xx-small">
+                                <li class="c-card__list-item">delivery of plants and supplies</li>
+                                <li class="c-card__list-item">plant installation</li>
+                                <li class="c-card__list-item">contractor discounts</li>
+                            </ol>
+                            <div
+                                class="l-flex l-flex-justify-between c-button c-button--primary c-button--width-medium l-mb-1 c-button--padding c-button--margin-top">
+                                <a href="coming-soon.html">Our Services</a>
+                                <img src="Icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                            </div>
+                        </div>
+                        <div class="c-card">
+                            <img src="icons/water.svg" style="height: 80px" alt="watering plant icon">
+                            <h3 class="c-card__title l-pt-1">Plant Care</h3>
+                            <p class="c-section__text l-pt-05">Cultivate your green thumb and learn how to grow plants with
+                                our
+                                plant care resources:</p>
+                            <ol class="l-pt-05 l-pb-2 c-section__text u-fs-xx-small">
+                                <li class="c-card__list-item">planting tips for trees &amp; shrubs</li>
+                                <li class="c-card__list-item">plant spacing</li>
+                            </ol>
+                            <div
+                                class="l-flex l-flex-justify-between c-button c-button--primary c-button--width-medium l-mb-1 c-button--padding c-button--margin-top">
+                                <a href="coming-soon.html">Plant Care Tips</a>
+                                <img src="Icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-075">HTML Code</h2>
+                    <div class="u-bg-primary-60">
+                        <p class="u-body-text u-fw-light">&lt;div class=&quot;u-bg-primary-60 u-border-bottom-1&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;section class=&quot;c-hero wrapper-center-content&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class=&quot;c-hero__image&quot; src=&quot;images/outback-nursery-grounds-1.jpg&quot; alt=&quot;outback nursery grounds&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;wrapper-center-content&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class=&quot;c-hero__title&quot;&gt;We love plants and trees as much as you do.&lt;/h1&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;l-flex l-flex-column l-flex-align-center l-pb-2-5&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class=&quot;l-flex l-flex-justify-between c-button c-button--primary l-mb-1-5 c-button--width-medium c-button--padding&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#map&quot;&gt;Get Inspired - Visit Us!&lt;/a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;Icons/thin-right-arrow.svg&quot; alt=&quot;right arrow icon&quot; style=&quot;width: 30px&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class=&quot;l-flex l-flex-justify-between c-button c-button--width-medium l-mb-1-5 c-button--padding&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#plants&quot;&gt;Find Your Perfect Plant&lt;/a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;Icons/thin-right-arrow.svg&quot; alt=&quot;right arrow icon&quot; style=&quot;width: 30px&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br>
+                            &lt;/div&gt;
+                            </p>
+                    </div>
+                    </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </div>
+    <script src="design-system.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="design-system.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Noto Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Add WT Solaire Font-->
+    <style media="screen, print">
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displayitalic-webfont.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'wt_solairedisplay';
+            src: url('Fonts/wtsolaire-displaylight-webfont.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        /* Add Helvetica Neue Font */
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBlack.otf") format('opentype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueBold.otf") format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueHeavy.otf") format('opentype');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueItalic.ttf") format('opentype');
+            font-weight: 400;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLight.otf") format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueLightItalic.otf") format('opentype');
+            font-weight: 300;
+            font-style: italic;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMedium.otf") format('opentype');
+            font-weight: 500;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueMediumItalic.otf") format('opentype');
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThin.otf") format('opentype');
+            font-weight: 100;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueThinItalic.otf") format('opentype');
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLight.otf") format('opentype');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueUltraLightItalic.otf") format('opentype');
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: url("Fonts/HelveticaNeueRoman.otf");
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+    <!--hamburger icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="grid-sticky border-right-1">
+        <header class="topnav-sticky">
+            <!-- Top navbar (desktop)-->
+            <div class="c-desktop-navbar l-flex-separate l-p-1">
+                <a class="c-desktop-menu__link u-ff-sans-serif u-fs-small" href="design-system.html">Design
+                    System</a>
+                <nav class="c-desktop-menu is-hidden-mobile is-visible-desktop">
+                    <ul class="l-flex u-ff-sans-serif u-fs-small">
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link l-pr-1"
+                                href="about-me.html">About Me</a></li>
+                        <li class="c-desktop-menu__item"><a class="c-desktop-menu__link" href="index.html"
+                                target="_blank">Demo Site</a></li>
+                    </ul>
+                </nav>
+                <a class="toggle is-hidden-desktop" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </div>
+        </header>
+        <!-- Mobile nanvbar & Sidebar (for desktop)-->
+        <aside>
+            <nav class="c-side-navbar sidebar-sticky l-p-1">
+                <ul id="c-mobile-menu__first"
+                    class="c-mobile-menu is-hidden-mobile is-hidden-desktop u-ff-sans-serif u-fs-small">
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="about-me.html">About Me</a>
+                    </li>
+                    <li class="c-mobile-menu__item"><a class="c-mobile-menu__link" href="index.html"
+                            target="_blank">Demo Site</a></li>
+                </ul>
+                <ul id="c-mobile-menu__second"
+                    class="c-mobile-menu is-hidden-mobile is-visible-desktop u-ff-sans-serif u-fs-small u-fw-light">
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="colours.html">01
+                            Colours</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="typography.html">02
+                            Typography</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Utilities</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="spacing.html">03
+                            Spacing</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="containers.html">04
+                            Containers</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="images.html">05
+                            Images</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="interactive.html">06
+                            Interactive</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Navigation</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="navbars.html">07
+                            Navbars</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="breadcrumbs.html">08
+                            Breadcrumbs</a></li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Blocks</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="hero.html">09
+                            Hero</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="carousel.html">10
+                            Carousel &amp; Pagination</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link is-active" href="footer.html">11
+                            Footer</a>
+                    </li>
+                    <h4 class="c-sidemenu__heading u-subheading--2">Components</h4>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="cards.html">12
+                            Cards</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="forms.html">13
+                            Forms</a>
+                    </li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link"
+                            href="accordion.html">14
+                            Accordion</a></li>
+                    <li class="c-sidemenu__item"><a class="c-sidemenu__link c-mobile-menu__link" href="lists.html">15
+                            Lists</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section class="width-80">
+                <h1 class="u-heading--2 u-fs-xxx-large l-py-3 wrapper-center-padding">11 Footer</h1>
+                <p class="u-body-text u-fw-light text-wrapper zero-auto">The footer is a section at the bottom of a website that
+                    typically contains information about the website, such as contact information, hours of operation, and
+                    social media links. It can also include a form for users to sign up for a newsletter or other updates.
+                    The footer is an important part of a website because it provides users with additional information and
+                    helps them navigate the site. In the redesign for the Outback Nursery website, the footer includes contact information, hours of operation, a map showing
+                    the location of the nursery, and a form for users to sign up for a newsletter.
+                </p>
+    
+                    <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-075">Footer example</h2>
+
+                    <div class="c-footer u-bg-primary-60">
+                        <div class="max-width l-pt-1">
+                            <div class="l-flex-container l-flex-container--space-around">
+                                <div class="l-flex c-footer__item">
+                                    <div>
+                                        <div class="l-flex l-flex-align-center">
+                                            <img src="Icons/tree-roots-lighter-green.svg" alt="tree icon" style="width: 40px">
+                                            <a class="c-nav__home-link" href="index.html">Outback<br>Nursery</a>
+                                        </div>
+                                        <p class="u-ff-serif u-fs-italic u-text-primary-200 u-line-height-1 l-py-05 l-pr-1 width-10rem">We love plants
+                                            and
+                                            trees as much as you do.</p>
+                                        <h4 class="c-footer__subheadings l-pt-1">Contact</h4>
+                                        <p class="c-footer__text">Tel. 250.703.0723</p>
+                                        <p class="c-footer__text l-pb-1">Email: info@outbacknursery.ca</p>
+                                        <img class="l-mr-1" src="Icons/facebook-logo.png" alt="facebook logo" style="width: 30px">
+                                        <img src="Icons/instagram-logo.png" alt="instagram logo" style="width: 30px">
+                                    </div>
+                                    <div class="l-pl-1">
+                                        <h4 class="c-footer__subheadings">Hours</h4>
+                                        <p class="u-ff-serif u-fs-italic u-text-primary-200 l-pb-05 u-fs-medium u-letter-spacing-1">Open
+                                            Season</p>
+                                        <p class="u-text-primary-200 u-fs-small u-line-height-1 u-fw-medium">Spring, Summer and Fall</p>
+                                        <p class="c-footer__text">Every day</p>
+                                        <p class="c-footer__text">9am - 5pm</p>
+                                        <p
+                                            class="u-ff-serif u-fs-italic u-text-primary-200 l-pt-2 l-pb-05 u-fs-medium u-line-height-0 u-letter-spacing-1">
+                                            Closed for the winter:</p>
+                                        <p class="u-text-primary-200 u-fs-small u-line-height-1 u-fw-medium">December, January and February
+                                        </p>
+                                    </div>
+                                </div>
+                            <div class="c-footer__item">
+                                <div class="l-grid l-grid-cols-2--mobile">
+                                    <div class="width-60--mobile l-flex-column--mobile">
+                                        <h4 class="c-footer__subheadings">Visit Us</h4>
+                                        <p class="c-footer__text">6016 Headquarters Rd</p>
+                                        <p class="c-footer__text">Courtenay, BC V9J 1M7</p>
+                                        <div
+                                        class="l-flex l-flex-justify-between c-button c-button--width-x-regular c-button--primary c-button--padding l-mt-2">
+                                        <a href="https://maps.app.goo.gl/KgCsreMu8E3EGCVLA">Plan route</a>
+                                        <img src="Icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                                    </div>
+                                    </div>
+                                    <!--Google map-->
+                                    <iframe id="map" class="c-footer__map"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.806904334595!2d-125.05348338778744!3d49.75207693728265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dcfbd232dd%3A0x8790393154738312!2s6016%20Headquarters%20Rd%2C%20Courtenay%2C%20BC%20V9J%201M7!5e0!3m2!1sen!2sca!4v1711649277144!5m2!1sen!2sca"
+                                        width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="c-footer__item">
+                                <form class="c-form l-p-1" action="/submit-newsletter" method="post">
+                                    <h4 class="u-ff-serif u-fs-medium u-fs-italic u-text-primary-200 l-pb-1">Join our plant community today
+                                    </h4>
+                                    <div class="l-flex-between--mobile">
+                                        <input class="l-pl-05 c-form__input width-60--mobile" placeholder="Enter your email address" type="email"
+                                            id="email" name="email" required>
+                                        <div
+                                            class="l-flex l-flex-justify-between c-button c-button--primary c-button--width-small l-p-05 l-mb-075">
+                                            <button class="u-tt-uppercase" type="submit">Sign up</button>
+                                            <img src="Icons/thin-right-arrow.svg" alt="right arrow icon" style="width: 30px">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="c-footer__terms">
+                            <div class="max-width l-px-05 l-pt-1 l-flex l-flex-justify-between">
+                                <p class="c-section__text u-fs-x-small">© 2024 Outback Nursery</p>
+                                <p class="c-section__text u-fs-x-small">Privacy Policy | Terms &amp; Conditions</p>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-075">HTML Code</h2>
+                    <div class="u-bg-primary-60">
+                        <p class="u-body-text u-fw-light">&lt;footer class=&quot;c-footer u-bg-primary-60&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;max-width l-pt-1&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;l-flex-container l-flex-container--space-around&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;l-flex c-footer__item&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;l-flex l-flex-align-center&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;Icons/tree-roots-lighter-green.svg&quot; alt=&quot;tree icon&quot; style=&quot;width: 40px&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class=&quot;c-nav__home-link&quot; href=&quot;index.html&quot;&gt;Outback&lt;br&gt;Nursery&lt;/a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;u-ff-serif u-fs-italic u-text-primary-200 u-line-height-1 l-py-05 l-pr-1 width-10rem&quot;&gt;We love plants<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trees as much as you do.&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class=&quot;c-footer__subheadings l-pt-1&quot;&gt;Contact&lt;/h4&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-footer__text&quot;&gt;Tel. 250.703.0723&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-footer__text l-pb-1&quot;&gt;Email: info@outbacknursery.ca&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class=&quot;l-mr-1&quot; src=&quot;Icons/facebook-logo.png&quot; alt=&quot;facebook logo&quot; style=&quot;width: 30px&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;Icons/instagram-logo.png&quot; alt=&quot;instagram logo&quot; style=&quot;width: 30px&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;l-pl-1&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class=&quot;c-footer__subheadings&quot;&gt;Hours&lt;/h4&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;u-ff-serif u-fs-italic u-text-primary-200 l-pb-05 u-fs-medium u-letter-spacing-1&quot;&gt;Open<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;u-text-primary-200 u-fs-small u-line-height-1 u-fw-medium&quot;&gt;Spring, Summer and Fall&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-footer__text&quot;&gt;Every day&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-footer__text&quot;&gt;9am - 5pm&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class=&quot;u-ff-serif u-fs-italic u-text-primary-200 l-pt-2 l-pb-05 u-fs-medium u-line-height-0 u-letter-spacing-1&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed for the winter:&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;u-text-primary-200 u-fs-small u-line-height-1 u-fw-medium&quot;&gt;December, January and February<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-footer__item&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;l-grid l-grid-cols-2--mobile&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;width-60--mobile l-flex-column--mobile&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class=&quot;c-footer__subheadings&quot;&gt;Visit Us&lt;/h4&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-footer__text&quot;&gt;6016 Headquarters Rd&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-footer__text&quot;&gt;Courtenay, BC V9J 1M7&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class=&quot;l-flex l-flex-justify-between c-button c-button--width-x-regular c-button--primary c-button--padding l-mt-2&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;https://maps.app.goo.gl/KgCsreMu8E3EGCVLA&quot;&gt;Plan route&lt;/a&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;Icons/thin-right-arrow.svg&quot; alt=&quot;right arrow icon&quot; style=&quot;width: 30px&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--Google map--&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe id=&quot;map&quot; class=&quot;c-footer__map&quot;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.806904334595!2d-125.05348338778744!3d49.75207693728265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dcfbd232dd%3A0x8790393154738312!2s6016%20Headquarters%20Rd%2C%20Courtenay%2C%20BC%20V9J%201M7!5e0!3m2!1sen!2sca!4v1711649277144!5m2!1sen!2sca&quot;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width=&quot;100%&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;referrerpolicy=&quot;no-referrer-when-downgrade&quot;&gt;&lt;/iframe&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-footer__item&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;form class=&quot;c-form l-p-1&quot; action=&quot;/submit-newsletter&quot; method=&quot;post&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4 class=&quot;u-ff-serif u-fs-medium u-fs-italic u-text-primary-200 l-pb-1&quot;&gt;Join our plant community today<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h4&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;l-flex-between--mobile&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class=&quot;l-pl-05 c-form__input width-60--mobile&quot; placeholder=&quot;Enter your email address&quot; type=&quot;email&quot;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id=&quot;email&quot; name=&quot;email&quot; required&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class=&quot;l-flex l-flex-justify-between c-button c-button--primary c-button--width-small l-p-05 l-mb-075&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class=&quot;u-tt-uppercase&quot; type=&quot;submit&quot;&gt;Sign up&lt;/button&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;Icons/thin-right-arrow.svg&quot; alt=&quot;right arrow icon&quot; style=&quot;width: 30px&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;c-footer__terms&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;max-width l-px-05 l-pt-1 l-flex l-flex-justify-between&quot;&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-section__text u-fs-x-small&quot;&gt;© 2024 Outback Nursery&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class=&quot;c-section__text u-fs-x-small&quot;&gt;Privacy Policy | Terms &amp; Conditions&lt;/p&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                            &lt;/footer&gt;
+                            </p>
+                    </div>
+            </section>
+        </main>
+    </div>
+    <script src="design-system.js"></script>
+</body>
+
+</html>
