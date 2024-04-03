@@ -1602,10 +1602,18 @@ text-decoration: underline;
 .c-section__title {
     font-family: var(--ff-serif);
     font-size: var(--fs-xx-large);
-    color: var(--clr-primary-200);
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
     font-weight: var(--fw-light);
+    z-index: 2;
+}
+
+.c-section__title--light {
+    color: var(--clr-soft-white);
+}
+
+.c-section__title--dark {
+    color: var(--clr-primary-200);
 }
 
 .c-section__title--y-padding-4 {
@@ -1622,8 +1630,9 @@ text-decoration: underline;
     font-family: var(--ff-sans-serif);
     font-weight: var(--fw-light);
     color: var(--clr-primary-200);
-    padding-bottom: var(--rem-space-1);
+    padding-bottom: var(--rem-space-2);
     text-align: left;
+    line-height: var(--line-height-3);
 }
 
 .c-section__text--small {
@@ -1635,17 +1644,38 @@ text-decoration: underline;
     padding-left: var(--rem-space-3);
     padding-bottom: var(--rem-space-2);
     border-bottom: 1px solid var(--clr-secondary-100);
+    position: relative;
+}
+
+.c-artichoke-graphic {
+    z-index: -1;
+}
+
+.svg-container--top-right {
+    position: absolute;
+    top: 2rem;
+    right: -5rem;
+    z-index: 1;
+}
+
+.svg-container--bottom-left {
+    position: absolute;
+    top: 40rem;
+    left: -15rem;
+    z-index: 1;
 }
 
 /* Accordion */
 
 .c-accordion__panel {
+    position: relative;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
     background-color: var(--clr-soft-white);
     padding-right: var(--rem-space-3);
     padding-left: var(--rem-space-3);
+    z-index: 5;
 }
 
 .c-accordion__button {
@@ -1664,10 +1694,11 @@ text-decoration: underline;
     border-bottom: 1px solid var(--clr-secondary-100);
     padding-left: var(--rem-space-3);
     transition: background-color 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .c-accordion__button:hover, .c-accordion__button.accordion-active {
-    background-color: #B3D0D1;
+    background-color: var(--clr-primary-80);
 }  
 
 
@@ -1702,6 +1733,7 @@ text-decoration: underline;
     margin-bottom: var(--rem-space-2-5);
     padding: var(--rem-space-2);
     text-align: center;
+    z-index: 2;
 }
 
 .c-card__icon {
@@ -1783,6 +1815,11 @@ text-decoration: underline;
 /* Testimonials Section */
 
 /* Carousel & Pagination with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
+
+/*.c-testimonials {
+    background-image: url(images/outback-nursery.jpeg);
+    size: cover;
+}*/
 
 .c-carousel {
     position: relative;
@@ -2069,7 +2106,7 @@ text-decoration: underline;
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 2;
+        z-index: 5;
     }
 
 
@@ -2167,7 +2204,7 @@ text-decoration: underline;
     /* Supplies, Services & Plant Care */
 
     .c-card {
-        height: 440px;
+        height: 500px;
         flex: 0 0 30%  
     }
 
