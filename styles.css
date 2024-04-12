@@ -1669,8 +1669,7 @@ text-decoration: underline;
 
 .c-accordion__panel {
     background-color: var(--clr-soft-white);
-    padding-right: var(--rem-space-3);
-    padding-left: var(--rem-space-3);
+    padding: var(--rem-space-1) var(--rem-space-3);
     z-index: 5;
 }
 
