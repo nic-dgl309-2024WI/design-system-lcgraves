@@ -1701,8 +1701,6 @@ text-decoration: underline;
     background-color: var(--clr-primary-80);
 }  
 
-
-
 .c-accordion__card-image {
     height: 15rem;
     object-fit: cover;
@@ -1759,7 +1757,7 @@ text-decoration: underline;
 
 .c-card__list-item {
    padding-left: var(--rem-space-2-5);
-   background-image: url(Icons/leaf-bullet-point.svg);
+   background-image: url(icons/leaf-bullet-point.svg);
    background-repeat: no-repeat;
    background-position: 0 50%;
    background-size: 16px 16px;
