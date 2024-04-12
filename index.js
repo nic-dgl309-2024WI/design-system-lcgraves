@@ -20,42 +20,7 @@ function showPlants() {
 
 // Accordion
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Select all accordion buttons
-    var accButtons = document.querySelectorAll('.c-accordion__button');
 
-    // Iterate through each button
-    accButtons.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-          // Check if this panel is already open
-          var isOpen = this.classList.contains('accordion-active');
-
-          // Use data-target attribute to find the panel
-          var panelId = this.getAttribute('data-target');
-          var panel = document.getElementById(panelId);
-
-          // First, remove 'active' class from all buttons and close all panels
-          accButtons.forEach(function(otherBtn) {
-              otherBtn.classList.remove('accordion-active');
-          });
-          document.querySelectorAll('.c-accordion__panel').forEach(function(otherPanel) {
-              otherPanel.style.maxHeight = null;
-          });
-
-          // Then, if the panel was not already open, open it and add 'active' class
-          if (!isOpen) {
-              this.classList.add('accordion-active'); // Add 'active' class to the clicked button
-              panel.style.maxHeight = panel.scrollHeight + "px"; // Open the panel
-          }
-      });
-  });
-
-   // Automatically open the first panel
-   if(accButtons.length > 0) {
-    // Force click the first button to open the first panel
-    accButtons[0].click();
-   }
-});
 
 /* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
 
@@ -89,15 +54,15 @@ function currentSlide(n) {
 // Initially show the first slide
 showSlides(slideIndex);
 
-// Optional: Add automatic sliding
+// Add automatic sliding
 var slideInterval = setInterval(function() { moveSlide(1); }, 3000); // Change image every 3 seconds
 
-// Optional: Stop automatic sliding on mouseover
+// Stop automatic sliding on mouseover
 document.getElementById('carousel').addEventListener('mouseover', function() {
   clearInterval(slideInterval);
 });
 
-// Optional: Resume automatic sliding on mouseout
+// Resume automatic sliding on mouseout
 document.getElementById('carousel').addEventListener('mouseout', function() {
   slideInterval = setInterval(function() { moveSlide(1); }, 3000);
 });
