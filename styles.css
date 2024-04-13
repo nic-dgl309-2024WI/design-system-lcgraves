@@ -1599,7 +1599,6 @@ text-decoration: underline;
 }
 
 .c-button--primary:hover {
-    background-color: var(--clr-accent-one-100);
     text-decoration: underline;
 }
 
