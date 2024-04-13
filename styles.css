@@ -1450,7 +1450,7 @@ body {
 }
 
 .c-banner__text--scrolling {
-    animation: scroll-right 30s linear infinite;
+    animation: scroll-left 30s linear infinite;
   }
 
 /* CSS rule to pause animation */
@@ -1460,12 +1460,12 @@ body {
   }
   
 /* Keyframes for scrolling animation */
-  @keyframes scroll-right {
+  @keyframes scroll-left {
     from {
-      transform: translateX(-90%);
+      transform: translateX(5%);
     }
     to {
-      transform: translateX(5%);
+      transform: translateX(-90%);
     }
   }   
 
