@@ -2171,6 +2171,12 @@ text-decoration: underline;
     .c-accordion__category {
         flex-grow: 1;
     }
+
+    .c-accordion__button.active {
+        border: 1px solid var(--clr-primary-100);
+        background-color: var(--clr-primary-80);
+    }
+
     .c-accordion__button {
         padding: var(--rem-space-2) var(--rem-space-3);
         text-align: center;
