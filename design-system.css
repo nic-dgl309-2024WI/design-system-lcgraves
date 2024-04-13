@@ -232,11 +232,6 @@
     border-bottom: 1px solid black;
 }
 
-/* Zebra striping for rows */
-/*.c-table tr:nth-child(even) {
-        background-color: var(--clr-soft-white);
-      }
-
 /* Colour Swatches */
 
 .c-swatch {
