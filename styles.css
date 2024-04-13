@@ -1822,10 +1822,6 @@ text-decoration: underline;
 
 /* Carousel & Pagination with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
 
-/*.c-testimonials {
-    background-image: url(images/outback-nursery.jpeg);
-    size: cover;
-}*/
 
 .c-carousel {
     position: relative;
@@ -2247,10 +2243,16 @@ text-decoration: underline;
 
 /* Testimonials Section */
 
+.c-testimonials {
+    position: relative;
+    overflow: hidden;
+}
+
 .c-carousel {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto; 
+    z-index: 3
 }
 
 .c-carousel__items .active {
