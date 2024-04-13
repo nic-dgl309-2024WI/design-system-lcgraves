@@ -20,6 +20,18 @@ function showPlants() {
 
 // Accordion
 
+const allDetails = document.querySelectorAll('details');
+allDetails.forEach((targetDetail) => {
+  targetDetail.addEventListener('toggle', () => {
+    if (targetDetail.open) {
+      allDetails.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute('open');
+        }
+      });
+    }
+  });
+});
 
 
 /* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
