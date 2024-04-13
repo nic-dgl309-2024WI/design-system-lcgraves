@@ -2248,8 +2248,11 @@ text-decoration: underline;
 /* Testimonials Section */
 
 .c-testimonials {
-    position: relative;
     overflow: hidden;
+}
+
+.c-testimonials__intro {
+    position: relative;
 }
 
 .c-carousel {
