@@ -1887,8 +1887,8 @@ text-decoration: underline;
   
   .c-carousel__dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     margin: 0 2px;
     background-color: var(--clr-secondary-100);
     border-radius: 50%;
