@@ -1980,11 +1980,17 @@ text-decoration: underline;
         margin-left: auto;
     }
 
+    .width-44rem {
+        width: 44rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .width-48rem {
         width: 48rem;
         margin-left: auto;
         margin-right: auto;
-    }
+    }   
 
     .width-10rem {
         width: 14rem;
