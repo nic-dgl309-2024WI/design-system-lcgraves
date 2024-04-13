@@ -2154,6 +2154,10 @@ text-decoration: underline;
 
     /* Plant Section */
 
+    .c-plants {
+        overflow: hidden;
+    }
+
     /* Accordion */
 
     .c-plants__intro {
