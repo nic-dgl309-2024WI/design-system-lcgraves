@@ -21,7 +21,9 @@ function showPlants() {
 // Accordion
 
 const allDetails = document.querySelectorAll('.c-accordion__category');
-allDetails.forEach((targetDetail) => {
+const buttonElement = document.querySelector('.c-plants__buttons');
+
+allDetails.forEach((targetDetail, index) => {
   targetDetail.addEventListener('toggle', () => {
     const summary = targetDetail.querySelector('.c-accordion__button');
     if (targetDetail.open) {
@@ -38,8 +40,19 @@ allDetails.forEach((targetDetail) => {
       // Remove active class if this detail is being closed
       summary.classList.remove('active');
     }
+
+    if (targetDetail.open) {
+      // Apply different styles if it's panel 2, 3, or 4
+      if (index === 1 || index === 2 || index === 3) {
+          buttonElement.style.marginTop = '26rem'; // Less margin
+      } else {
+          buttonElement.style.marginTop = '49rem'; // default
+      }
+  }
+
   });
 });
+
 
 
 /* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
