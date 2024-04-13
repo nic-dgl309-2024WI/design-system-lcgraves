@@ -2175,6 +2175,13 @@ text-decoration: underline;
         padding: var(--rem-space-2) var(--rem-space-3);
         text-align: center;
         width: fixed;
+        border-bottom: 1px solid var(--clr-secondary-100);
+        border-top: 1px solid var(--clr-secondary-100);
+        border-right: 1px solid var(--clr-secondary-100);
+    }
+
+    .c-accordion > :first-child {
+        border-left: 1px solid var(--clr-secondary-100);
     }
 
     .c-accordion__panel {
@@ -2182,7 +2189,7 @@ text-decoration: underline;
         justify-content: space-between;
         flex-wrap: wrap;
         position: absolute;
-        top: 5.4rem;
+        top: 5.7rem;
         left: 0;
         width: 100%;
     }
