@@ -1346,8 +1346,8 @@ body {
     margin-left: auto;
 }
 
-.width-85--mobile {
-    width: 85%;
+.width-90--mobile {
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -1652,8 +1652,8 @@ text-decoration: underline;
 }
 
 .c-plants__intro {
-    padding-right: var(--rem-space-3);
-    padding-left: var(--rem-space-3);
+    padding-right: var(--rem-space-2);
+    padding-left: var(--rem-space-2);
     padding-bottom: var(--rem-space-2);
     border-bottom: 1px solid var(--clr-secondary-100);
     position: relative;
@@ -1699,7 +1699,7 @@ text-decoration: underline;
     font-size: var(--fs-large);
     font-style: var(--fs-italic);
     border-bottom: 1px solid var(--clr-secondary-100);
-    padding-left: var(--rem-space-3);
+    padding-left: var(--rem-space-2);
     transition: background-color 0.3s ease-in-out;
     z-index: 2;
     list-style: none;
@@ -1867,12 +1867,12 @@ text-decoration: underline;
   }
   
   .c-carousel__control.prev {
-    left: 0;
+    left: -10px;
     border-radius: 3px 0 0 3px;
   }
   
   .c-carousel__control.next {
-    right: 0;
+    right: -10px;
     border-radius: 0 3px 3px 0;
   }
   
@@ -1922,7 +1922,7 @@ text-decoration: underline;
 
 .c-footer__item {
     border-bottom: 1px solid var(--clr-secondary-100);
-    padding: var(--rem-space-2);
+    padding: var(--rem-space-1-5);
 }
 
 .c-footer__map {
@@ -1969,7 +1969,7 @@ text-decoration: underline;
         width: auto;
     }
     
-    .width-85--mobile {
+    .width-90--mobile {
         width: auto;
         max-width: 1200px;
         margin-right: auto;
