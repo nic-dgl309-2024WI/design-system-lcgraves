@@ -22,6 +22,8 @@ function showPlants() {
 
 const allDetails = document.querySelectorAll('.c-accordion__category');
 const buttonElement = document.querySelector('.c-plants__buttons');
+// Define the media query for desktop layouts
+const mediaQuery = window.matchMedia('(min-width: 1000px)');
 
 allDetails.forEach((targetDetail, index) => {
   targetDetail.addEventListener('toggle', () => {
@@ -41,6 +43,7 @@ allDetails.forEach((targetDetail, index) => {
       summary.classList.remove('active');
     }
 
+if (mediaQuery.matches) {
     if (targetDetail.open) {
       // Apply different styles if it's panel 2, 3, or 4
       if (index === 1 || index === 2 || index === 3) {
@@ -49,6 +52,11 @@ allDetails.forEach((targetDetail, index) => {
           buttonElement.style.marginTop = '49rem'; // default
       }
   }
+}
+else {
+  // Ensure no inline styles are applied in mobile
+  buttonElement.style.marginTop = ''; // Clear any inline styles
+}
 
   });
 });
