@@ -20,15 +20,23 @@ function showPlants() {
 
 // Accordion
 
-const allDetails = document.querySelectorAll('details');
+const allDetails = document.querySelectorAll('.c-accordion__category');
 allDetails.forEach((targetDetail) => {
   targetDetail.addEventListener('toggle', () => {
+    const summary = targetDetail.querySelector('.c-accordion__button');
     if (targetDetail.open) {
+      // Close all other details and remove active class
       allDetails.forEach((detail) => {
         if (detail !== targetDetail) {
           detail.removeAttribute('open');
+          detail.querySelector('.c-accordion__button').classList.remove('active');
         }
       });
+      // Add active class to the currently opened detail's summary
+      summary.classList.add('active');
+    } else {
+      // Remove active class if this detail is being closed
+      summary.classList.remove('active');
     }
   });
 });
