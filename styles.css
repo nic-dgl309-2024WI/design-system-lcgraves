@@ -1362,6 +1362,12 @@ body {
     min-width: 60%;
 }
 
+.width-16rem {
+    width: 16rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .wrapper-center-content {
     width: fit-content;
     margin-right: auto;
@@ -1631,8 +1637,15 @@ text-decoration: underline;
     font-weight: var(--fw-light);
     color: var(--clr-primary-200);
     padding-bottom: var(--rem-space-2);
-    text-align: left;
     line-height: var(--line-height-3);
+}
+
+.c-section__text--left {
+    text-align: left;
+}
+
+.c-section__text--center {
+    text-align: center;
 }
 
 .c-section__text--small {
@@ -1970,12 +1983,6 @@ text-decoration: underline;
 
     .width-48rem {
         width: 48rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .width-15rem {
-        width: 18rem;
         margin-left: auto;
         margin-right: auto;
     }
