@@ -2159,6 +2159,7 @@ text-decoration: underline;
         display: flex;
         width: 100%;
         position: relative;
+        z-index: 3
     }
 
 
