@@ -2158,6 +2158,7 @@ text-decoration: underline;
     .c-accordion {
         display: flex;
         width: 100%;
+        position: relative;
     }
 
 
@@ -2172,17 +2173,25 @@ text-decoration: underline;
     .c-accordion__button {
         padding: var(--rem-space-2) var(--rem-space-3);
         text-align: center;
-        flex-grow: 1;
+        width: fixed;
     }
 
     .c-accordion__panel {
         display: flex;
         justify-content: space-between;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 5.4rem;
+        left: 0;
+        width: 100%;
     }
 
     .c-accordion__card {
         flex: 0 0 30%;
+    }
+
+    .c-plants__buttons {
+        margin-top: 48rem;;
     }
 
     /* Supplies, Services & Plant Care */
