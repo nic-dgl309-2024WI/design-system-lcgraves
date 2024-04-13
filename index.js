@@ -18,6 +18,20 @@ function showPlants() {
     plantstuff.classList.toggle("show-plants");
 }
 
+// Add sticky class to navbar after scroll past banner 
+
+window.addEventListener('scroll', function() {
+  var nav = document.querySelector('.c-nav__container');
+  var banner = document.querySelector('.c-banner');
+  var stickyStart = banner.offsetHeight;
+
+  if (window.scrollY> stickyStart) {
+    nav.classList.add('c-nav--sticky');
+  } else {
+    nav.classList.remove('c-nav--sticky');
+  }
+});
+
 // Accordion
 
 const allDetails = document.querySelectorAll('.c-accordion__category');
