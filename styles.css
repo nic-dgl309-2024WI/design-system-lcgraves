@@ -2155,34 +2155,24 @@ text-decoration: underline;
         border-bottom: none;
     }
 
-    .c-accordion__button-container {
+    .c-accordion {
         display: flex;
-        align-items: center;
-        border: 1px solid var(--clr-secondary-100);
-        background-color: var(--clr-primary-40);
+        width: 100%;
     }
 
-    .c-accordion__button {
-        flex: 1;
-        position: relative;
-        border: none;
-        text-align: center;
-        padding-left: 0;
-    }
 
     .c-accordion__button--y-padding {
         padding-top: 31px;
         padding-bottom: 31px;
     }
 
-    .c-accordion__button:not(:first-child)::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top:0;
-        bottom:0;
-        width: 1px;
-        background-color: var(--clr-secondary-100);
+    .c-accordion__category {
+        flex-grow: 1;
+    }
+    .c-accordion__button {
+        padding: var(--rem-space-2) var(--rem-space-3);
+        text-align: center;
+        flex-grow: 1;
     }
 
     .c-accordion__panel {
