@@ -11,8 +11,6 @@ function showNav() {
 
 // Accordion
 
-// Accordion
-
 const allDetails = document.querySelectorAll('.c-accordion__category');
 const elementBelow = document.querySelector('.html-code__heading');
 // Define the media query for desktop layouts
@@ -97,4 +95,21 @@ document.getElementById('carousel').addEventListener('mouseover', function() {
 // Optional: Resume automatic sliding on mouseout
 document.getElementById('carousel').addEventListener('mouseout', function() {
   slideInterval = setInterval(function() { moveSlide(1); }, 3000);
+});
+
+
+// HMTL Code Copy Button
+
+document.querySelectorAll('.copy-btn').forEach(button => {
+  button.addEventListener('click', function() {
+      // Get the code text
+      var code = this.previousElementSibling.querySelector('code').innerText;
+
+      // Copy the code
+      navigator.clipboard.writeText(code).then(() => {
+          alert('Code copied to clipboard!');
+      }).catch(err => {
+          console.error('Failed to copy text: ', err);
+      });
+  });
 });
