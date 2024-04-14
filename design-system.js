@@ -52,8 +52,25 @@ else {
   });
 });
 
+// HMTL Code Copy Button
+
+document.querySelectorAll('.copy-btn').forEach(button => {
+  button.addEventListener('click', function() {
+      // Access the .html-code element using a more accurate path
+      var codeContainer = this.parentNode.nextElementSibling; // Gets the next sibling of the parent div of the button
+      var codeText = codeContainer.querySelector('.html-code').innerText;
+
+      // Copy the code
+      navigator.clipboard.writeText(codeText).then(() => {
+          alert('Code copied to clipboard!');
+      }).catch(err => {
+          console.error('Failed to copy text: ', err);
+      });
+  });
+});
+
 /* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
-/*
+
 var slideIndex = 0;
 var slides = document.getElementsByClassName("c-carousel__item");
 var paginationDots = document.getElementsByClassName("c-carousel__dot");
@@ -84,34 +101,15 @@ function currentSlide(n) {
 // Initially show the first slide
 showSlides(slideIndex);
 
-// Optional: Add automatic sliding
+// Add automatic sliding
 var slideInterval = setInterval(function() { moveSlide(1); }, 3000); // Change image every 3 seconds
 
-// Optional: Stop automatic sliding on mouseover
+// Stop automatic sliding on mouseover
 document.getElementById('carousel').addEventListener('mouseover', function() {
   clearInterval(slideInterval);
 });
 
-// Optional: Resume automatic sliding on mouseout
+// Resume automatic sliding on mouseout
 document.getElementById('carousel').addEventListener('mouseout', function() {
   slideInterval = setInterval(function() { moveSlide(1); }, 3000);
-});
-*/
-
-
-// HMTL Code Copy Button
-
-document.querySelectorAll('.copy-btn').forEach(button => {
-  button.addEventListener('click', function() {
-      // Access the .html-code element using a more accurate path
-      var codeContainer = this.parentNode.nextElementSibling; // Gets the next sibling of the parent div of the button
-      var codeText = codeContainer.querySelector('.html-code').innerText;
-
-      // Copy the code
-      navigator.clipboard.writeText(codeText).then(() => {
-          alert('Code copied to clipboard!');
-      }).catch(err => {
-          console.error('Failed to copy text: ', err);
-      });
-  });
 });
