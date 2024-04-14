@@ -2290,6 +2290,7 @@ text-decoration: underline;
 
 .c-carousel__item-image {  
     object-fit: cover;
+    height: 100%;
 }
 
 /* Footer */
