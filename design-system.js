@@ -14,7 +14,7 @@ function showNav() {
 // Accordion
 
 const allDetails = document.querySelectorAll('.c-accordion__category');
-const elementBelow = document.querySelector('.html-code');
+const elementBelow = document.querySelector('.html-code__heading');
 // Define the media query for desktop layouts
 const mediaQuery = window.matchMedia('(min-width: 1000px)');
 
