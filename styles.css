@@ -1990,8 +1990,6 @@ text-decoration: underline;
 
     .width-10rem {
         width: 14rem;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .wrapper {
@@ -2069,7 +2067,7 @@ text-decoration: underline;
     }
     
     .c-button--width-x-regular {
-        width: 12rem;
+        width: 18rem;
     }
 
     .c-button--width-regular {
