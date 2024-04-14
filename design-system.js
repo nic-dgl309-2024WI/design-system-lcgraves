@@ -53,7 +53,7 @@ else {
 });
 
 /* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
-
+/*
 var slideIndex = 0;
 var slides = document.getElementsByClassName("c-carousel__item");
 var paginationDots = document.getElementsByClassName("c-carousel__dot");
@@ -96,17 +96,19 @@ document.getElementById('carousel').addEventListener('mouseover', function() {
 document.getElementById('carousel').addEventListener('mouseout', function() {
   slideInterval = setInterval(function() { moveSlide(1); }, 3000);
 });
+*/
 
 
 // HMTL Code Copy Button
 
 document.querySelectorAll('.copy-btn').forEach(button => {
   button.addEventListener('click', function() {
-      // Get the code text
-      var code = this.previousElementSibling.querySelector('code').innerText;
+      // Access the .html-code element using a more accurate path
+      var codeContainer = this.parentNode.nextElementSibling; // Gets the next sibling of the parent div of the button
+      var codeText = codeContainer.querySelector('.html-code').innerText;
 
       // Copy the code
-      navigator.clipboard.writeText(code).then(() => {
+      navigator.clipboard.writeText(codeText).then(() => {
           alert('Code copied to clipboard!');
       }).catch(err => {
           console.error('Failed to copy text: ', err);
