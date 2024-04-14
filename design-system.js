@@ -11,34 +11,46 @@ function showNav() {
 
 // Accordion
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Select all accordion buttons
-    var accButtons = document.querySelectorAll('.c-accordion__button');
+// Accordion
 
-    // Iterate through each button
-    accButtons.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-          // Check if this panel is already open
-          var isOpen = this.classList.contains('accordion-active');
+const allDetails = document.querySelectorAll('.c-accordion__category');
+const elementBelow = document.querySelector('.html-code');
+// Define the media query for desktop layouts
+const mediaQuery = window.matchMedia('(min-width: 1000px)');
 
-          // Use data-target attribute to find the panel
-          var panelId = this.getAttribute('data-target');
-          var panel = document.getElementById(panelId);
-
-          // First, remove 'active' class from all buttons and close all panels
-          accButtons.forEach(function(otherBtn) {
-              otherBtn.classList.remove('accordion-active');
-          });
-          document.querySelectorAll('.c-accordion__panel').forEach(function(otherPanel) {
-              otherPanel.style.maxHeight = null;
-          });
-
-          // Then, if the panel was not already open, open it and add 'active' class
-          if (!isOpen) {
-              this.classList.add('accordion-active'); // Add 'active' class to the clicked button
-              panel.style.maxHeight = panel.scrollHeight + "px"; // Open the panel
-          }
+allDetails.forEach((targetDetail, index) => {
+  targetDetail.addEventListener('toggle', () => {
+    const summary = targetDetail.querySelector('.c-accordion__button');
+    if (targetDetail.open) {
+      // Close all other details and remove active class
+      allDetails.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute('open');
+          detail.querySelector('.c-accordion__button').classList.remove('active');
+        }
       });
+      // Add active class to the currently opened detail's summary
+      summary.classList.add('active');
+    } else {
+      // Remove active class if this detail is being closed
+      summary.classList.remove('active');
+    }
+
+if (mediaQuery.matches) {
+    if (targetDetail.open) {
+      // Apply different styles if it's panel 2, 3, or 4
+      if (index === 1 || index === 2 || index === 3) {
+          elementBelow.style.marginTop = '26rem'; // Less margin
+      } else {
+          elementBelow.style.marginTop = '49rem'; // default
+      }
+  }
+}
+else {
+  // Ensure no inline styles are applied in mobile
+  elementBelow.style.marginTop = ''; // Clear any inline styles
+}
+
   });
 });
 

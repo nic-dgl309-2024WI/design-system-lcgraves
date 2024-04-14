@@ -218,124 +218,135 @@
                 </p>
                 <div class="width-85--mobile">
                     <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-075">Accordion example</h2>
-                    <div class="c-accordion__button-container">
-                        <button class="u-border-top-1 c-accordion__button c-accordion__button--y-padding u-border-top-1"
-                            data-target="trees-panel">Trees</button>
-                        <button class="c-accordion__button c-accordion__button--y-padding"
-                            data-target="shrubs-panel">Shrubs</button>
-                        <button class="c-accordion__button c-accordion__button--y-padding"
-                            data-target="hedging-panel">Hedging</button>
-                        <button class="c-accordion__button c-accordion__button--y-padding" data-target="edible-panel">Edible
-                            Plants</button>
-                        <button class="c-accordion__button" data-target="vines-panel">Vines, Grasses and Other
-                            Plants</button>
-                    </div>
-                    <div id="trees-panel" class="c-accordion__panel">
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/coniferous-saplings.jpeg"
-                                alt="coniferous saplings">
-                            <h3 class="c-accordion__card-title">Conifers</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/lilac-tree.jpeg" alt="lilac tree">
-                            <h3 class="c-accordion__card-title">Ornamentals</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/acer-palmatum-kihachijo.jpeg"
-                                alt="japanese maple tree">
-                            <h3 class="c-accordion__card-title">Japanese Maples</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/peach-tree.jpeg" alt="fruit trees">
-                            <h3 class="c-accordion__card-title">Fruit Trees</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/nursery-full-trees.jpeg"
-                                alt="deciduous trees in nursery">
-                            <h3 class="c-accordion__card-title">Deciduous</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/bay-laurel-evergreen-tree.jpeg"
-                                alt="bay laurel evergreen tree">
-                            <h3 class="c-accordion__card-title">Evergreens</h3>
-                        </div>
-                    </div>
+                    <div class="c-accordion">
+                        <details class="c-accordion__category" open>
+                            <summary class="c-accordion__button active">Trees</summary>
+                            <div class="c-accordion__panel">
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/coniferous-saplings.jpeg"
+                                        alt="coniferous saplings">
+                                    <h3 class="c-accordion__card-title">Conifers</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/lilac-tree.jpeg" alt="lilac tree">
+                                    <h3 class="c-accordion__card-title">Ornamentals</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/acer-palmatum-kihachijo.jpeg"
+                                        alt="japanese maple tree">
+                                    <h3 class="c-accordion__card-title">Japanese Maples</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/peach-tree.jpeg" alt="fruit trees">
+                                    <h3 class="c-accordion__card-title">Fruit Trees</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/nursery-full-trees.jpeg"
+                                        alt="deciduous trees in nursery">
+                                    <h3 class="c-accordion__card-title">Deciduous</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/bay-laurel-evergreen-tree.jpeg"
+                                        alt="bay laurel evergreen tree">
+                                    <h3 class="c-accordion__card-title">Evergreens</h3>
+                                </div>
+                            </div>
+                        </details>
     
-                    <!--Shrubs-->
-                    <div id="shrubs-panel" class="c-accordion__panel">
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/evergreen-shrubs.jpeg" alt="evergreen shrubs">
-                            <h3 class="c-accordion__card-title">Evergreen Shrubs</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/dogwood.jpeg" alt="deciduous shrubs">
-                            <h3 class="c-accordion__card-title">Deciduous Shrubs</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/pink-hydrangea.jpeg" alt="pink pink-hydrangea">
-                            <h3 class="c-accordion__card-title">Flowering Shrubs</h3>
-                        </div>
-                    </div>
+                        <!--Shrubs-->
+                        <details class="c-accordion__category">
+                            <summary class="c-accordion__button">Shrubs</summary>
+                            <div class="c-accordion__panel">
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/evergreen-shrubs.jpeg"
+                                        alt="evergreen shrubs">
+                                    <h3 class="c-accordion__card-title">Evergreen Shrubs</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/dogwood.jpeg" alt="deciduous shrubs">
+                                    <h3 class="c-accordion__card-title">Deciduous Shrubs</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/pink-hydrangea.jpeg"
+                                        alt="pink pink-hydrangea">
+                                    <h3 class="c-accordion__card-title">Flowering Shrubs</h3>
+                                </div>
+                            </div>
+                        </details>
     
-                    <!--Hedging-->
-                    <div id="hedging-panel" class="c-accordion__panel">
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/conifers.jpeg" alt="evergreen hedging">
-                            <h3 class="c-accordion__card-title">Evergreen Hedging</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/broadleaf-hedging.jpeg"
-                                alt="broadleaf hedging">
-                            <h3 class="c-accordion__card-title">Broadleaf Evergreen Hedging</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/leylandii-fast-growing-hedging.jpeg"
-                                alt="Leylandii hedging">
-                            <h3 class="c-accordion__card-title">Fast-Growing Hedging Plants</h3>
-                        </div>
-                    </div>
+                        <!--Hedging-->
+                        <details class="c-accordion__category">
+                            <summary class="c-accordion__button">Hedging</summary>
+                            <div class="c-accordion__panel">
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/conifers.jpeg" alt="evergreen hedging">
+                                    <h3 class="c-accordion__card-title">Evergreen Hedging</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/broadleaf-hedging.jpeg"
+                                        alt="broadleaf hedging">
+                                    <h3 class="c-accordion__card-title">Broadleaf Evergreen Hedging</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/leylandii-fast-growing-hedging.jpeg"
+                                        alt="Leylandii hedging">
+                                    <h3 class="c-accordion__card-title">Fast-Growing Hedging Plants</h3>
+                                </div>
+                            </div>
+                        </details>
     
-                    <!--Edibles-->
-                    <div id="edible-panel" class="c-accordion__panel">
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/fruit-trees.jpeg" alt="apple tree">
-                            <h3 class="c-accordion__card-title">Fruit trees</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/hazelnut-tree.jpeg" alt="hazelnut tree">
-                            <h3 class="c-accordion__card-title">Nut Trees</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/raspberry-bush.jpeg" alt="raspberry bush">
-                            <h3 class="c-accordion__card-title">Berry plants</h3>
-                        </div>
-                    </div>
+                        <!--Edibles-->
+                        <details class="c-accordion__category">
+                            <summary class="c-accordion__button">Edibles</summary>
+                            <div class="c-accordion__panel">
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/fruit-trees.jpeg" alt="apple tree">
+                                    <h3 class="c-accordion__card-title">Fruit trees</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/hazelnut-tree.jpeg"
+                                        alt="hazelnut tree">
+                                    <h3 class="c-accordion__card-title">Nut Trees</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/raspberry-bush.jpeg"
+                                        alt="raspberry bush">
+                                    <h3 class="c-accordion__card-title">Berry plants</h3>
+                                </div>
+                            </div>
+                        </details>
     
-                    <!--Vines, Grasses, and Other Plants-->
-                    <div id="vines-panel" class="c-accordion__panel">
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/vines.jpeg" alt="vines">
-                            <h3 class="c-accordion__card-title">Vines</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/ornamental-grasses.jpg"
-                                alt="ornamental grasses">
-                            <h3 class="c-accordion__card-title">Grasses</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/ferns.jpeg" alt="ferns">
-                            <h3 class="c-accordion__card-title">Ferns</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/hostas.jpeg" alt="hostas">
-                            <h3 class="c-accordion__card-title">Hostas</h3>
-                        </div>
-                        <div class="c-accordion__card">
-                            <img class="c-accordion__card-image" src="images/perennials.jpeg" alt="perennials">
-                            <h3 class="c-accordion__card-title">Perennials</h3>
-                        </div>
+                        <!--Vines, Grasses, and Other Plants-->
+                        <details class="c-accordion__category">
+                            <summary class="c-accordion__button">Vines, Grasses, and Other Plants</summary>
+                            <div class="c-accordion__panel">
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/vines.jpeg" alt="vines">
+                                    <h3 class="c-accordion__card-title">Vines</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/ornamental-grasses.jpg"
+                                        alt="ornamental grasses">
+                                    <h3 class="c-accordion__card-title">Grasses</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/ferns.jpeg" alt="ferns">
+                                    <h3 class="c-accordion__card-title">Ferns</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/hostas.jpeg" alt="hostas">
+                                    <h3 class="c-accordion__card-title">Hostas</h3>
+                                </div>
+                                <div class="c-accordion__card">
+                                    <img class="c-accordion__card-image" src="images/perennials.jpeg" alt="perennials">
+                                    <h3 class="c-accordion__card-title">Perennials</h3>
+                                </div>
+                            </div>
+                        </details>
                     </div>
-                    <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-075">HTML Code</h2>
+
+
+                    <h2 class="html-code u-heading--4 u-fs-x-large l-pt-3 l-pb-075">HTML Code</h2>
                     <div class="u-bg-primary-60 l-p-1">
                         <p class="u-body-text u-fw-light">&lt;div class=&quot;c-accordion__button-container&quot;&gt;<br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&lt;button class=&quot;u-border-top-1 c-accordion__button c-accordion__button--y-padding u-border-top-1&quot;<br>
