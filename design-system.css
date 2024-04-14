@@ -70,6 +70,7 @@
     font-size: var(--fs-regular);
     font-weight: var(--fw-regular);
     line-height: var(--line-height-3);
+    font-weight: var(--fw-light);
 }
 
 .u-body-text--small-light {
