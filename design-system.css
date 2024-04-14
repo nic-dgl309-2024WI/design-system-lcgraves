@@ -342,6 +342,16 @@ pre {
     margin: 0;
 }
 
+/* Lists */
+
+.list-item {
+    padding-left: var(--rem-space-2-5);
+    background-image: url(icons/leaf-bullet-point.svg);
+    background-repeat: no-repeat;
+    background-position: 0 .3rem;
+    background-size: 16px 16px;
+    margin-bottom: 1rem;
+ }
 
 /** MEDIA QUERY - DESKTOP LAYOUT **/
 
