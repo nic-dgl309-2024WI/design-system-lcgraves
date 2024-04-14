@@ -1899,6 +1899,12 @@ text-decoration: underline;
   .c-carousel__dot.active, .c-carousel__dot:hover {
     background-color: var(--clr-secondary-200);
   }
+
+  .c-carousel__item-image {
+    height: 14rem;
+    object-fit: cover;
+    object-position: top;
+  }
   
 /* FOOTER */
 
