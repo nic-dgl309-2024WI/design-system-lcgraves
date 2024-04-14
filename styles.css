@@ -2045,6 +2045,10 @@ text-decoration: underline;
         display: flex;
     }
 
+    .l-flex-grow-1 {
+        flex-grow: 1;
+    }
+
     /* Global styles */
 
     .c-button {
@@ -2298,7 +2302,7 @@ text-decoration: underline;
 .c-footer__map {
    padding-left: 0;
    padding-top: var(--rem-space-1);
-   width: 12rem;
+   width: 18rem;
    height: 7rem;
 }
 
