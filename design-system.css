@@ -321,7 +321,7 @@
 
 .code-container {
     background-color: var(--clr-primary-40);
-    padding: var(--rem-space-1);
+    padding: var(--rem-space-1-5);
     white-space: nowrap;
     overflow-x: auto;
 }
