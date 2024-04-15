@@ -1324,13 +1324,6 @@ body {
     border-left: 1px solid var(--clr-primary-200);
 }
 
-/* Drop Shadow */
-
-/* Copied from https://getcssscan.com/css-box-shadow-examples */
-.u-drop-shadow-1 {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
 /* Container Classes */
 /* Base (mobile first) styles */
 
