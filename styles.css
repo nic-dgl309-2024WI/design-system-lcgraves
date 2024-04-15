@@ -1520,7 +1520,6 @@ body {
 
 .c-nav__mobile {
     justify-content: space-evenly;
-    align-items: left;
     padding-left: var(--rem-space-1);
     position: absolute;
     top: 3rem;
@@ -1838,7 +1837,7 @@ text-decoration: underline;
   }
 
   .c-carousel__item-title {
-    font-family: car(--ff-serif);
+    font-family: var(--ff-serif);
     font-size: var(--fs-large);
 
   }
@@ -2193,7 +2192,6 @@ text-decoration: underline;
     .c-accordion__button {
         padding: var(--rem-space-2) var(--rem-space-3);
         text-align: center;
-        width: fixed;
         border-bottom: 1px solid var(--clr-secondary-100);
         border-top: 1px solid var(--clr-secondary-100);
         border-right: 1px solid var(--clr-secondary-100);
