@@ -1436,7 +1436,7 @@ body {
   
 .c-banner__text {
     font-family: var(--ff-sans-serif);
-    color: var(--clr-secondary-200);
+    color: var(--clr-soft-black);
     font-size: var(--fs-small);
     display: flex;
     align-content: center;
