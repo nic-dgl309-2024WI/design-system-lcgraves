@@ -1872,7 +1872,8 @@ text-decoration: underline;
   }
   
   .c-carousel__control:hover {
-    background-color: var(--clr-secondary-200)
+    background-color: var(--clr-secondary-200);
+    color: var(--clr-soft-white);
   }
   
   .c-carousel__pagination {
