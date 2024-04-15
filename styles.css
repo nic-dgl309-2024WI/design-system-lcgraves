@@ -1707,12 +1707,31 @@ text-decoration: underline;
 .c-accordion__card-image {
     height: 15rem;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+    width: 100;
+    overflow: hidden;
 }
+
+.c-accordion__card-link {
+        display: block;
+}
+
+.c-accordion__card:hover .c-accordion__card-image {
+        transform: scale(1.1); /* Increase the size of the image */
+    }
 
 .c-accordion__card {
     margin: var(--rem-space-2) 0;
     border: 1px solid var(--clr-secondary-100);
-    background-color: var(--clr-primary-40)
+    background-color: var(--clr-primary-40);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.c-accordion__card-image-container {
+    overflow: hidden;
 }
 
 .c-accordion__card-title {
