@@ -644,13 +644,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="c-carousel__pagination">
-                        <span class="c-carousel__dot active" onclick="currentSlide(0)"></span>
-                        <span class="c-carousel__dot" onclick="currentSlide(1)"></span>
-                        <span class="c-carousel__dot" onclick="currentSlide(2)"></span>
-                        <span class="c-carousel__dot" onclick="currentSlide(3)"></span>
-                        <span class="c-carousel__dot" onclick="currentSlide(4)"></span>
-                    </div>
+                   <div class="c-carousel__pagination" role="tablist">
+    <span role="button" class="c-carousel__dot" tabindex="0" onclick="currentSlide(0)" onkeypress="handleKeyPress(event, 0)" aria-label="Go to slide 1"></span>
+    <span role="button" class="c-carousel__dot" tabindex="0" onclick="currentSlide(1)" onkeypress="handleKeyPress(event, 1)" aria-label="Go to slide 2"></span>
+    <span role="button" class="c-carousel__dot" tabindex="0" onclick="currentSlide(2)" onkeypress="handleKeyPress(event, 2)" aria-label="Go to slide 3"></span>
+    <span role="button" class="c-carousel__dot" tabindex="0" onclick="currentSlide(3)" onkeypress="handleKeyPress(event, 3)" aria-label="Go to slide 4"></span>
+    <span role="button" class="c-carousel__dot active" tabindex="0" onclick="currentSlide(4)" onkeypress="handleKeyPress(event, 4)" aria-label="Go to slide 5"></span>
+</div>
                     <button class="c-carousel__control prev" onclick="moveSlide(-1)" aria-label="Previous Slide">&#10094;</button>
 <button class="c-carousel__control next" onclick="moveSlide(1)" aria-label="Next Slide">&#10095;</button>
                 </div>

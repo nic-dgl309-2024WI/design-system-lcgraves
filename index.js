@@ -121,3 +121,12 @@ document.getElementById('carousel').addEventListener('mouseover', function() {
 document.getElementById('carousel').addEventListener('mouseout', function() {
   slideInterval = setInterval(function() { moveSlide(1); }, 3000);
 });
+
+// Add ability to change slides with enter key for accessibility
+
+function handleKeyPress(event, slideIndex) {
+  // Check if the key pressed is 'Enter'
+  if (event.key === "Enter") {
+      currentSlide(slideIndex);
+  }
+}
