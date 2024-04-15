@@ -1093,71 +1093,71 @@ body {
 
 /* Flex direction */
 
-.l-flex-row {
+.l-flex--row {
     flex-direction: row;
 }
 
-.l-flex-column {
+.l-flex--column {
     flex-direction: column;
 }
 
 /* Flex wrap */
 
-.l-flex-wrap {
+.l-flex--wrap {
     flex-wrap: wrap;
 }
 
 /* Justify content */
 
-.l-flex-justify-start {
+.l-flex--justify-start {
     justify-content: flex-start;
 }
 
-.l-flex-justify-end {
+.l-flex--justify-end {
     justify-content: flex-end;
 }
 
-.l-flex-justify-center {
+.l-flex--justify-center {
     justify-content: center;
 }
 
-.l-flex-justify-between {
+.l-flex--justify-between {
     justify-content: space-between;
 }
 
-.l-flex-justify-around {
+.l-flex--justify-around {
     justify-content: space-around;
 }
 
-.l-flex-justify-evenly {
+.l-flex--justify-evenly {
     justify-content: space-evenly;
 }
 
 /* Align items */
 
-.l-flex-align-start {
+.l-flex--align-start {
     align-items: flex-start;
 }
 
-.l-flex-align-center {
+.l-flex--align-center {
     align-items: center;
 }
 
-.l-flex-align-end {
+.l-flex--align-end {
     align-items: flex-end;
 }
 
 /* Align self */
 
-.l-flex-align-self-start {
+.l-flex--align-self-start {
     align-self: flex-start;
 }
 
-.l-flex-align-self-center {
+.l-flex--align-self-center {
     align-self: center;
 }
 
-.l-flex-align-self-end {
+.l-flex--align-self-end {
     align-self: flex-end;
 }
 
@@ -1169,47 +1169,47 @@ body {
 
 /* Grid Columns */
 
-.l-grid-cols-2 {
+.l-grid--cols-2 {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.l-grid-cols-3 {
+.l-grid--cols-3 {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.l-grid-cols-4 {
+.l-grid--cols-4 {
     grid-template-columns: repeat(4, 1fr);
 }
 
 /* Grid Rows */
 
-.l-grid-rows-2 {
+.l-grid--rows-2 {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.l-grid-rows-3 {
+.l-grid--rows-3 {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.l-grid-rows-4 {
+.l-grid--rows-4 {
     grid-template-columns: repeat(4, 1fr);
 }
 
 /* Grid Gap */
 
-.l-grid-gap-1 {
+.l-grid--gap-1 {
     gap: 1rem;
 }
 
-.l-grid-gap-1-5 {
+.l-grid--gap-1-5 {
     gap: 1.5rem;
 }
 
-.l-grid-gap-2 {
+.l-grid--gap-2 {
     gap: 2rem;
 }
 
-.l-grid-gap-3 {
+.l-grid--gap-3 {
     gap: 3rem;
 }
 
@@ -1221,61 +1221,61 @@ body {
 
 /* Justify and Align Items */
 
-.l-grid-justify-items-start {
+.l-grid--justify-items-start {
     justify-items: start;
 }
 
-.l-grid-justify-items-center {
+.l-grid--justify-items-center {
     justify-items: center;
 }
 
-.l-grid-align-items-start {
+.l-grid--align-items-start {
     align-items: start;
 }
 
-.l-grid-align-items-center {
+.l-grid--align-items-center {
     align-items: center;
 }
 
 /* Justify and Align Content */
 
-.l-grid-justify-content-start {
+.l-grid--justify-content-start {
     justify-content: start;
 }
 
-.l-grid-justify-content-center {
+.l-grid--justify-content-center {
     justify-content: center;
 }
 
-.l-grid-align-content-start {
+.l-grid--align-content-start {
     align-content: start;
 }
 
-.l-grid-align-content-center {
+.l-grid--align-content-center {
     align-content: center;
 }
 
 /* Justify and align self */
 
-.l-grid-align-self-start {
+.l-grid--align-self-start {
     align-self: start;
 }
 
-.l-grid-align-self-center {
+.l-grid--align-self-center {
     align-self: center;
 }
 
-.l-grid-justify-self-end {
+.l-grid--justify-self-end {
     justify-self: end;
 } 
 
-.l-grid-align-self-end {
+.l-grid--align-self-end {
     align-self: end;
 }
 
 /* Grid span two columns */
 
-.l-grid-span-2-cols {
+.l-grid--span-2-cols {
     grid-column: 1 / -1;
 }
 
@@ -1404,7 +1404,7 @@ body {
 
 /* Mobile Layouts */
 
-.l-flex-column--mobile {
+.l-flex--column--mobile {
     display: flex;
     flex-direction: column;
 }
@@ -1414,7 +1414,7 @@ body {
     justify-content: space-between;
 }
 
-.l-grid-cols-2--mobile {
+.l-grid--cols-2--mobile {
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -2020,14 +2020,14 @@ text-decoration: underline;
         flex-direction: column;
     }
 
-    .l-grid-cols-2--mobile {
+    .l-grid--cols-2--mobile {
         display: block;
     }
 
     /* Layout classes for desktop */
 
 
-    .l-grid-cols-2--desktop {
+    .l-grid--cols-2--desktop {
         grid-template-columns: repeat(2, 1fr);
     }
 
