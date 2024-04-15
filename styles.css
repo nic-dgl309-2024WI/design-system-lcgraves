@@ -1269,6 +1269,10 @@ body {
     justify-self: end;
 } 
 
+.l-grid-align-self-end {
+    align-self: end;
+}
+
 /* Grid span two columns */
 
 .l-grid-span-2-cols {
