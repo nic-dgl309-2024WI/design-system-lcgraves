@@ -75,6 +75,15 @@ else {
   });
 });
 
+// Automatically open the first accordion on desktop
+if (mediaQuery.matches) {
+  if (allDetails.length > 0) {
+    allDetails[0].setAttribute('open', '');
+    allDetails[0].querySelector('.c-accordion__button').classList.add('active');
+    // Adjust button margin for the first panel if needed
+    buttonElement.style.marginTop = '53rem'; // Adjust if different value is needed for the first item
+  }
+}
 
 
 /* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
