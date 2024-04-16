@@ -1763,12 +1763,16 @@ text-decoration: underline;
 /* SUPPLIES. SERVICES & PLANT CARE */
 
 .c-card {
-    border: 1px solid var(--clr-secondary-100);
     background-color: var(--clr-primary-40);
     margin-bottom: var(--rem-space-2-5);
     padding: var(--rem-space-2);
     text-align: center;
     z-index: 2;
+    border: 1px solid transparent;
+}
+
+.c-card:hover {
+    border: 1px solid var(--clr-primary-200);
 }
 
 .c-card__icon {
