@@ -57,23 +57,28 @@ allDetails.forEach((targetDetail, index) => {
       summary.classList.remove('active');
     }
 
-if (mediaQuery.matches) {
-    if (targetDetail.open) {
-      // Apply different styles if it's panel 2, 3, or 4
-      if (index === 1 || index === 2 || index === 3) {
-          buttonElement.style.marginTop = '29rem'; // Less margin
-      } else {
-          buttonElement.style.marginTop = '56.5rem'; // default
-      }
-  }
-}
-else {
-  // Ensure no inline styles are applied in mobile
-  buttonElement.style.marginTop = ''; // Clear any inline styles
-}
+    const areAllClosed = Array.from(allDetails).every(detail => !detail.hasAttribute('open'));
 
+    if (mediaQuery.matches) {
+      if (areAllClosed) {
+        buttonElement.style.marginTop = '0'; // Set margin to 0 if all panels are closed
+      } else {
+        if (targetDetail.open) {
+          // Apply different styles if it's panel 2, 3, or 4
+          if (index === 1 || index === 2 || index === 3) {
+            buttonElement.style.marginTop = '29rem'; // Less margin
+          } else {
+            buttonElement.style.marginTop = '56.5rem'; // default
+          }
+        }
+      }
+    } else {
+      // Ensure no inline styles are applied in mobile
+      buttonElement.style.marginTop = ''; // Clear any inline styles
+    }
   });
 });
+
 
 // Automatically open the first accordion on desktop
 if (mediaQuery.matches) {
