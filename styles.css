@@ -1769,6 +1769,7 @@ text-decoration: underline;
     text-align: center;
     z-index: 2;
     border: 1px solid transparent;
+    border-radius: 8px;
 }
 
 .c-card:hover {
