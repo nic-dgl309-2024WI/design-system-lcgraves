@@ -1431,13 +1431,26 @@ body {
     }
   }
 
-  .element-animate {
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } 
+
+  .element--animate {
     opacity: 0;
     animation-fill-mode: forwards;
   }
 
-  .animate-visible {
+  .fadeinup--visible {
     animation: fadeInUp 0.5s ease-in-out;
+  }
+
+  .fadein--visible {
+    animation: fadeIn 0.5s ease-in-out;
   }
 
 
