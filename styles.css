@@ -1717,31 +1717,45 @@ text-decoration: underline;
         display: block;
 }
 
-.c-accordion__card:hover .c-accordion__card-image {
+.c-accordion__card-image-container:hover .c-accordion__card-image {
         transform: scale(1.1); /* Increase the size of the image */
     }
 
 .c-accordion__card {
     margin: var(--rem-space-2) 0;
-    border: 1px solid var(--clr-secondary-100);
-    background-color: var(--clr-primary-40);
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
     position: relative;
 }
 
 .c-accordion__card-image-container {
+    border-radius: 8px;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.c-accordion__card-image-container:hover {
+    border: 1px solid var(--clr-primary-200);
 }
 
 .c-accordion__card-title {
     font-family: var(--ff-serif);
     font-size: var(--fs-medium);
+    font-weight: var(--fw-regular);
     color: var(--clr-primary-200);
     font-style: var(--fs-italic);
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
-    padding: var(--rem-space-1);
+    padding: var(--rem-space-1) var(--rem-space-1) var(--rem-space-075) var(--rem-space-1);
+    text-align: center;
+}
+
+.c-accordion__card-text {
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-light);
+    color: var(--clr-primary-200);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-1);
     text-align: center;
 }
 
