@@ -1752,7 +1752,6 @@ text-decoration: underline;
 
 .c-accordion__card-text {
     font-family: var(--ff-sans-serif);
-    font-size: var(--fs-small);
     font-weight: var(--fw-light);
     color: var(--clr-primary-200);
     line-height: var(--line-height-1);
