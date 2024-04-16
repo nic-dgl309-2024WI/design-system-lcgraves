@@ -63,7 +63,7 @@ if (mediaQuery.matches) {
       if (index === 1 || index === 2 || index === 3) {
           buttonElement.style.marginTop = '28rem'; // Less margin
       } else {
-          buttonElement.style.marginTop = '53rem'; // default
+          buttonElement.style.marginTop = '56.5rem'; // default
       }
   }
 }
@@ -80,8 +80,6 @@ if (mediaQuery.matches) {
   if (allDetails.length > 0) {
     allDetails[0].setAttribute('open', '');
     allDetails[0].querySelector('.c-accordion__button').classList.add('active');
-    // Adjust button margin for the first panel if needed
-    buttonElement.style.marginTop = '53rem'; // Adjust if different value is needed for the first item
   }
 }
 
