@@ -2078,6 +2078,7 @@ body {
 
 .c-footer__map {
     padding-left: var(--rem-space-1-5);
+    width: 100%;
 }
 
 
