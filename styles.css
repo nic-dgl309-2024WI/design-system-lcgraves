@@ -1418,12 +1418,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* Fade in and up animation */
+/* Fade in and up animations */
 
 @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -1446,11 +1446,11 @@ body {
   }
 
   .fadeinup--visible {
-    animation: fadeInUp 0.5s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
   }
 
   .fadein--visible {
-    animation: fadeIn 0.8s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
   }
 
 
