@@ -3,18 +3,19 @@
 document.addEventListener("DOMContentLoaded", function() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // Get the animation type from data-attribute
+      // Adding the animation class when the intersection ratio is at least 0.5
+      if (entry.intersectionRatio >= 0.3) {
         const animationType = entry.target.getAttribute('data-animation');
         entry.target.classList.add(animationType);
-      } else {
-        // Remove the class based on the data-attribute to allow reanimation if needed
+      } 
+      // Removing the class when no part of the element is visible
+      if (entry.intersectionRatio === 0) {
         const animationType = entry.target.getAttribute('data-animation');
         entry.target.classList.remove(animationType);
       }
     });
   }, {
-    threshold: [0, 0.4, 1.0] // 
+    threshold: [0, 0.3, 1.0] // 
   });
 
   const elements = document.querySelectorAll('.element--animate');
