@@ -1467,19 +1467,38 @@ body {
     animation-fill-mode: forwards;
   }
 
-  .fadeinup {
+  .fadein-up {
     animation: fadeInUp 1s ease-in-out forwards;
   }
+
+  .fadein-up-2s {
+    animation: fadeInUp 2s ease-in-out forwards;
+  }
+
+  .fadein-up-dealy1s {
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+
+  .fadein-up-delay2s {
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: 2s;
+  }
+
+    .fadein-up-delay3s {
+        animation: fadeInUp 1s ease-in-out forwards;
+        animation-delay: 3s;
+    }   
 
   .fadein {
     animation: fadeIn 1s ease-in-out forwards;
   }
 
-  .fadeinright {
+  .fadein-right {
     animation: fadeInRight 2s ease-in-out forwards;
   }
 
-  .fadeinleft {
+  .fadein-left {
     animation: fadeInLeft 2s ease-in-out forwards;
   }
 
