@@ -1426,7 +1426,7 @@ body {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(40px);
     }
 
     to {
@@ -1448,7 +1448,7 @@ body {
 @keyframes fadeInRight {
     from {
         opacity: 0;
-        transform: translateX(5rem);
+        transform: translateX(40px);
     }
 
     to {
@@ -1502,11 +1502,11 @@ body {
 }
 
 .fadein-right {
-    animation: fadeInRight 2s ease-in-out forwards;
+    animation: fadeInRight 1.5s ease-in-out forwards;
 }
 
 .fadein-left {
-    animation: fadeInLeft 2s ease-in-out forwards;
+    animation: fadeInLeft 1.5s ease-in-out forwards;
 }
 
 
