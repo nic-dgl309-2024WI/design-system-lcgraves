@@ -5,13 +5,16 @@ document.addEventListener("DOMContentLoaded", function() {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('fadeinup--visible');
-        }
+        } else {
+          entry.target.classList.remove('fadeinup--visible');
+      }
     });
 }, {
     threshold: 0.5
 });
 
-const elements = document.querySelectorAll('.element-animate');
+const elements = document.querySelectorAll('.element--animate');
+console.log("Elements to observe:", elements.length);
 elements.forEach(el => observer.observe(el));
 });
 
