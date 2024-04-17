@@ -1467,16 +1467,20 @@ body {
     animation-fill-mode: forwards;
   }
 
-  .fadeinup--visible {
+  .fadeinup {
     animation: fadeInUp 1s ease-in-out forwards;
   }
 
-  .fadein--visible {
+  .fadein {
     animation: fadeIn 1s ease-in-out forwards;
   }
 
-  .fadeinright--visible {
+  .fadeinright {
     animation: fadeInRight 2s ease-in-out forwards;
+  }
+
+  .fadeinleft {
+    animation: fadeInLeft 2s ease-in-out forwards;
   }
 
 
