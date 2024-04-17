@@ -98,12 +98,17 @@ allDetails.forEach((targetDetail, index) => {
 
 
 // Automatically open the first accordion on desktop
-if (mediaQuery.matches) {
-  if (allDetails.length > 0) {
-    allDetails[0].setAttribute('open', '');
-    allDetails[0].querySelector('.c-accordion__button').classList.add('active');
+document.addEventListener("DOMContentLoaded", function() {
+  const allDetails = document.querySelectorAll('.c-accordion__category');
+  const mediaQuery = window.matchMedia('(min-width: 1000px)');
+
+  if (mediaQuery.matches) {
+      if (allDetails.length > 0) {
+          allDetails[0].setAttribute('open', '');
+          allDetails[0].querySelector('.c-accordion__button').classList.add('active');
+      }
   }
-}
+});
 
 
 /* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
