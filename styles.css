@@ -1446,11 +1446,11 @@ body {
   }
 
   .fadeinup--visible {
-    animation: fadeInUp 1s ease-in-out;
+    animation: fadeInUp 1s ease-in-out forwards;
   }
 
   .fadein--visible {
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out forwards;
   }
 
 
