@@ -3,19 +3,21 @@
 document.addEventListener("DOMContentLoaded", function() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fadeinup--visible');
-        } else {
-          entry.target.classList.remove('fadeinup--visible');
+      // Check if the element is at least 40% visible
+      if (entry.intersectionRatio >= 0.4) {
+        entry.target.classList.add('fadeinup--visible');
+      }
+      // Check if the element is completely out of view
+      if (entry.intersectionRatio === 0) {
+        entry.target.classList.remove('fadeinup--visible');
       }
     });
-}, {
-    threshold: 0.5
-});
+  }, {
+    threshold: [0, 0.4, 1.0] // 
+  });
 
-const elements = document.querySelectorAll('.element--animate');
-console.log("Elements to observe:", elements.length);
-elements.forEach(el => observer.observe(el));
+  const elements = document.querySelectorAll('.element--animate');
+  elements.forEach(el => observer.observe(el));
 });
 
 // Banner text scrolling effect
