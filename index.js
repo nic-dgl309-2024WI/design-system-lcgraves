@@ -3,13 +3,14 @@
 document.addEventListener("DOMContentLoaded", function() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      // Check if the element is at least 40% visible
-      if (entry.intersectionRatio >= 0.4) {
-        entry.target.classList.add('fadeinup--visible');
-      }
-      // Check if the element is completely out of view
-      if (entry.intersectionRatio === 0) {
-        entry.target.classList.remove('fadeinup--visible');
+      if (entry.isIntersecting) {
+        // Get the animation type from data-attribute
+        const animationType = entry.target.getAttribute('data-animation');
+        entry.target.classList.add(animationType);
+      } else {
+        // Remove the class based on the data-attribute to allow reanimation if needed
+        const animationType = entry.target.getAttribute('data-animation');
+        entry.target.classList.remove(animationType);
       }
     });
   }, {
