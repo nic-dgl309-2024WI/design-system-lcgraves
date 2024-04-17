@@ -30,11 +30,17 @@ document.getElementById('scrollingText').addEventListener('click', function() {
   // Navigation
 
 document.getElementById("plants").addEventListener("click", showPlants);
-document.getElementById("hamburger").addEventListener("click", showNav);
+document.getElementById("hamburger").addEventListener("click", toggleNav);
+document.getElementById("close-nav").addEventListener("click", toggleNav);
 
-function showNav() {
+function toggleNav() {
     var element = document.getElementById("nav-items");
+    var closeButton = document.getElementById("close-nav");
+    var hamburgerIcon = document.getElementById("hamburger");
     element.classList.toggle("show-items");
+    element.classList.toggle("c-nav__mobile--border");
+    closeButton.classList.toggle("c-nav__close");
+    hamburgerIcon.classList.toggle("is-hidden");
 }
 
 function showPlants() {
