@@ -1450,7 +1450,7 @@ body {
   }
 
   .fadein--visible {
-    animation: fadeIn 0.5s ease-in-out;
+    animation: fadeIn 0.8s ease-in-out;
   }
 
 
@@ -2215,16 +2215,27 @@ text-decoration: underline;
         justify-content: center;
     }
 
-    .c-hero__image {
+    .c-hero__image-container {
         order: 1;
-        max-width: 55%;
-        object-fit: cover;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .c-hero__image {
+        height: 100%;
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        
     }
 
     .c-hero__title {
         font-size: var(--fs-xxx-large);
         width: 450px;
-        margin: 0 3rem;
+        margin: 0 7rem;
     }   
 
     /* Plant Section */
