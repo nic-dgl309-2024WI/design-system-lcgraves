@@ -1418,12 +1418,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* Fade in and up animations */
+/* Animations */
 
 @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(40px);
     }
     to {
       opacity: 1;
@@ -1440,6 +1440,28 @@ body {
     }
   } 
 
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(5rem);  
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   .element--animate {
     opacity: 0;
     animation-fill-mode: forwards;
@@ -1451,6 +1473,10 @@ body {
 
   .fadein--visible {
     animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .fadeinright--visible {
+    animation: fadeInRight 2s ease-in-out forwards;
   }
 
 
