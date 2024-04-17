@@ -1,3 +1,20 @@
+// Trigger animation on scroll
+
+document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fadeinup--visible');
+        }
+    });
+}, {
+    threshold: 0.5
+});
+
+const elements = document.querySelectorAll('.element-animate');
+elements.forEach(el => observer.observe(el));
+});
+
 // Banner text scrolling effect
 document.getElementById('scrollingText').addEventListener('click', function() {
     this.classList.toggle('paused');
