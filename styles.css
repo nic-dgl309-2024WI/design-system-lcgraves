@@ -104,7 +104,7 @@ body {
 
     --clr-almost-white: #FAFCFB;
     --clr-soft-white: #F2F5F4;
-    --clr-soft-black: #545454;
+    --clr-soft-black: #4F5151;
 
     /*** TYPOGRAPHY VARIABLES ***/
 
@@ -2319,9 +2319,18 @@ text-decoration: underline;
 /* Gift Cards */
 
 .c-gift-card__image {
-   height: unset;
-   width: 100%;
-   height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: unset;
+    height: 100%;
+    object-fit: cover;
+    overflow: visible;
+}
+
+.c-gift-card__image-container {
+    position: relative;
 }
 
 .c-form {
