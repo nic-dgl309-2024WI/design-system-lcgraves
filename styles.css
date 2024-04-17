@@ -1426,7 +1426,7 @@ body {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(30px);
     }
 
     to {
@@ -1448,7 +1448,7 @@ body {
 @keyframes fadeInRight {
     from {
         opacity: 0;
-        transform: translateX(40px);
+        transform: translateX(30px);
     }
 
     to {
@@ -1460,7 +1460,7 @@ body {
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translateX(-40px);
+        transform: translateX(-30px);
     }
 
     to {
@@ -1816,7 +1816,7 @@ body {
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
     display: block;
-    width: 100;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -2080,8 +2080,6 @@ body {
     padding-left: var(--rem-space-1-5);
     width: 100%;
 }
-
-
 
 
 /* Desktop CSS Rulesets */
