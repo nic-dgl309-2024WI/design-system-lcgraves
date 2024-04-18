@@ -2087,6 +2087,11 @@ body {
     width: 100%;
 }
 
+.c-footer__terms {
+    padding-right: var(--rem-space-05);
+    padding-left: var(--rem-space-05)
+}
+
 .c-footer__form-input--width {
    width: 12rem;
 }
@@ -2492,10 +2497,16 @@ line-height: var(--line-height-0);
         height: 7rem;
     }
 
-    .c-footer__terms {
-        border-top: 1px solid var(--clr-secondary-100);
+    .c-footer__terms-container {
         width: auto;
-        padding: 0 var(--rem-space-3)
+        padding-right: 0;
+        padding-left: 0;
+        border-top: 1px solid var(--clr-secondary-100);
+    }
+
+    .c-footer__terms {
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .c-footer {
