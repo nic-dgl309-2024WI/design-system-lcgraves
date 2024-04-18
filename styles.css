@@ -2104,6 +2104,27 @@ margin-bottom: var(--rem-space-075);
 line-height: var(--line-height-0);
 }
 
+/* Breadcrumbs */
+
+.c-breadcrumbs {
+    font-family: var(--ff-sans-serif);
+    font-size: var(--fs-small);
+    color: var(--clr-primary-200);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-1);
+    padding: var(--rem-space-1) var(--rem-space-2);
+    background-color: var(--clr-primary-40);
+    border-bottom: 1px solid var(--clr-secondary-100);
+    list-style: none;
+}
+
+.c-breadcrumbs__item, .c-breadcrumbs__item--active {
+    display: inline-block;
+}
+
+.c-breadcrumbs__item--active {
+    text-decoration: underline;
+}
 
 /* Desktop CSS Rulesets */
 @media (min-width: 1000px) {
