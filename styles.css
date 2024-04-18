@@ -2093,6 +2093,10 @@ body {
 
 .c-footer__sign-up-button {
 border: 1px solid var(--clr-primary-200);
+padding-right: var(--rem-space-05);
+padding-left: var(--rem-space-05);
+margin-bottom: var(--rem-space-075);
+line-height: var(--line-height-0);
 }
 
 
@@ -2501,5 +2505,9 @@ border: 1px solid var(--clr-primary-200);
     .c-footer__form-input--width {
         width: initial;
      }
+
+     .c-footer__sign-up-button {
+        padding: var(--rem-space-05);
+        }
 
 }
