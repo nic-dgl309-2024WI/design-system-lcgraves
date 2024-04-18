@@ -101,6 +101,28 @@ document.querySelectorAll('.copy-btn').forEach(button => {
   });
 });
 
+// Navigation
+
+document.getElementById("plants").addEventListener("click", showPlants);
+document.getElementById("hamburger").addEventListener("click", toggleNav);
+document.getElementById("close-nav").addEventListener("click", toggleNav);
+
+function toggleNav() {
+    var element = document.getElementById("nav-items");
+    var closeButton = document.getElementById("close-nav");
+    var hamburgerIcon = document.getElementById("hamburger");
+    element.classList.toggle("show-items");
+    element.classList.toggle("c-nav__mobile--border");
+    closeButton.classList.toggle("c-nav__close");
+    hamburgerIcon.classList.toggle("is-hidden");
+}
+
+function showPlants() {
+    var plantstuff = document.getElementById("plant-items");
+    plantstuff.classList.toggle("show-plants");
+}
+
+
 /* Carousel and Pagination - with help from: https://dev.to/cwrcode/create-testimonial-slider-using-html-css-and-javascript-26gg*/
 
 var slideIndex = 0;
@@ -145,24 +167,3 @@ document.getElementById('carousel').addEventListener('mouseover', function() {
 document.getElementById('carousel').addEventListener('mouseout', function() {
   slideInterval = setInterval(function() { moveSlide(1); }, 3000);
 });
-
-// Navigation
-
-document.getElementById("plants").addEventListener("click", showPlants);
-document.getElementById("hamburger").addEventListener("click", toggleNav);
-document.getElementById("close-nav").addEventListener("click", toggleNav);
-
-function toggleNav() {
-    var element = document.getElementById("nav-items");
-    var closeButton = document.getElementById("close-nav");
-    var hamburgerIcon = document.getElementById("hamburger");
-    element.classList.toggle("show-items");
-    element.classList.toggle("c-nav__mobile--border");
-    closeButton.classList.toggle("c-nav__close");
-    hamburgerIcon.classList.toggle("is-hidden");
-}
-
-function showPlants() {
-    var plantstuff = document.getElementById("plant-items");
-    plantstuff.classList.toggle("show-plants");
-}
