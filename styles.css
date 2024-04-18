@@ -2453,6 +2453,9 @@ line-height: var(--line-height-0);
 
     .c-form {
         width: 90%;
+    }
+
+    .c-form--center {
         margin-right: 0;
         margin-left: auto;
     }
