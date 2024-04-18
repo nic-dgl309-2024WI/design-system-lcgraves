@@ -2091,6 +2091,11 @@ body {
    width: 12rem;
 }
 
+.c-footer__sign-up-button {
+border: 1px solid var(--clr-primary-200);
+}
+
+
 /* Desktop CSS Rulesets */
 @media (min-width: 1000px) {
 
