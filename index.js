@@ -96,9 +96,9 @@ allDetails.forEach((targetDetail, index) => {
         if (targetDetail.open) {
           // Apply different styles if it's panel 2, 3, or 4
           if (index === 1 || index === 2 || index === 3) {
-            buttonElement.style.marginTop = '29rem'; // Less margin
+            buttonElement.style.marginTop = '28.5rem'; // Less margin
           } else {
-            buttonElement.style.marginTop = '56.5rem'; // default
+            buttonElement.style.marginTop = '54.25rem'; // default
           }
         }
       }
