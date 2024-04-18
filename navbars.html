@@ -218,24 +218,27 @@
             
                 <div>
                     <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-075">Navbar example</h2>
-                    <header>
-                    <div class="u-bg-primary-60 full-width u-border-bottom-1">
+                    <div class="c-nav__container u-bg-primary-60 full-width u-border-bottom-1">
                         <div class="c-nav">
                             <div class="l-flex l-flex--align-center">
-                                <img src="Icons/tree-roots-lighter-green.svg" alt="tree icon" style="width: 40px">
+                                <img src="icons/tree-roots-lighter-green.svg" alt="tree icon" style="width: 40px">
                                 <a class="c-nav__home-link" href="index.html">Outback<br>Nursery</a>
                             </div>
                             <nav>
                                 <ul class="is-hidden--desktop is-hidden c-nav__mobile" id="nav-items">
-                                    <li id="plants" class="c-nav__list-items c-nav__links">Plants</li>
-                                    <ul class="c-nav__plants-item is-hidden" id="plant-items">
-                                        <li class="c-nav__links"><a class="c-nav__links l-mb-05" href="coming-soon.html">Trees</a></li>
-                                        <li class="c-nav__links"><a href="coming-soon.html">Shrubs</a></li>
-                                        <li class="c-nav__links"><a href="coming-soon.html">Hedging</a></li>
-                                        <li class="c-nav__links"><a href="coming-soon.html">Edibles</a></li>
-                                        <li class="c-nav__links"><a href="coming-soon.html">Vines, Grasses &amp; Other Plants</a>
-                                        </li>
-                                    </ul>
+                                    <li><a id="plants" class="c-nav__list-items c-nav__links">Plants</a>
+                                        <ul class="c-nav__plants-item is-hidden" id="plant-items">
+                                            <li class="c-nav__links"><a class="c-nav__links l-mb-05"
+                                                    href="coming-soon.html">Trees</a>
+                                            </li>
+                                            <li class="c-nav__links"><a href="coming-soon.html">Shrubs</a></li>
+                                            <li class="c-nav__links"><a href="coming-soon.html">Hedging</a></li>
+                                            <li class="c-nav__links"><a href="coming-soon.html">Edibles</a></li>
+                                            <li class="c-nav__links"><a href="coming-soon.html">Vines, Grasses &amp; Other
+                                                    Plants</a>
+                                            </li>
+                                        </ul>
+                                    </li>
                                     <li class="c-nav__list-items c-nav__links"><a href="coming-soon.html">Garden
                                             Supplies</a></li>
                                     <li class="c-nav__links c-nav__list-items"><a href="coming-soon.html">Services</a></li>
@@ -244,18 +247,22 @@
                                     <li class="c-nav__links c-nav__list-items"><a href="coming-soon.html">Gift Cards</a>
                                     </li>
                                     <li class="c-nav__links c-nav__list-items"><a href="coming-soon.html">About Us</a></li>
-                                    <div class="c-nav__links c-nav__social-media">
-                                        <a href="https://www.facebook.com/p/Outback-Nursery-Garden-Centre-100045470087619/" target="_blank"><img class="l-mr-1" src="Icons/facebook-logo.png" alt="facebook logo" style="width: 25px"></a>
+                                    <li class="c-nav__links c-nav__social-media">
+                                        <a href="https://www.facebook.com/p/Outback-Nursery-Garden-Centre-100045470087619/"
+                                            target="_blank"><img class="l-mr-1" src="icons/facebook-logo.png" alt="facebook logo"
+                                                style="width: 25px"></a>
                                         <a href="https://www.instagram.com/outbacknursery/?hl=en" target="_blank">
-                                        <img src="Icons/instagram-logo.png" alt="instagram logo" style="width: 25px">
+                                            <img src="icons/instagram-logo.png" alt="instagram logo" style="width: 25px">
                                         </a>
-                                    </div>
+                                    </li>
                                 </ul>
+                                <a id="close-nav" class="is-hidden--desktop c-nav__close" href="javascript:void(0);" style="position: absolute; top: 10px; right: 10px; cursor: pointer;" aria-label="Close menu">
+                                    <img src="icons/close.png" alt="Close menu" width="24" height="24">
+                                </a>
                             </nav>
                             <a id="hamburger" class="is-hidden--desktop"><i class="fa fa-bars"></i></a>
                         </div>
                     </div>
-                </header>
                     <div>
                         <div class="l-flex l-flex--justify-between l-flex--align-end">
                             <h2 class="u-heading--4 u-fs-x-large l-pt-3 l-pb-075">HTML Code</h2>
