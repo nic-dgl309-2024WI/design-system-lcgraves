@@ -1331,6 +1331,12 @@ body {
     border-left: 1px solid var(--clr-primary-200);
 }
 
+/* Overflow */
+
+.overflow-hidden {
+    overflow: hidden;
+}   
+
 /* Container Classes */
 /* Base (mobile first) styles */
 
@@ -2081,6 +2087,9 @@ body {
     width: 100%;
 }
 
+.c-footer__form-input--width {
+   width: 12rem;
+}
 
 /* Desktop CSS Rulesets */
 @media (min-width: 1000px) {
@@ -2295,23 +2304,21 @@ body {
         order: 1;
         position: relative;
         width: 100%;
-        overflow: hidden;
+        overflow: visible;
     }
 
     .c-hero__image {
         height: 100%;
-        overflow: visible;
         position: absolute;
         top: 0;
         left: 0;
         width: auto;
-
     }
 
     .c-hero__title {
         font-size: var(--fs-xxx-large);
         width: 450px;
-        margin: 0 7rem;
+        margin: 0 5rem;
     }
 
     /* Plant Section */
@@ -2378,7 +2385,7 @@ body {
     }
 
     .c-plants__buttons {
-        margin-top: 56.5rem;
+        margin-top: 54.25rem;
     }
 
     /* Supplies, Services & Plant Care */
@@ -2485,5 +2492,9 @@ body {
     .c-footer {
         padding: 0.5rem 0;
     }
+
+    .c-footer__form-input--width {
+        width: initial;
+     }
 
 }
