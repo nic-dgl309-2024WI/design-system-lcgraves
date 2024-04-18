@@ -192,6 +192,11 @@
         max-width: 550px;
     }
 
+/* Overflow */
+
+overflow-hidden {
+    overflow: hidden;
+}
     
     
     /* To allow break in paragraph for long string of characters */
@@ -239,47 +244,6 @@
     min-width: 18rem;
     max-width: 18rem;
 }
-
-
-/* Drawing clockwise border Animation */
-/* animation-fill-mode set to forwards to ensure that border stays at 100% keyframe value -- with help from: https://www.joshwcomeau.com/animation/keyframe-animations/ */
-
-/* c-swatch:hover {
-    animation: drawBorder 1.5s ease-in forwards;
-}
-  
-  @keyframes drawBorder {
-    0% {
-      border-top-color: transparent;
-    }
-    15% {
-      border-top-color: black;
-    }
-    35% {
-        border-right-color: black;
-    }
-    55% {
-      border-bottom-color: black;
-    }
-    75% {
-      border-left-color: black;
-    }
-    100% {
-      border-color: black;
-    }
-  }
-
-
-/* Draw border on hover */
-/*.u-drawborder {
-    border: 1.5px solid transparent;
-}
-
-.u-drawborder:hover {
-    animation: drawBorder 1.5s ease-in forwards;
-}
-
-*/
 
 /** STATES **/
 
