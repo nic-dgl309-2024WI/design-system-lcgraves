@@ -1,12 +1,27 @@
 /* Toggles mobile menu on and off with click/tap on hamburger icon */
 /* Used chatGPT to help with figuring out how to toggle on/off two menus with separate ID's with one click event" */
 
-function showNav() {
-    var firstMenu = document.getElementById("c-mobile-menu__first");
-    var secondMenu = document.getElementById("c-mobile-menu__second")
-    firstMenu.classList.toggle("is-visible-dropdown-menu");
-    secondMenu.classList.toggle("is-visible-dropdown-menu");
-}
+document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      // Adding the animation class when the intersection ratio is at least 0.5
+      if (entry.intersectionRatio >= 0.3) {
+        const animationType = entry.target.getAttribute('data-animation');
+        entry.target.classList.add(animationType);
+      } 
+      // Removing the class when no part of the element is visible
+      if (entry.intersectionRatio === 0) {
+        const animationType = entry.target.getAttribute('data-animation');
+        entry.target.classList.remove(animationType);
+      }
+    });
+  }, {
+    threshold: [0, 0.3, 1.0] // 
+  });
+
+  const elements = document.querySelectorAll('.element--animate');
+  elements.forEach(el => observer.observe(el));
+});
 
 
 // Accordion
@@ -34,22 +49,39 @@ allDetails.forEach((targetDetail, index) => {
       summary.classList.remove('active');
     }
 
-if (mediaQuery.matches) {
-    if (targetDetail.open) {
-      // Apply different styles if it's panel 2, 3, or 4
-      if (index === 1 || index === 2 || index === 3) {
-          elementBelow.style.marginTop = '26rem'; // Less margin
+    const areAllClosed = Array.from(allDetails).every(detail => !detail.hasAttribute('open'));
+
+    if (mediaQuery.matches) {
+      if (areAllClosed) {
+        elementBelow.style.marginTop = '0'; // Set margin to 0 if all panels are closed
       } else {
-          elementBelow.style.marginTop = '49rem'; // default
+        if (targetDetail.open) {
+          // Apply different styles if it's panel 2, 3, or 4
+          if (index === 1 || index === 2 || index === 3) {
+            elementBelow.style.marginTop = '29rem'; // Less margin
+          } else {
+            elementBelow.style.marginTop = '56.5rem'; // default
+          }
+        }
+      }
+    } else {
+      // Ensure no inline styles are applied in mobile
+      elementBelow.style.marginTop = ''; // Clear any inline styles
+    }
+  });
+});
+
+// Automatically open the first accordion on desktop
+document.addEventListener("DOMContentLoaded", function() {
+  const allDetails = document.querySelectorAll('.c-accordion__category');
+  const mediaQuery = window.matchMedia('(min-width: 1000px)');
+
+  if (mediaQuery.matches) {
+      if (allDetails.length > 0) {
+          allDetails[0].setAttribute('open', '');
+          allDetails[0].querySelector('.c-accordion__button').classList.add('active');
       }
   }
-}
-else {
-  // Ensure no inline styles are applied in mobile
-  elementBelow.style.marginTop = ''; // Clear any inline styles
-}
-
-  });
 });
 
 // HMTL Code Copy Button
@@ -113,3 +145,24 @@ document.getElementById('carousel').addEventListener('mouseover', function() {
 document.getElementById('carousel').addEventListener('mouseout', function() {
   slideInterval = setInterval(function() { moveSlide(1); }, 3000);
 });
+
+// Navigation
+
+document.getElementById("plants").addEventListener("click", showPlants);
+document.getElementById("hamburger").addEventListener("click", toggleNav);
+document.getElementById("close-nav").addEventListener("click", toggleNav);
+
+function toggleNav() {
+    var element = document.getElementById("nav-items");
+    var closeButton = document.getElementById("close-nav");
+    var hamburgerIcon = document.getElementById("hamburger");
+    element.classList.toggle("show-items");
+    element.classList.toggle("c-nav__mobile--border");
+    closeButton.classList.toggle("c-nav__close");
+    hamburgerIcon.classList.toggle("is-hidden");
+}
+
+function showPlants() {
+    var plantstuff = document.getElementById("plant-items");
+    plantstuff.classList.toggle("show-plants");
+}
