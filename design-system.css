@@ -320,7 +320,13 @@ pre {
 
 @media only screen and (min-width: 1200px) {
 
-    /* Desktop grid layout to keep top and side navigation sticky --> adapted from your 'Spacing Recipes'*/
+/* Spacing for desktop */
+
+.l-ml-2--desktop {
+    margin-left: var(--rem-space-2)
+}
+
+/* Desktop grid layout to keep top and side navigation sticky --> adapted from your 'Spacing Recipes'*/
 
 .grid-sticky {
     --header-height: 3.6rem;
