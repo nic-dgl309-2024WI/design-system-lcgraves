@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const animationType = entry.target.getAttribute('data-animation');
         entry.target.classList.add(animationType);
       } 
-      // Removing the class when no part of the element is visible
+      /* Removing the class when no part of the element is visible
       if (entry.intersectionRatio === 0) {
         const animationType = entry.target.getAttribute('data-animation');
         entry.target.classList.remove(animationType);
-      }
+      } */
     });
   }, {
     threshold: [0, 0.3, 1.0] // 
